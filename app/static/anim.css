@@ -1,0 +1,35 @@
+@keyframes flashSuccess {
+    0% {
+        background-color: rgba(34, 197, 94, 0);
+    }
+
+    50% {
+        background-color: rgba(34, 197, 94, 0.2);
+    }
+
+    100% {
+        background-color: rgba(34, 197, 94, 0);
+    }
+}
+
+.animate-flash-success {
+    animation: flashSuccess 1.5s ease-out;
+}
+
+@keyframes flashUpdate {
+    0% {
+        background-color: rgba(6, 182, 212, 0);
+    }
+
+    50% {
+        background-color: rgba(6, 182, 212, 0.2);
+    }
+
+    100% {
+        background-color: rgba(6, 182, 212, 0);
+    }
+}
+
+.animate-flash-update {
+    animation: flashUpdate 1.5s ease-out;
+}

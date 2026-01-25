@@ -1,0 +1,152 @@
+2026-01-25 11:53:18,460 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_115318.log
+2026-01-25 11:53:54,297 | INFO     | main:generate_thought_response:169 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:54:02,484 | INFO     | main:generate_thought_response:169 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:54:22,007 | INFO     | main:chat_audio:688 - 🎤 User said: 呃今天心情还不错
+2026-01-25 11:54:22,007 | INFO     | main:chat_audio:713 - 💧 Re-hydrating plan cache from frontend data for d17f9834...
+2026-01-25 11:54:24,017 | DEBUG    | main:chat_audio:782 - 📥 Model API Response: {
+  "id": "019bf349d9a44c3ac8c1108d58cf26b8",
+  "object": "chat.completion",
+  "created": 1769313262,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n听到你今天心情还不错，这真是个令人欣慰的消息，我为你感到开心。即使是在心情好的时候，偶尔是不是也会有一些小小的念头或困扰在脑海里闪过呢？能和我分享一下最近有没有让你觉得有些在意的事情吗？"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 633,
+    "completion_tokens": 51,
+    "total_tokens": 684,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 377
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 11:54:24,018 | INFO     | main:chat_audio:788 - 📝 Reply text: 
+听到你今天心情还不错，这真是个令人欣慰的消息，我为你感到开心。即使是在心情好的时候，偶尔是不是也会有一些小小的念头或困扰在脑海里闪过呢？能和我分享一下最近有没有让你觉得有些在意的事情吗？...
+2026-01-25 11:54:24,018 | INFO     | main:chat_audio:796 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 11:54:24,047 | INFO     | main:evaluate_plan_async:542 - 📡 Sending Plan Eval Request to zai-org/GLM-4.6...
+2026-01-25 11:54:24,868 | DEBUG    | main:evaluate_plan_async:560 - 📥 Plan API Response: {
+  "id": "019bf349e16b04f0ee674993db520bad",
+  "object": "chat.completion",
+  "created": 1769313264,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 936,
+    "completion_tokens": 0,
+    "total_tokens": 936,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 936
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 11:54:24,868 | INFO     | main:evaluate_plan_async:565 - ℹ️ No tool calls. Text: 
+2026-01-25 11:54:24,870 | INFO     | main:chat_audio:806 - ✅ Plan evaluation complete for d17f9834: {'updated': False, 'interview_complete': False}
+2026-01-25 11:54:35,662 | INFO     | main:chat_audio:688 - 🎤 User said: 呃，请你更新一下你的计划。
+2026-01-25 11:54:35,662 | INFO     | main:chat_audio:709 - 📥 Using cached plan for d17f9834...
+2026-01-25 11:54:37,751 | DEBUG    | main:chat_audio:782 - 📥 Model API Response: {
+  "id": "019bf34a0f07dc61817b6b503c47be1f",
+  "object": "chat.completion",
+  "created": 1769313275,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n亲爱的，谢谢你直接地告诉我你的想法，这对我来说很重要。有时候我们内心深处的声音，就像你刚才说的那样，需要被清晰地表达出来。那么，当你希望我“更新计划”时，你内心真正渴望的是什么呢？可以再多说一点吗？"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 692,
+    "completion_tokens": 57,
+    "total_tokens": 749,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 436
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 11:54:37,751 | INFO     | main:chat_audio:788 - 📝 Reply text: 
+亲爱的，谢谢你直接地告诉我你的想法，这对我来说很重要。有时候我们内心深处的声音，就像你刚才说的那样，需要被清晰地表达出来。那么，当你希望我“更新计划”时，你内心真正渴望的是什么呢？可以再多说一点吗？...
+2026-01-25 11:54:37,751 | INFO     | main:chat_audio:796 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 11:54:37,783 | INFO     | main:evaluate_plan_async:542 - 📡 Sending Plan Eval Request to zai-org/GLM-4.6...
+2026-01-25 11:54:39,082 | DEBUG    | main:evaluate_plan_async:560 - 📥 Plan API Response: {
+  "id": "019bf34a172528a09926cd802546389f",
+  "object": "chat.completion",
+  "created": 1769313277,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "✨",
+        "tool_calls": [
+          {
+            "id": "019bf34a1b070af978b47b3ed0b0a1d7",
+            "type": "function",
+            "function": {
+              "name": "modify_pending_item",
+              "arguments": "{\"item_id\": \"1\", \"new_content\": \"探索用户内心真实的需求和期待，了解\\\"更新计划\\\"背后的深层含义\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1001,
+    "completion_tokens": 42,
+    "total_tokens": 1043,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 832
+    },
+    "prompt_cache_hit_tokens": 832,
+    "prompt_cache_miss_tokens": 169
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 11:54:39,082 | INFO     | main:evaluate_plan_async:574 - 🛠️ Processing 1 tool calls
+2026-01-25 11:54:39,082 | INFO     | main:evaluate_plan_async:584 - 🔧 Tool: modify_pending_item | Args: {'item_id': '1', 'new_content': '探索用户内心真实的需求和期待，了解"更新计划"背后的深层含义'}
+2026-01-25 11:54:39,082 | INFO     | main:evaluate_plan_async:612 - 📝 Modified pending item 1
+2026-01-25 11:54:39,084 | INFO     | main:evaluate_plan_async:628 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 11:54:39,085 | INFO     | main:chat_audio:806 - ✅ Plan evaluation complete for d17f9834: {'updated': True, 'interview_complete': False, 'final_result': None}

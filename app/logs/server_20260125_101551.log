@@ -1,0 +1,8 @@
+2026-01-25 10:15:51,026 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:15:51,273 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:15:51,428 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:15:51,437 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:15:51,541 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:15:51,570 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101551.log
+2026-01-25 10:16:09,106 | INFO     | main:chat_audio:606 - 🎤 User said: 你有啥想聊的吗？我状态还行这两天。
+2026-01-25 10:16:44,513 | INFO     | main:chat_audio:606 - 🎤 User said: 呃，最近还是有点压力吧，主要就是学业压力比较大。

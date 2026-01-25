@@ -1,0 +1,616 @@
+2026-01-25 19:13:04,291 | INFO     | logger:setup_logging:25 - 日志已初始化。写入文件: logs/server_20260125_191304.log
+2026-01-25 19:13:04,460 | INFO     | config:<module>:22 - ✅ Loaded .env from: I:\AI面试\app\.env
+2026-01-25 19:13:04,504 | INFO     | main:<module>:28 - Application initialized with modular structure.
+2026-01-25 19:13:30,331 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:14:39,621 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:14:39,918 | WARNING  | llm_service:generate_thought_response:59 - Model GLM-4.6 Failed: 503 - {"code":50508,"message":"System is too busy now. Please try again later.","data":null}
+2026-01-25 19:14:39,919 | CRITICAL | llm_service:generate_thought_response:67 - All models in chain failed.
+2026-01-25 19:14:39,919 | ERROR    | interview:upload_resume:203 - Error generating opening: 500: All AI models failed. Last error: HTTP 503: {"code":50508,"message":"System is too busy now. Please try again later.","data":null}
+2026-01-25 19:14:54,358 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:15:01,910 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:15:02,231 | WARNING  | llm_service:generate_thought_response:59 - Model GLM-4.6 Failed: 503 - {"code":50508,"message":"System is too busy now. Please try again later.","data":null}
+2026-01-25 19:15:02,233 | CRITICAL | llm_service:generate_thought_response:67 - All models in chain failed.
+2026-01-25 19:15:02,233 | ERROR    | interview:upload_resume:203 - Error generating opening: 500: All AI models failed. Last error: HTTP 503: {"code":50508,"message":"System is too busy now. Please try again later.","data":null}
+2026-01-25 19:18:30,336 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:18:41,957 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:18:49,413 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:19:01,429 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:19:43,893 | INFO     | interview:chat_audio:229 - 🎤 用户说: はじめまして。どうぞよろしくお願いします。
+2026-01-25 19:19:43,893 | INFO     | interview:chat_audio:245 - 💧 从前端数据恢复计划缓存 (50bbd81e)...
+2026-01-25 19:19:43,893 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:19:45,241 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+自己紹介は名前と趣味を含めてください。もう一度、具体的に話してみてください。...
+2026-01-25 19:19:45,291 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 19:19:50,176 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4e19b5b235274e546bc3d5ed4f9",
+  "object": "chat.completion",
+  "created": 1769339984,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4e1ad042055a308f39975002bed",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 60, \"evaluation\": \"用户回答了基本的问候语，但没有完整地用日语介绍自己的名字和兴趣爱好。只说了初次见面的礼貌用语。\", \"suggestion\": \"需要补充完整的自我介绍，包括姓名和兴趣爱好的具体内容。\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1535,
+    "completion_tokens": 80,
+    "total_tokens": 1615,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens
+2026-01-25 19:19:50,176 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 19:19:50,176 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 60, 'evaluation': '用户回答了基本的问候语，但没有完整地用日语介绍自己的名字和兴趣爱好。只说了初次见面的礼貌用语。', 'suggestion': '需要补充完整的自我介绍，包括姓名和兴趣爱好的具体内容。'}
+2026-01-25 19:19:50,176 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 1 complete: Score 60
+2026-01-25 19:19:50,176 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 50bbd81e (1 updates)
+2026-01-25 19:20:05,028 | INFO     | interview:chat_audio:229 - 🎤 用户说: Okay, now I can't speak Japanese to be honest.
+2026-01-25 19:20:05,028 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (50bbd81e)...
+2026-01-25 19:20:05,028 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:20:07,185 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+日本語を話す練習をするためにここにいるのですから、心配しないでください。では、簡単なところから始めましょう。あなたの名前は何ですか。日本語で答えてみてください。...
+2026-01-25 19:20:07,224 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 19:20:09,283 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4e1f100844380480816be722a34",
+  "object": "chat.completion",
+  "created": 1769340006,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4e1f7a0db977de6a4ba6edb1bec",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 0, \"evaluation\": \"Candidate admitted they cannot speak Japanese, unable to complete the basic question about asking where someone is from.\", \"suggestion\": \"Start with absolute basics: learn hiragana/katakana, basic greetings, and simple self-introduction phrases before attempting conversations.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1550,
+    "completion_tokens": 86,
+    "total_tokens": 1636,
+    "complet
+2026-01-25 19:20:09,283 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 19:20:09,283 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 0, 'evaluation': 'Candidate admitted they cannot speak Japanese, unable to complete the basic question about asking where someone is from.', 'suggestion': 'Start with absolute basics: learn hiragana/katakana, basic greetings, and simple self-introduction phrases before attempting conversations.'}
+2026-01-25 19:20:09,283 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 0
+2026-01-25 19:20:09,283 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 50bbd81e (1 updates)
+2026-01-25 19:20:32,683 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:20:40,070 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:21:28,743 | INFO     | interview:chat_audio:229 - 🎤 用户说: Okay, Is that I think the most challenging aspect for I preparing for I, T or I E L T S, is that I have to try speaking to more foreigners to practice my speaking speaking ability.
+2026-01-25 19:21:28,743 | INFO     | interview:chat_audio:245 - 💧 从前端数据恢复计划缓存 (57141d66)...
+2026-01-25 19:21:28,743 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:21:36,235 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+That's a common strategy, but simply talking to foreigners isn't enough. What specific feedback hav...
+2026-01-25 19:21:36,277 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 19:21:44,315 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4e34cc52d2f360f2f3b251d2e50",
+  "object": "chat.completion",
+  "created": 1769340095,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4e36ace0db1f0fce93829dd14dd",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 65, \"evaluation\": \"Candidate answered the question about IELTS preparation challenges, mentioning speaking practice with foreigners. Response was somewhat repetitive and had some hesitation, but conveyed the main idea clearly.\", \"suggestion\": \"Work on reducing repetition and develop more specific examples. Try to elaborate on why speaking with foreigners is challenging and what specific difficulties you face.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+ 
+2026-01-25 19:21:44,316 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 19:21:44,316 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 65, 'evaluation': 'Candidate answered the question about IELTS preparation challenges, mentioning speaking practice with foreigners. Response was somewhat repetitive and had some hesitation, but conveyed the main idea clearly.', 'suggestion': 'Work on reducing repetition and develop more specific examples. Try to elaborate on why speaking with foreigners is challenging and what specific difficulties you face.'}
+2026-01-25 19:21:44,316 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 1 complete: Score 65
+2026-01-25 19:21:44,317 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 19:26:51,795 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:26:59,030 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:30:37,181 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:30:51,069 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:30:59,755 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:31:13,130 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:31:39,333 | INFO     | interview:chat_audio:229 - 🎤 用户说: I came from Uh Jinzhou Xiao in Liaoning province and I think that the most unique thing is is that, this uh this place has happened happened for a lot of war.
+2026-01-25 19:31:39,334 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 19:31:39,334 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 19:31:41,110 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+That's a start, but 'happened for a lot of war' is too vague. Be more specific. What kind of histor...
+2026-01-25 19:31:41,152 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 19:31:43,854 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4ec8767692976d71f79b50603bc",
+  "object": "chat.completion",
+  "created": 1769340700,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4ec90c278e1d1280845f99147ad",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 65, \"evaluation\": \"Candidate provided basic information about hometown but response was fragmented with repetition and limited detail. Grammar needs improvement (happened happened).\", \"suggestion\": \"Practice using more varied vocabulary and complex sentence structures. Provide more specific details about your hometown's unique characteristics.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1696,
+    "completion_t
+2026-01-25 19:31:43,854 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 19:31:43,854 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 65, 'evaluation': 'Candidate provided basic information about hometown but response was fragmented with repetition and limited detail. Grammar needs improvement (happened happened).', 'suggestion': "Practice using more varied vocabulary and complex sentence structures. Provide more specific details about your hometown's unique characteristics."}
+2026-01-25 19:31:43,855 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 1 complete: Score 65
+2026-01-25 19:31:43,855 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 20:53:56,451 | INFO     | interview:chat_audio:229 - 🎤 用户说: Um, it's the war, World War Two, and, ah, it's the C, P, C versus kuo min tang.
+2026-01-25 20:53:56,451 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 20:53:56,454 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 20:53:57,950 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+Okay, that's clearer. Now, moving on from history, let's talk about your current life. Do you work ...
+2026-01-25 20:53:57,991 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 20:54:01,319 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf537dbe17a2ff03dea9084d4c4f1",
+  "object": "chat.completion",
+  "created": 1769345637,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf537e744cfce1119cddb6a5c7052",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 45, \"evaluation\": \"Answer was very brief and lacked detail. Candidate mentioned work/study status but provided minimal description of daily routine. Limited vocabulary and sentence structure.\", \"suggestion\": \"Provide more detailed descriptions of your daily activities, use more varied vocabulary, and construct more complex sentences to demonstrate better language proficiency.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt
+2026-01-25 20:54:01,319 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 20:54:01,319 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 45, 'evaluation': 'Answer was very brief and lacked detail. Candidate mentioned work/study status but provided minimal description of daily routine. Limited vocabulary and sentence structure.', 'suggestion': 'Provide more detailed descriptions of your daily activities, use more varied vocabulary, and construct more complex sentences to demonstrate better language proficiency.'}
+2026-01-25 20:54:01,319 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 45
+2026-01-25 20:54:01,319 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 20:54:36,551 | INFO     | interview:chat_audio:229 - 🎤 用户说: Okay, that I have studied every day, and. And I'm a. A, student from science, uh computer science. And I always develop develop some useful, interesting, uh, I f your apps, uh, on the internet every day.
+2026-01-25 20:54:36,551 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 20:54:36,551 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 20:54:38,714 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+Developing apps sounds interesting, but your description was quite fragmented. Tell me more about t...
+2026-01-25 20:54:38,749 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 20:54:41,364 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf5387ad4e402efb3a0cdc294fee4",
+  "object": "chat.completion",
+  "created": 1769345678,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf538830d9356749bb3d54c9fb3e4",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 45, \"evaluation\": \"Basic response indicating student status and computer science major. Mentions app development but lacks detail about daily routine structure and specific activities. Grammar and fluency need improvement.\", \"suggestion\": \"Provide a more structured description of your daily routine including specific times, activities, and responsibilities. Use complete sentences and better grammar.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+
+2026-01-25 20:54:41,365 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 20:54:41,365 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 45, 'evaluation': 'Basic response indicating student status and computer science major. Mentions app development but lacks detail about daily routine structure and specific activities. Grammar and fluency need improvement.', 'suggestion': 'Provide a more structured description of your daily routine including specific times, activities, and responsibilities. Use complete sentences and better grammar.'}
+2026-01-25 20:54:41,365 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 45
+2026-01-25 20:54:41,366 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 20:57:11,957 | INFO     | interview:chat_audio:229 - 🎤 用户说: Uh, such as a tarot game, such as, I could, get some cards, and I choose for some of them, and I use AI to analyze it to, give some advice, uh, to the, people today.
+2026-01-25 20:57:11,957 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 20:57:11,958 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 20:57:13,563 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+An AI tarot game is a novel concept, but your explanation was hesitant. Let's switch gears. What do...
+2026-01-25 20:57:13,603 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 20:57:16,789 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf53ad7e273514755b0ac13ae4d6f",
+  "object": "chat.completion",
+  "created": 1769345833,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf53ae2db94e4aff0df06f9fe1b0d",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 55, \"evaluation\": \"Candidate provided a specific example of an app (tarot game with AI analysis) but the response was fragmented and lacked detail about the development process or technical aspects.\", \"suggestion\": \"Practice speaking in complete sentences and provide more structured explanations about your projects, including technical details and development challenges.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_toke
+2026-01-25 20:57:16,789 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 20:57:16,789 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 55, 'evaluation': 'Candidate provided a specific example of an app (tarot game with AI analysis) but the response was fragmented and lacked detail about the development process or technical aspects.', 'suggestion': 'Practice speaking in complete sentences and provide more structured explanations about your projects, including technical details and development challenges.'}
+2026-01-25 20:57:16,789 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 55
+2026-01-25 20:57:16,789 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 20:57:50,119 | INFO     | interview:chat_audio:229 - 🎤 用户说: I like to sing some songs, yes.
+2026-01-25 20:57:50,119 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 20:57:50,119 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 20:57:52,002 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+Singing is a common hobby, but that answer was too brief. Tell me, what kind of songs do you prefer...
+2026-01-25 20:57:52,045 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 20:57:55,496 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf53b6dfdaff28cacec3575e10286",
+  "object": "chat.completion",
+  "created": 1769345871,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf53b7a055b72217ebf55480b3aef",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"3\", \"score\": 35, \"evaluation\": \"Very brief answer with minimal detail. Only mentioned singing songs without elaboration on hobbies, interests, or activities.\", \"suggestion\": \"Provide more details about your hobbies and free time activities - what specific types of songs you enjoy, when you sing, other interests you have, and why you enjoy these activities.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1115,
+    "completion_t
+2026-01-25 20:57:55,497 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 20:57:55,497 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '3', 'score': 35, 'evaluation': 'Very brief answer with minimal detail. Only mentioned singing songs without elaboration on hobbies, interests, or activities.', 'suggestion': 'Provide more details about your hobbies and free time activities - what specific types of songs you enjoy, when you sing, other interests you have, and why you enjoy these activities.'}
+2026-01-25 20:57:55,497 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 3 complete: Score 35
+2026-01-25 20:57:55,497 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 20:59:00,958 | INFO     | interview:chat_audio:229 - 🎤 用户说: I usually sing the, uh, soul R and B. Uh, uh, because I love Khalid, like his love song, and love the love. Uh, it's so, impressive for me. So that I always sing them on some, uh. Night show, night show in our school, yeah.
+2026-01-25 20:59:00,958 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (57141d66)...
+2026-01-25 20:59:00,958 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 20:59:02,441 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+Singing soul and R&B is specific, which is good, but your delivery was hesitant and lacked detail. ...
+2026-01-25 20:59:02,475 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 20:59:05,004 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf53c80f2510b5ad2a3a5f05584f2",
+  "object": "chat.completion",
+  "created": 1769345941,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf53c89931b89d7dca2e51d198f1d",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"3\", \"score\": 45, \"evaluation\": \"Answer provided about singing R&B songs, specifically Khalid's love songs, and performing at school night shows. Response was somewhat fragmented and hesitant.\", \"suggestion\": \"Try to provide more complete sentences and elaborate on why you enjoy this hobby and how it makes you feel.\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1160,
+    "completion_tokens": 89,
+    "total_tokens": 1249,
+    
+2026-01-25 20:59:05,004 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 20:59:05,004 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '3', 'score': 45, 'evaluation': "Answer provided about singing R&B songs, specifically Khalid's love songs, and performing at school night shows. Response was somewhat fragmented and hesitant.", 'suggestion': 'Try to provide more complete sentences and elaborate on why you enjoy this hobby and how it makes you feel.'}
+2026-01-25 20:59:05,005 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 3 complete: Score 45
+2026-01-25 20:59:05,005 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 57141d66 (1 updates)
+2026-01-25 21:09:16,393 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:09:27,303 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:09:28,965 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:09:38,055 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:10:33,261 | INFO     | interview:chat_audio:229 - 🎤 用户说: 呃还好吧，今天心情还不错。
+2026-01-25 21:10:33,262 | INFO     | interview:chat_audio:245 - 💧 从前端数据恢复计划缓存 (382d7697)...
+2026-01-25 21:10:33,262 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:10:37,699 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+听到你今天心情还不错，这真是个好消息。那在这样不错的心情里，有没有什么特别想分享的开心事，或者哪怕只是一点点让你觉得愉快的小瞬间呢？我很愿意听听看。...
+2026-01-25 21:10:37,729 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 21:10:39,325 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf5471cab6642b6fe7d57d6d19d87",
+  "object": "chat.completion",
+  "created": 1769346637,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf54721acdf0cdb24a05aaa0c87ae",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 85, \"evaluation\": \"用户回应了问候并表达了基本状态，建立了初步的信任基础\", \"suggestion\": \"可以更深入地了解用户的具体感受和经历\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1739,
+    "completion_tokens": 63,
+    "total_tokens": 1802,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1739
+  },
+  "system_fingerp
+2026-01-25 21:10:39,325 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 21:10:39,325 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 85, 'evaluation': '用户回应了问候并表达了基本状态，建立了初步的信任基础', 'suggestion': '可以更深入地了解用户的具体感受和经历'}
+2026-01-25 21:10:39,325 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 1 complete: Score 85
+2026-01-25 21:10:39,325 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 382d7697 (1 updates)
+2026-01-25 21:11:03,240 | INFO     | interview:chat_audio:229 - 🎤 用户说: 今天状态还不错。
+2026-01-25 21:11:03,240 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (382d7697)...
+2026-01-25 21:11:03,240 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:11:05,408 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+听到你今天状态还不错，这真是个好消息。那在这样不错的心情里，有没有什么特别想分享的开心事，或者哪怕只是一点点让你觉得愉快的小瞬间呢？我很愿意听听看。...
+2026-01-25 21:11:05,437 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 21:11:07,098 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf54788d0b9f803e4ef04bccd6b00",
+  "object": "chat.completion",
+  "created": 1769346664,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf5478e2dfcf9158309dfea12f50f",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 75, \"evaluation\": \"用户回答了今天的状态，但回答比较简短，没有分享具体的事情\", \"suggestion\": \"可以进一步询问具体是什么让今天状态不错，或者引导用户分享更多细节\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1155,
+    "completion_tokens": 71,
+    "total_tokens": 1226,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_tokens": 643
+  }
+2026-01-25 21:11:07,099 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 21:11:07,099 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 75, 'evaluation': '用户回答了今天的状态，但回答比较简短，没有分享具体的事情', 'suggestion': '可以进一步询问具体是什么让今天状态不错，或者引导用户分享更多细节'}
+2026-01-25 21:11:07,099 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 75
+2026-01-25 21:11:07,099 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 382d7697 (1 updates)
+2026-01-25 21:11:27,115 | INFO     | interview:chat_audio:229 - 🎤 用户说: 晚上和我老妈一起出去遛弯儿。
+2026-01-25 21:11:27,115 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (382d7697)...
+2026-01-25 21:11:27,115 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:11:28,410 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+和妈妈一起散步，听起来真是一段温馨又放松的时光。在散步的时候，你们都聊了些什么呢？或者，仅仅是静静地走在一起，也让你感觉很舒服吗？...
+2026-01-25 21:11:28,439 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 21:11:29,969 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf547e2dc42ef1f1a0a85cc6e2112",
+  "object": "chat.completion",
+  "created": 1769346687,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf547e788c17b2f00b4cbdc36776c",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"3\", \"score\": 70, \"evaluation\": \"用户分享了具体的活动（和妈妈遛弯），但未深入描述情绪状态\", \"suggestion\": \"可以进一步询问这个活动带来的感受，以及是否有其他情绪体验\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1152,
+    "completion_tokens": 69,
+    "total_tokens": 1221,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 576
+    },
+    "prompt_cache_hit_tokens": 576,
+    "prompt_cache_miss_tokens": 576
+  },
+  
+2026-01-25 21:11:29,969 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 21:11:29,969 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '3', 'score': 70, 'evaluation': '用户分享了具体的活动（和妈妈遛弯），但未深入描述情绪状态', 'suggestion': '可以进一步询问这个活动带来的感受，以及是否有其他情绪体验'}
+2026-01-25 21:11:29,971 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 3 complete: Score 70
+2026-01-25 21:11:29,971 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 382d7697 (1 updates)
+2026-01-25 21:14:17,419 | INFO     | interview:chat_audio:229 - 🎤 用户说: 嗯。对的。
+2026-01-25 21:14:17,419 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (382d7697)...
+2026-01-25 21:14:17,419 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:14:19,431 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+嗯，我明白了。有时候，仅仅是和家人静静地待在一起，那种无言的陪伴就足以让人感到安心和温暖。那么，除了这份温馨的陪伴，最近还有没有其他事情，让你觉得心里有些压力或者烦恼呢？如果你愿意的话，可以和我聊聊...
+2026-01-25 21:14:19,476 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 21:14:21,736 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf54a7ed33db9a396c4befa8fdcda",
+  "object": "chat.completion",
+  "created": 1769346858,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf54a867c9fc252b04710464cbf95",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"4\", \"score\": 60, \"evaluation\": \"用户简单确认了之前的回应，表明他们愿意继续对话，但没有明确表达是否需要建议还是只想倾诉\", \"suggestion\": \"可以更明确地询问用户的具体需求，比如\\\"您是希望我给出一些建议，还是更想继续聊聊您的感受呢？\\\"\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1137,
+    "completion_tokens": 91,
+    "total_tokens": 1228,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "pro
+2026-01-25 21:14:21,736 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 21:14:21,736 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '4', 'score': 60, 'evaluation': '用户简单确认了之前的回应，表明他们愿意继续对话，但没有明确表达是否需要建议还是只想倾诉', 'suggestion': '可以更明确地询问用户的具体需求，比如"您是希望我给出一些建议，还是更想继续聊聊您的感受呢？"'}
+2026-01-25 21:14:21,737 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 4 complete: Score 60
+2026-01-25 21:14:21,737 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 382d7697 (1 updates)
+2026-01-25 21:14:36,664 | INFO     | interview:chat_audio:229 - 🎤 用户说: 没啥想聊的没啥烦恼吗还行吧。
+2026-01-25 21:14:36,664 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (382d7697)...
+2026-01-25 21:14:36,664 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 21:14:38,172 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+没关系，不想说的时候，我们就不说。我能感觉到你似乎在保护自己，这很正常。那么，你希望我只是静静地陪着你，还是可以给你一些简单的小建议，帮助你更好地照顾自己的情绪呢？...
+2026-01-25 21:14:38,216 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 21:14:40,580 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf54ac7e1c1fe98c0ccb8d8f5f264",
+  "object": "chat.completion",
+  "created": 1769346877,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf54ad017cbd525bb93eb0087f968",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"5\", \"score\": 65, \"evaluation\": \"用户回应了关于进一步询问具体情境的问题，表示\\\"没啥想聊的没啥烦恼\\\"，虽然回答简短但确实回应了问题\", \"suggestion\": \"可以尝试用更开放和温和的方式引导用户分享，比如询问最近的生活细节或兴趣爱好\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1143,
+    "completion_tokens": 86,
+    "total_tokens": 1229,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "prompt_cache_hit_tokens": 640,
+    "pro
+2026-01-25 21:14:40,580 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 21:14:40,581 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '5', 'score': 65, 'evaluation': '用户回应了关于进一步询问具体情境的问题，表示"没啥想聊的没啥烦恼"，虽然回答简短但确实回应了问题', 'suggestion': '可以尝试用更开放和温和的方式引导用户分享，比如询问最近的生活细节或兴趣爱好'}
+2026-01-25 21:14:40,581 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 5 complete: Score 65
+2026-01-25 21:14:40,581 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for 382d7697 (1 updates)

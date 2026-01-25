@@ -1,0 +1,207 @@
+2026-01-25 13:32:00,818 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_133200.log
+2026-01-25 13:32:47,685 | INFO     | main:generate_thought_response:169 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 13:32:54,910 | INFO     | main:generate_thought_response:169 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 13:33:09,011 | INFO     | main:chat_audio:688 - 🎤 User said: 你好，你好。
+2026-01-25 13:33:09,012 | INFO     | main:chat_audio:713 - 💧 Re-hydrating plan cache from frontend data for d17f9834...
+2026-01-25 13:33:10,667 | DEBUG    | main:chat_audio:782 - 📥 Model API Response: {
+  "id": "019bf3a44996b4ddca8362dc050ae513",
+  "object": "chat.completion",
+  "created": 1769319188,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n很高兴你来了，这是一个勇敢的开始。可以和我说说，最近你的心情怎么样吗？不用急着回答，慢慢来。"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 655,
+    "completion_tokens": 27,
+    "total_tokens": 682,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 399
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:33:10,668 | INFO     | main:chat_audio:788 - 📝 Reply text: 
+很高兴你来了，这是一个勇敢的开始。可以和我说说，最近你的心情怎么样吗？不用急着回答，慢慢来。...
+2026-01-25 13:33:10,668 | INFO     | main:chat_audio:796 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 13:33:10,698 | INFO     | main:evaluate_plan_async:542 - 📡 Sending Plan Eval Request to zai-org/GLM-4.6...
+2026-01-25 13:33:11,522 | DEBUG    | main:evaluate_plan_async:560 - 📥 Plan API Response: {
+  "id": "019bf3a44ff7516997baccae532fa755",
+  "object": "chat.completion",
+  "created": 1769319190,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": ""
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 0,
+    "total_tokens": 964,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 964
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:33:11,522 | INFO     | main:evaluate_plan_async:565 - ℹ️ No tool calls. Text: 
+2026-01-25 13:33:11,524 | INFO     | main:chat_audio:806 - ✅ Plan evaluation complete for d17f9834: {'updated': False, 'interview_complete': False}
+2026-01-25 13:34:01,214 | INFO     | main:chat_audio:688 - 🎤 User said: 心情还不错
+2026-01-25 13:34:01,214 | INFO     | main:chat_audio:709 - 📥 Using cached plan for d17f9834...
+2026-01-25 13:34:02,633 | DEBUG    | main:chat_audio:782 - 📥 Model API Response: {
+  "id": "019bf3a5158a553e1ce521fda39109b0",
+  "object": "chat.completion",
+  "created": 1769319241,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n听到你这么说，我很为你感到高兴。既然你提到了“还不错”，那在那些最让你感到开心或满足的时刻，通常都是些什么样的事情呢？"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 684,
+    "completion_tokens": 34,
+    "total_tokens": 718,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 428
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:34:02,633 | INFO     | main:chat_audio:788 - 📝 Reply text: 
+听到你这么说，我很为你感到高兴。既然你提到了“还不错”，那在那些最让你感到开心或满足的时刻，通常都是些什么样的事情呢？...
+2026-01-25 13:34:02,634 | INFO     | main:chat_audio:796 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 13:34:02,662 | INFO     | main:evaluate_plan_async:542 - 📡 Sending Plan Eval Request to zai-org/GLM-4.6...
+2026-01-25 13:34:03,560 | DEBUG    | main:evaluate_plan_async:560 - 📥 Plan API Response: {
+  "id": "019bf3a51ada521abe0f2b4765466cf7",
+  "object": "chat.completion",
+  "created": 1769319242,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "可以和我具体分享一下吗？"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1000,
+    "completion_tokens": 6,
+    "total_tokens": 1006,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1000
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:34:03,560 | INFO     | main:evaluate_plan_async:565 - ℹ️ No tool calls. Text: 可以和我具体分享一下吗？
+2026-01-25 13:34:03,562 | INFO     | main:chat_audio:806 - ✅ Plan evaluation complete for d17f9834: {'updated': False, 'interview_complete': False}
+2026-01-25 13:34:20,548 | INFO     | main:chat_audio:688 - 🎤 User said: 就出去溜达溜达什么的。
+2026-01-25 13:34:20,549 | INFO     | main:chat_audio:709 - 📥 Using cached plan for d17f9834...
+2026-01-25 13:34:22,024 | DEBUG    | main:chat_audio:782 - 📥 Model API Response: {
+  "id": "019bf3a560ece435885e10355104dff5",
+  "object": "chat.completion",
+  "created": 1769319260,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n听起来，大自然和独处的时光能带给你一份平静和喜悦，这真是一件很美好的事。除了这些让你感到舒服的时刻，最近生活中，有没有什么事情会让你感到有些困扰或者压力呢？"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 728,
+    "completion_tokens": 43,
+    "total_tokens": 771,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 640
+    },
+    "prompt_cache_hit_tokens": 640,
+    "prompt_cache_miss_tokens": 88
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:34:22,024 | INFO     | main:chat_audio:788 - 📝 Reply text: 
+听起来，大自然和独处的时光能带给你一份平静和喜悦，这真是一件很美好的事。除了这些让你感到舒服的时刻，最近生活中，有没有什么事情会让你感到有些困扰或者压力呢？...
+2026-01-25 13:34:22,024 | INFO     | main:chat_audio:796 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 13:34:22,054 | INFO     | main:evaluate_plan_async:542 - 📡 Sending Plan Eval Request to zai-org/GLM-4.6...
+2026-01-25 13:34:22,943 | DEBUG    | main:evaluate_plan_async:560 - 📥 Plan API Response: {
+  "id": "019bf3a566a4dcbc10aef06a5f9d9106",
+  "object": "chat.completion",
+  "created": 1769319261,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "我想更全面地了解你的状态。"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1053,
+    "completion_tokens": 8,
+    "total_tokens": 1061,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 896
+    },
+    "prompt_cache_hit_tokens": 896,
+    "prompt_cache_miss_tokens": 157
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 13:34:22,943 | INFO     | main:evaluate_plan_async:565 - ℹ️ No tool calls. Text: 我想更全面地了解你的状态。
+2026-01-25 13:34:22,946 | INFO     | main:chat_audio:806 - ✅ Plan evaluation complete for d17f9834: {'updated': False, 'interview_complete': False}

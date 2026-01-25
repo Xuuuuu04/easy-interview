@@ -1,0 +1,173 @@
+2026-01-25 18:47:36,273 | INFO     | logger:setup_logging:25 - 日志已初始化。写入文件: logs/server_20260125_184736.log
+2026-01-25 18:47:36,438 | INFO     | config:<module>:22 - ✅ Loaded .env from: I:\AI面试\app\.env
+2026-01-25 18:47:36,481 | INFO     | main:<module>:28 - Application initialized with modular structure.
+2026-01-25 18:47:49,742 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 18:48:18,190 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 18:48:22,236 | ERROR    | interview:generate_tts:351 - TTS Error 400: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:22,237 | ERROR    | interview:generate_tts:360 - TTS Error: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+Traceback (most recent call last):
+  File "I:\AI面试\app\api\routes\interview.py", line 352, in generate_tts
+    raise HTTPException(status_code=r.status_code, detail=f"TTS Provider Error: {error_detail.decode()}")
+fastapi.exceptions.HTTPException: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:30,830 | INFO     | interview:chat_audio:229 - 🎤 用户说: 你好。
+2026-01-25 18:48:30,830 | INFO     | interview:chat_audio:245 - 💧 从前端数据恢复计划缓存 (d17f9834)...
+2026-01-25 18:48:30,830 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 18:48:32,096 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+很高兴你能来这里，这本身就是很勇敢的一步。当你感到困扰时，身体或者心里会有什么特别的感觉吗？可以和我分享一下吗？...
+2026-01-25 18:48:32,131 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 18:48:32,431 | ERROR    | interview:generate_tts:351 - TTS Error 400: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:32,433 | ERROR    | interview:generate_tts:360 - TTS Error: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+Traceback (most recent call last):
+  File "I:\AI面试\app\api\routes\interview.py", line 352, in generate_tts
+    raise HTTPException(status_code=r.status_code, detail=f"TTS Provider Error: {error_detail.decode()}")
+fastapi.exceptions.HTTPException: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:33,583 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4c50660d97b4790f2c6f6eae9e4",
+  "object": "chat.completion",
+  "created": 1769338111,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4c50ab3bdb046fdc8f81de3b4f9",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 10, \"evaluation\": \"用户只是简单问候，没有表达情绪状态或困扰\", \"suggestion\": \"需要更主动地引导用户分享内心感受\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1515,
+    "completion_tokens": 59,
+    "total_tokens": 1574,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1515
+  },
+  "system_fingerprint": "
+2026-01-25 18:48:33,584 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 18:48:33,584 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 10, 'evaluation': '用户只是简单问候，没有表达情绪状态或困扰', 'suggestion': '需要更主动地引导用户分享内心感受'}
+2026-01-25 18:48:33,584 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 1 complete: Score 10
+2026-01-25 18:48:33,584 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 18:48:43,339 | INFO     | interview:chat_audio:229 - 🎤 用户说: 我今天心情不错。
+2026-01-25 18:48:43,340 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (d17f9834)...
+2026-01-25 18:48:43,340 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 18:48:44,680 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+听到你今天心情不错，我真的很为你感到高兴。这真是一个美好的开始。那在心情不错的时候，你通常会做些什么让自己感到更愉悦呢？...
+2026-01-25 18:48:44,716 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 18:48:45,028 | ERROR    | interview:generate_tts:351 - TTS Error 400: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:45,030 | ERROR    | interview:generate_tts:360 - TTS Error: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+Traceback (most recent call last):
+  File "I:\AI面试\app\api\routes\interview.py", line 352, in generate_tts
+    raise HTTPException(status_code=r.status_code, detail=f"TTS Provider Error: {error_detail.decode()}")
+fastapi.exceptions.HTTPException: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:48:46,558 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4c53781161b8687cf0e5f4dd0ee",
+  "object": "chat.completion",
+  "created": 1769338124,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4c53d6588aca5fd4d7e981acd49",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 80, \"evaluation\": \"用户表达了当前的情绪状态，虽然简短但直接回答了关于感受的问题\", \"suggestion\": \"可以进一步探索这种好心情的原因，或者询问是否还有其他想要分享的感受\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1543,
+    "completion_tokens": 71,
+    "total_tokens": 1614,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1543
+  }
+2026-01-25 18:48:46,558 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 18:48:46,558 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 80, 'evaluation': '用户表达了当前的情绪状态，虽然简短但直接回答了关于感受的问题', 'suggestion': '可以进一步探索这种好心情的原因，或者询问是否还有其他想要分享的感受'}
+2026-01-25 18:48:46,558 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 2 complete: Score 80
+2026-01-25 18:48:46,558 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 18:49:01,169 | INFO     | interview:chat_audio:229 - 🎤 用户说: 就散散步啥的吧，唱唱歌弹弹琴。
+2026-01-25 18:49:01,171 | INFO     | interview:chat_audio:242 - 📥 使用缓存计划 (d17f9834)...
+2026-01-25 18:49:01,171 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 18:49:02,807 | INFO     | interview:chat_audio:286 - 📝 回复内容: 
+听起来散步和音乐能给你带来很多平静和快乐，这真的很棒。当你沉浸在这些活动中的时候，脑海里通常在想些什么呢？是会完全放空，还是思绪会飘到别的地方去？...
+2026-01-25 18:49:02,842 | INFO     | interview_service:evaluate_plan_async:112 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 18:49:03,138 | ERROR    | interview:generate_tts:351 - TTS Error 400: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:49:03,140 | ERROR    | interview:generate_tts:360 - TTS Error: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+Traceback (most recent call last):
+  File "I:\AI面试\app\api\routes\interview.py", line 352, in generate_tts
+    raise HTTPException(status_code=r.status_code, detail=f"TTS Provider Error: {error_detail.decode()}")
+fastapi.exceptions.HTTPException: 400: TTS Provider Error: {"code":20047,"message":"Invalid voice.","data":null}
+2026-01-25 18:49:04,870 | DEBUG    | interview_service:evaluate_plan_async:131 - 📥 计划 API 响应: {
+  "id": "019bf4c57e4a977bffce21d8490ae4b6",
+  "object": "chat.completion",
+  "created": 1769338142,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf4c584eb029042adbfc4e7102508",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"3\", \"score\": 75, \"evaluation\": \"用户成功识别了让自己心情愉悦的具体活动（散步、唱歌、弹琴），这表明他们能够识别情绪背后的具体行为和想法。\", \"suggestion\": \"可以进一步探索这些活动对情绪的具体影响机制，以及如何在需要时主动运用这些调节方式。\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1029,
+    "completion_tokens": 89,
+    "total_tokens": 1118,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "p
+2026-01-25 18:49:04,871 | INFO     | interview_service:evaluate_plan_async:145 - 🛠️ 处理 1 个工具调用
+2026-01-25 18:49:04,871 | INFO     | interview_service:evaluate_plan_async:155 - 🔧 工具: mark_item_complete | 参数: {'item_id': '3', 'score': 75, 'evaluation': '用户成功识别了让自己心情愉悦的具体活动（散步、唱歌、弹琴），这表明他们能够识别情绪背后的具体行为和想法。', 'suggestion': '可以进一步探索这些活动对情绪的具体影响机制，以及如何在需要时主动运用这些调节方式。'}
+2026-01-25 18:49:04,871 | INFO     | interview_service:evaluate_plan_async:172 - ✅ Marked item 3 complete: Score 75
+2026-01-25 18:49:04,871 | INFO     | interview_service:evaluate_plan_async:199 - 💾 Cached plan for d17f9834 (1 updates)

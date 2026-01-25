@@ -1,0 +1,6 @@
+2026-01-25 10:32:49,008 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_103249.log
+2026-01-25 10:32:49,085 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_103249.log
+2026-01-25 10:36:12,429 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 10:36:20,412 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 10:36:35,554 | INFO     | main:chat_audio:613 - 🎤 User said: 嗯你好你好，最近心情不错。
+2026-01-25 10:36:38,208 | ERROR    | main:chat_audio:796 - Error in chat_audio: cannot access local variable 'json' where it is not associated with a value

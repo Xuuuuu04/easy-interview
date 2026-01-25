@@ -1,0 +1,42 @@
+2026-01-25 09:56:10,581 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_095610.log
+2026-01-25 09:56:10,865 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_095610.log
+2026-01-25 09:56:45,125 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:56:51,183 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:57:04,684 | INFO     | main:chat_audio:606 - 🎤 User said: 今天和女朋友吵架了。
+2026-01-25 09:57:04,688 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:57:06,094 | DEBUG    | main:chat_audio:674 - 🤖 AI Raw Output (After Think Trim): 和最亲近的人发生争执，心里一定很难受吧。能和我说说，是因为什么事情起了争执吗？如果你现在还不想说，也没关系，我们可以先聊聊你现在的感受。
+2026-01-25 09:57:06,095 | INFO     | main:chat_audio:695 - 🚀 Launched async plan evaluator for session d17f9834...
+2026-01-25 09:57:06,690 | INFO     | main:evaluate_plan_async:493 - 📡 Sending Background Eval Request to zai-org/GLM-4.6...
+2026-01-25 09:57:08,350 | DEBUG    | main:evaluate_plan_async:512 - 📥 Background API Raw Response: {
+  "id": "019bf2de91647ecd85a44bdd990a34ae",
+  "object": "chat.completion",
+  "created": 1769306231,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "</think>\n<think></think>\n你好，我是你的心理咨询师，很高兴能在这里倾听你的心声。可以和我聊聊，最近是什么让你感到困扰吗？别担心，慢慢说，我在这里陪着你。"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 579,
+    "completion_tokens": 41,
+    "total_tokens": 620,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 579
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 09:57:08,350 | INFO     | main:evaluate_plan_async:521 - ℹ️ No tool calls in response. Text content: </think>
+<think></think>
+你好，我是你的心理咨询师，很高兴能在这里倾听你的心声。可以和我聊聊，最近是什么让你感到困扰吗？别担心，慢慢说，我在这里陪着你。

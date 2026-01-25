@@ -1,0 +1,76 @@
+{
+    "version": "1.0.0",
+    "generated_at": "2026-01-25T15:25:49+08:00",
+    "project": {
+        "name": "AI面试助手",
+        "description": "基于 FastAPI 和 SiliconFlow 的智能面试系统",
+        "root_path": "I:\\AI面试"
+    },
+    "modules": [
+        {
+            "path": "app",
+            "name": "Core Backend",
+            "type": "FastAPI Backend",
+            "entry": "main.py",
+            "routes": ["api/routes/system.py", "api/routes/interview.py"],
+            "services": ["services/llm_service.py", "services/interview_service.py", "services/file_service.py"],
+            "core": ["core/config.py", "core/logger.py"],
+            "schemas": ["schemas/requests.py"],
+            "static": ["static/index.html", "static/app.js", "static/style.css", "static/anim.css"],
+            "config": "requirements.txt",
+            "env": ".env"
+        }
+    ],
+    "api_endpoints": {
+        "system": [
+            { "path": "/", "method": "GET", "description": "重定向到前端页面" },
+            { "path": "/api/scenarios", "method": "GET", "description": "获取面试场景列表" },
+            { "path": "/api/languages", "method": "GET", "description": "获取支持的语言列表" }
+        ],
+        "interview": [
+            { "path": "/api/analyze-resume", "method": "POST", "description": "分析简历并生成面试计划" },
+            { "path": "/api/analyze-video", "method": "POST", "description": "分析视频帧（防作弊检测）" },
+            { "path": "/api/upload-resume", "method": "POST", "description": "上传简历并生成开场白" },
+            { "path": "/api/chat", "method": "POST", "description": "语音/文本对话接口" },
+            { "path": "/api/tts", "method": "POST", "description": "文本转语音" }
+        ]
+    },
+    "models": {
+        "siliconflow": {
+            "sense": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+            "vision": "Qwen/Qwen3-VL-30B-A3B-Instruct",
+            "chat_chain": ["zai-org/GLM-4.6"],
+            "plan_eval": "Qwen/Qwen2.5-72B-Instruct",
+            "tts": "fnlp/MOSS-TTSD-v0.5"
+        }
+    },
+    "coverage": {
+        "total_files_estimated": 20,
+        "scanned_files": 18,
+        "coverage_percent": 90,
+        "ignored_patterns": ["venv/**", "*.pyc", "__pycache__/**"]
+    },
+    "gaps": [
+        {
+            "area": "测试",
+            "description": "项目中未找到测试目录或测试文件",
+            "recommendation": "建议添加 app/tests/ 目录，使用 pytest 编写单元测试"
+        },
+        {
+            "area": "数据持久化",
+            "description": "计划缓存使用内存存储，服务重启后丢失",
+            "recommendation": "考虑添加 Redis 或数据库存储"
+        },
+        {
+            "area": "面试模板",
+            "description": "未找到 interview_templates.py 文件",
+            "recommendation": "确认此文件是否存在于 app 目录下"
+        }
+    ],
+    "next_steps": [
+        "扫描 app/interview_templates.py 文件（如存在）",
+        "添加测试目录 app/tests/ 并编写测试用例",
+        "考虑添加 .gitignore 文件（如不存在）"
+    ],
+    "truncated": false
+}

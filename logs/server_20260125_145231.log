@@ -1,0 +1,259 @@
+2026-01-25 14:52:31,316 | INFO     | logger:setup_logging:25 - 日志已初始化。写入文件: logs/server_20260125_145231.log
+2026-01-25 14:52:31,575 | INFO     | config:<module>:22 - ✅ Loaded .env from: I:\AI面试\app\.env
+2026-01-25 14:52:31,589 | INFO     | main:<module>:28 - Application initialized with modular structure.
+2026-01-25 14:55:05,521 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 14:55:16,645 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 14:55:17,841 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 14:55:25,083 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 14:55:31,959 | INFO     | interview:chat_audio:227 - 🎤 用户说: 為何我要為着你生還當中一個人
+2026-01-25 14:55:31,959 | INFO     | interview:chat_audio:243 - 💧 从前端数据恢复计划缓存 (d17f9834)...
+2026-01-25 14:55:31,959 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 14:55:33,973 | INFO     | interview:chat_audio:281 - 📝 回复内容: 
+听到你这么说，我能感受到你内心深处的疲惫和委屈。这种感觉一定让你觉得很孤独，好像所有的付出都只为了别人。可以和我多说说，是发生了什么事让你有这种感觉吗？我在这里，很想听听你的故事。...
+2026-01-25 14:55:34,005 | INFO     | interview_service:evaluate_plan_async:109 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 14:55:35,712 | DEBUG    | interview_service:evaluate_plan_async:128 - 📥 计划 API 响应: {
+  "id": "019bf3efbd69714c5cbe1e66dd9e3fcc",
+  "object": "chat.completion",
+  "created": 1769324133,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf3efc2d50f8fdd3eba1b207d22ff",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 85, \"evaluation\": \"用户表达了深层的情感困扰，虽然表达方式较为隐晦，但明显透露出内心的痛苦和挣扎\", \"suggestion\": \"需要更深入了解用户的具体情感状态和困扰来源\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1550,
+    "completion_tokens": 71,
+    "total_tokens": 1621,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1550
+  },
+  
+2026-01-25 14:55:35,713 | INFO     | interview_service:evaluate_plan_async:142 - 🛠️ 处理 1 个工具调用
+2026-01-25 14:55:35,713 | INFO     | interview_service:evaluate_plan_async:152 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 85, 'evaluation': '用户表达了深层的情感困扰，虽然表达方式较为隐晦，但明显透露出内心的痛苦和挣扎', 'suggestion': '需要更深入了解用户的具体情感状态和困扰来源'}
+2026-01-25 14:55:35,713 | INFO     | interview_service:evaluate_plan_async:169 - ✅ Marked item 1 complete: Score 85
+2026-01-25 14:55:35,713 | INFO     | interview_service:evaluate_plan_async:196 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 15:00:52,769 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:01:00,042 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:01:32,301 | INFO     | interview:chat_audio:227 - 🎤 用户说: 喂喂喂
+2026-01-25 15:01:32,301 | INFO     | interview:chat_audio:243 - 💧 从前端数据恢复计划缓存 (47241256)...
+2026-01-25 15:01:32,302 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:01:33,891 | INFO     | interview:chat_audio:281 - 📝 回复内容: 
+That's not a professional response in any language. Let's try again. Describe a time you led an int...
+2026-01-25 15:01:33,925 | INFO     | interview_service:evaluate_plan_async:109 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 15:01:35,615 | DEBUG    | interview_service:evaluate_plan_async:128 - 📥 计划 API 响应: {
+  "id": "019bf3f53b8082cbc36911ea933e8b03",
+  "object": "chat.completion",
+  "created": 1769324493,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf3f540a600b8dfa7c5355ef52e26",
+            "type": "function",
+            "function": {
+              "name": "modify_pending_item",
+              "arguments": "{\"item_id\": \"1\", \"new_content\": \"描述一次你主导的国际商务会议，如何确保议程高效推进？请用英语回答并展示你的专业商务沟通能力。\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1591,
+    "completion_tokens": 50,
+    "total_tokens": 1641,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1591
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 15:01:35,615 | INFO     | interview_service:evaluate_plan_async:142 - 🛠️ 处理 1 个工具调用
+2026-01-25 15:01:35,615 | INFO     | interview_service:evaluate_plan_async:152 - 🔧 工具: modify_pending_item | 参数: {'item_id': '1', 'new_content': '描述一次你主导的国际商务会议，如何确保议程高效推进？请用英语回答并展示你的专业商务沟通能力。'}
+2026-01-25 15:01:35,615 | INFO     | interview_service:evaluate_plan_async:180 - 📝 Modified pending item 1
+2026-01-25 15:01:35,615 | INFO     | interview_service:evaluate_plan_async:196 - 💾 Cached plan for 47241256 (1 updates)
+2026-01-25 15:04:29,437 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:04:35,761 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:04:46,999 | INFO     | interview:chat_audio:227 - 🎤 用户说: 最近心情不是很好。
+2026-01-25 15:04:46,999 | INFO     | interview:chat_audio:240 - 📥 使用缓存计划 (d17f9834)...
+2026-01-25 15:04:46,999 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:04:48,266 | INFO     | interview:chat_audio:281 - 📝 回复内容: 
+听到你这么说，我感到很心疼。能和我说说，是发生了什么事情让你感觉心情不好吗？别担心，慢慢说，我在这里听着呢。...
+2026-01-25 15:04:48,320 | INFO     | interview_service:evaluate_plan_async:109 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 15:04:50,366 | DEBUG    | interview_service:evaluate_plan_async:128 - 📥 计划 API 响应: {
+  "id": "019bf3f832eead393ae56acfa32d2838",
+  "object": "chat.completion",
+  "created": 1769324688,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf3f839609c5d87a4971317c3605a",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"2\", \"score\": 75, \"evaluation\": \"用户开始分享情绪状态，虽然简短但已表达困扰\", \"suggestion\": \"可以进一步引导用户分享更多具体细节和感受\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1493,
+    "completion_tokens": 62,
+    "total_tokens": 1555,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1493
+  },
+  "system_fingerprin
+2026-01-25 15:04:50,367 | INFO     | interview_service:evaluate_plan_async:142 - 🛠️ 处理 1 个工具调用
+2026-01-25 15:04:50,367 | INFO     | interview_service:evaluate_plan_async:152 - 🔧 工具: mark_item_complete | 参数: {'item_id': '2', 'score': 75, 'evaluation': '用户开始分享情绪状态，虽然简短但已表达困扰', 'suggestion': '可以进一步引导用户分享更多具体细节和感受'}
+2026-01-25 15:04:50,367 | INFO     | interview_service:evaluate_plan_async:169 - ✅ Marked item 2 complete: Score 75
+2026-01-25 15:04:50,367 | INFO     | interview_service:evaluate_plan_async:196 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 15:07:29,105 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:07:34,195 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:07:44,908 | INFO     | interview:chat_audio:227 - 🎤 用户说: 你好今天心情不太好
+2026-01-25 15:07:44,909 | INFO     | interview:chat_audio:240 - 📥 使用缓存计划 (d17f9834)...
+2026-01-25 15:07:44,909 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:07:46,367 | INFO     | interview:chat_audio:281 - 📝 回复内容: 
+嗯，我感受到了你此刻的低落，谢谢你愿意告诉我。能和我多说一点吗？是什么让你觉得心情不太好呢？无论是什么，我都会在这里认真听你说的。...
+2026-01-25 15:07:46,405 | INFO     | interview_service:evaluate_plan_async:109 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 15:07:48,272 | DEBUG    | interview_service:evaluate_plan_async:128 - 📥 计划 API 响应: {
+  "id": "019bf3faea20f771f1a64061eaf86ecc",
+  "object": "chat.completion",
+  "created": 1769324866,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf3faf0542db6553b7c48eee7f2a8",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"3\", \"score\": 70, \"evaluation\": \"用户简单表达了心情不好的状态，这是情绪探索的开始，但还需要更深入了解具体原因\", \"suggestion\": \"可以进一步询问具体是什么让用户心情不好，帮助用户更深入地探索情绪来源\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1486,
+    "completion_tokens": 75,
+    "total_tokens": 1561,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "prompt_cache_hit_tokens": 512,
+    "prompt_cache_miss_toke
+2026-01-25 15:07:48,272 | INFO     | interview_service:evaluate_plan_async:142 - 🛠️ 处理 1 个工具调用
+2026-01-25 15:07:48,272 | INFO     | interview_service:evaluate_plan_async:152 - 🔧 工具: mark_item_complete | 参数: {'item_id': '3', 'score': 70, 'evaluation': '用户简单表达了心情不好的状态，这是情绪探索的开始，但还需要更深入了解具体原因', 'suggestion': '可以进一步询问具体是什么让用户心情不好，帮助用户更深入地探索情绪来源'}
+2026-01-25 15:07:48,272 | INFO     | interview_service:evaluate_plan_async:169 - ✅ Marked item 3 complete: Score 70
+2026-01-25 15:07:48,273 | INFO     | interview_service:evaluate_plan_async:196 - 💾 Cached plan for d17f9834 (1 updates)
+2026-01-25 15:11:11,481 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:11:18,893 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:11:29,490 | INFO     | interview:chat_audio:227 - 🎤 用户说: 今天心情不太好
+2026-01-25 15:11:29,490 | INFO     | interview:chat_audio:240 - 📥 使用缓存计划 (d17f9834)...
+2026-01-25 15:11:29,490 | INFO     | llm_service:generate_thought_response:24 - 尝试模型: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 15:11:30,644 | INFO     | interview:chat_audio:281 - 📝 回复内容: 
+嗯，听到你这么说，我能感觉到你此刻的低落。愿意和我说说，是发生了什么特别的事情，让你有这种感觉吗？...
+2026-01-25 15:11:30,677 | INFO     | interview_service:evaluate_plan_async:109 - 📡 发送计划评估请求至 zai-org/GLM-4.6...
+2026-01-25 15:11:32,977 | DEBUG    | interview_service:evaluate_plan_async:128 - 📥 计划 API 响应: {
+  "id": "019bf3fe566aec3a1ff366c83e593115",
+  "object": "chat.completion",
+  "created": 1769325090,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "id": "019bf3fe5e07c44c5450576bc0a44641",
+            "type": "function",
+            "function": {
+              "name": "mark_item_complete",
+              "arguments": "{\"item_id\": \"1\", \"score\": 85, \"evaluation\": \"用户简单表达了当前的情绪状态，虽然简短但为后续交流打开了话题\", \"suggestion\": \"可以鼓励用户更详细地描述情绪的具体表现和感受\"}"
+            }
+          }
+        ]
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1471,
+    "completion_tokens": 67,
+    "total_tokens": 1538,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 1471
+  },
+  "system
+2026-01-25 15:11:32,977 | INFO     | interview_service:evaluate_plan_async:142 - 🛠️ 处理 1 个工具调用
+2026-01-25 15:11:32,977 | INFO     | interview_service:evaluate_plan_async:152 - 🔧 工具: mark_item_complete | 参数: {'item_id': '1', 'score': 85, 'evaluation': '用户简单表达了当前的情绪状态，虽然简短但为后续交流打开了话题', 'suggestion': '可以鼓励用户更详细地描述情绪的具体表现和感受'}
+2026-01-25 15:11:32,977 | INFO     | interview_service:evaluate_plan_async:169 - ✅ Marked item 1 complete: Score 85
+2026-01-25 15:11:32,977 | INFO     | interview_service:evaluate_plan_async:196 - 💾 Cached plan for d17f9834 (1 updates)

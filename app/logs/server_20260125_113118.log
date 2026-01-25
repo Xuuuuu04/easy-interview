@@ -1,0 +1,45 @@
+2026-01-25 11:31:18,579 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_113118.log
+2026-01-25 11:31:52,129 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:34:06,038 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:34:07,562 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:34:11,377 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:34:21,807 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:34:39,560 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 11:35:34,891 | INFO     | main:chat_audio:627 - 🎤 User said: 呃，今天心情不错。
+2026-01-25 11:35:34,892 | INFO     | main:chat_audio:652 - 💧 Re-hydrating plan cache from frontend data for d17f9834...
+2026-01-25 11:35:36,841 | DEBUG    | main:chat_audio:721 - 📥 Model API Response: {
+  "id": "019bf338a75840e541eda664f0bd1c66",
+  "object": "chat.completion",
+  "created": 1769312135,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "\n听到你今天心情不错，这真是一个温暖的开始，我为你感到高兴。那换个话题，最近有没有什么事情，让你觉得有些困扰或者烦心呢，无论大小都可以说说看。"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 637,
+    "completion_tokens": 41,
+    "total_tokens": 678,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 381
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 11:35:36,841 | INFO     | main:chat_audio:727 - 📝 Reply text: 
+听到你今天心情不错，这真是一个温暖的开始，我为你感到高兴。那换个话题，最近有没有什么事情，让你觉得有些困扰或者烦心呢，无论大小都可以说说看。...
+2026-01-25 11:35:36,842 | INFO     | main:chat_audio:735 - 🔄 Starting plan evaluation for d17f9834
+2026-01-25 11:35:37,366 | INFO     | main:evaluate_plan_async:507 - 📡 Sending Background Eval Request to zai-org/GLM-4.6...
+2026-01-25 11:35:37,652 | ERROR    | main:evaluate_plan_async:522 - ❌ Background API Error (400): {"code":20015,"message":"Value error, prefix is not allowed when the response format is `json_schema`.","data":null}
+2026-01-25 11:35:37,655 | INFO     | main:chat_audio:745 - ✅ Plan evaluation complete for d17f9834

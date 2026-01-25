@@ -1,0 +1,481 @@
+sk-wcflriifeqkrkrmyauvvrjeuicuremwljizieotqnahiwnos
+多模态输入模型（无需ASR）：Qwen/Qwen3-Omni-30B-A3B-Captioner
+文档：功能特性
+多模态模型（视觉/音频/视频）
+​
+1. 概述
+多模态模型是能够同时处理多种模态信息（文本、图像、音频、视频）的大语言模型。SiliconFlow 提供了多个支持不同模态组合的强大模型，能够：
+视觉理解：理解图片内容、OCR、图像描述
+视频分析：提取视频帧、理解视频内容、动作识别
+音频处理：语音识别、音频内容分析
+多模态融合：同时处理多种媒体类型的综合分析
+​
+2. 支持模型概览
+模型系列	视觉输入	音频输入	视频输入	主要特点
+Qwen3-Omni 系列	✅	✅	✅	全面多模态支持，音视频同时处理
+Qwen3-VL 系列	✅	❌	✅	视觉+视频理解，无音频支持
+GLM 系列	✅	❌	❌	仅视觉理解
+Qwen2-VL 系列	✅	❌	❌	仅视觉理解
+DeepseekVL2 系列	✅	❌	❌	仅视觉理解
+Step3	✅	❌	❌	仅视觉理解
+DeepSeek-OCR	✅	❌	❌	仅视觉理解，支持pdf输入
+通过模型广场查看当前支持的多模态模型列表。 支持的模型可能发生调整，请以平台实际展示为准。
+​
+3. 使用方式
+所有多模态模型都通过 /chat/completions 接口调用，使用标准化的 messages 格式，其中 content 可以包含不同类型的内容部分。
+​
+3.1 基本消息格式
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "text" | "image_url" | "audio_url" | "video_url",
+            "[type]_url": {
+                // 对应类型的配置
+            }
+        }
+    ]
+}
+​
+3.2 通用参数说明
+​
+图像参数 (image_url)
+url: 图像 URL 或 base64 编码数据，DeepSeek-OCR 还支持 PDF URL 或 base64 编码数据
+detail: 细节级别 (auto, low, high)
+​
+视频参数 (video_url)
+url: 视频 URL 或 base64 编码数据
+detail: 细节级别 (auto, low, high)
+max_frames: 最大提取帧数
+fps: 每秒提取帧数，最终帧数为 min(fps × T, max_frames)
+​
+音频参数 (audio_url)
+url: 音频 URL 或 base64 编码数据
+​
+4. 使用示例
+​
+4.1 视觉理解
+​
+图像分析
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "image_url",
+            "image_url": {
+                "url": "https://example.com/image.jpg",
+                "detail": "high"
+            }
+        },
+        {
+            "type": "text",
+            "text": "描述这张图片的内容"
+        }
+    ]
+}
+​
+多图对比
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "image_url",
+            "image_url": {"url": "https://example.com/image1.jpg"}
+        },
+        {
+            "type": "image_url",
+            "image_url": {"url": "https://example.com/image2.jpg"}
+        },
+        {
+            "type": "text",
+            "text": "比较这两张图片的相同点和不同点"
+        }
+    ]
+}
+​
+PDF OCR
+DeepSeek-OCR 还支持 PDF URL 或 base64 编码数据。
+DeepSeek-OCR 支持多种场景的提示词：
+- 文档转Markdown：<image>\n<|grounding|>Convert the document to markdown.
+- 通用OCR：<image>\n<|grounding|>OCR this image.
+- 无布局提取：<image>\nFree OCR.
+- 图表解析：<image>\nParse the figure.
+- 图像描述：<image>\nDescribe this image in detail.
+- 文本定位：<image>\nLocate <|ref|>特定文字<|/ref|> in the image.
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "image_url",
+            "image_url": {
+                "url": "data:application/pdf;base64," + base64.b64encode(
+                            open("xxx.pdf", "rb").read()).decode("utf-8")
+                            }
+        },
+        {
+            "type": "text",
+            "text": "<image>\n<|grounding|>Convert the document to markdown. "
+        }
+    ]
+}
+​
+4.2 视频理解
+​
+基础视频分析
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "video_url",
+            "video_url": {
+                "url": "https://example.com/video.mp4",
+                "detail": "high",
+                "max_frames": 16,
+                "fps": 1
+            }
+        },
+        {
+            "type": "text",
+            "text": "总结这个视频的主要内容"
+        }
+    ]
+}
+​
+多模态分析（视频 + 图片）
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "video_url",
+            "video_url": {
+                "url": "https://example.com/video.mp4",
+                "detail": "high",
+                "max_frames": 16,
+                "fps": 1
+            }
+        },
+        {
+            "type": "image_url",
+            "image_url": {"url": "https://example.com/thumbnail.jpg"}
+        },
+        {
+            "type": "text",
+            "text": "基于视频和缩略图，分析这个视频的主题和受众群体"
+        }
+    ]
+}
+​
+4.3 音频理解
+​
+音频内容分析
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "audio_url",
+            "audio_url": {
+                "url": "https://example.com/audio.mp3"
+            }
+        },
+        {
+            "type": "text",
+            "text": "转录这个音频的内容"
+        }
+    ]
+}
+​
+4.4 全模态分析
+​
+音视频综合分析
+{
+    "role": "user",
+    "content": [
+        {
+            "type": "video_url",
+            "video_url": {
+                "url": "https://example.com/video.mp4",
+                "detail": "high",
+                "max_frames": 16,
+                "fps": 1
+            }
+        },
+        {
+            "type": "audio_url",
+            "audio_url": {
+                "url": "https://example.com/audio.mp3"
+            }
+        },
+        {
+            "type": "text",
+            "text": "对比分析视频画面和音频内容，找出它们之间的联系"
+        }
+    ]
+}
+​
+5. Python SDK 使用示例
+​
+5.1 视觉识别
+from openai import OpenAI
+
+client = OpenAI(
+    api_key="your-api-key",
+    base_url="https://api.siliconflow.cn/v1"
+)
+
+response = client.chat.completions.create(
+    model="Qwen/Qwen2.5-VL-72B-Instruct",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": "https://example.com/tech-conference.jpg"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "这张图片显示的是什么样的科技会议？分析参会者的表情和氛围"
+                }
+            ]
+        }
+    ]
+)
+
+print(response.choices[0].message.content)
+​
+5.2 视频分析
+response = client.chat.completions.create(
+    model="Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "video_url",
+                    "video_url": {
+                        "url": "https://example.com/product-demo.mp4",
+                        "detail": "high",
+                        "max_frames": 16,
+                        "fps": 1
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "这个产品演示视频展示了哪些核心功能？目标用户群体可能是什么？"
+                }
+            ]
+        }
+    ],
+    stream=True
+)
+
+# 流式输出
+for chunk in response:
+    content = chunk.choices[0].delta.content
+    if content:
+        print(content, end='', flush=True)
+​
+5.3 音频理解
+response = client.chat.completions.create(
+    model="Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "audio_url",
+                    "audio_url": {
+                        "url": "data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEA..."
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "这段音频的主要内容和情感基调是什么？"
+                }
+            ]
+        }
+    ]
+)
+​
+6. 计费说明
+​
+6.1 视觉输入计费
+不同模型的视觉内容转换方式不同。下表对比展示核心规则与计费口径：
+模型系列	尺寸/像素约束	detail=low	detail=high	Token 计算方式
+Qwen 系列	最小 56×56，
+最大 3584×3584；
+按 28 的倍数取整到区间	统一 448×448，≈256 token	长宽先上取整到 28 的倍数，再等比裁剪到区间	ceil(h/28) * ceil(w/28)
+DeepseekVL2 系列	以 384×384 为基块；
+1 ≤ h*w ≤ 9 的 (h,w) 块数	统一 384×384，421 token	按 (h*384, w*384) 放缩，选择有效像素最大且无效像素更小的组合	(h*w + 1) * 196 + (w + 1) * 14 + 1
+GLM 系列	最小 28×28；
+按 28 的倍数取整到区间；
+若小于 112×112 或超出上限则回压到区间	统一 448×448，≈256 token	长宽取最近 28 倍数并限制在 (12544, 4816894) 像素区间	(h/28) * (w/28)
+DeepSeek-OCR	全局视图固定 1024×1024;
+局部视图基准 640×640	固定 1024×1024，272 token	与 640×640 对比缩放，确定分块数	272 + (h×10)×(w×10+1) + 1（尺寸>640×640）;
+272 + 1（尺寸≤640×640）
+说明：
+h,w 为最终用于计费的像素尺寸；表中 token 为视觉输入侧的估算，实际账单以请求时的最终转换结果为准。
+​
+6.2 视频输入计费
+视频内容根据提取的帧数转换为 tokens：
+最终帧数 = min(fps × 视频时长, max_frames)
+每帧图像按对应视觉模型的标准转换
+​
+6.3 音频输入计费
+音频内容转换为 tokens 进行计费，对于 Qwen3 omni 多模态模型，输入音频每秒对应 13 个 token， 如 22.5s 音频对应 292 个 token。
+​
+7. 最佳实践
+​
+7.1 性能优化
+视频时长控制：建议 30 秒内以获得最佳分析效果
+帧数选择：max_frames=8-16，fps=1-2 通常足够
+图像尺寸：根据模型推荐尺寸进行预处理
+​
+7.2 使用建议
+逐步分析：复杂任务分解为多个简单步骤
+多模态组合：充分利用不同类型媒体的优势
+错误处理：检查媒体文件可访问性和格式兼容性
+​
+7.3 常见问题
+Q: 文件大小限制？ A: 建议音频视频文件保持适中大小，超大文件可能影响性能
+Q: 可以同时处理多少个媒体文件？ A: 可以在同一请求中包含多个媒体 URL，但建议控制总体数据量
+Q: 帧提取策略？ A: 对于长视频，合理设置fps和max_frames参数以获得最优的分析效果和成本平衡
+语言模型
+视频生成模型
+Ask a question...
+
+TTS模型：fnlp/MOSS-TTSD-v0.5
+系列
+创建文本转语音请求
+Generate audio from input text. The data generated by the interface is the binary data of the audio, which requires the user to handle it themselves. Reference:https://docs.siliconflow.cn/capabilities/text-to-speech#5
+
+POST
+/
+audio
+/
+speech
+Create Speech
+
+curl --request POST \
+  --url https://api.siliconflow.cn/v1/audio/speech \
+  --header 'Authorization: Bearer <token>' \
+  --header 'Content-Type: application/json' \
+  --data @- <<EOF
+{
+  "model": "fnlp/MOSS-TTSD-v0.5",
+  "input": "[S1]Hello, how are you today?[S2]I'm doing great, thanks for asking![S1]That's wonderful to hear "
+}
+EOF
+
+200
+
+400
+
+401
+
+403
+
+404
+
+429
+
+503
+
+504
+"音频的二进制数据"
+Authorizations
+​
+Authorization
+stringheaderrequired
+Use the following format for authentication: Bearer
+
+Body
+application/json
+MOSS-TTSD-v0.5
+CosyVoice2-0.5B
+​
+model
+enum<string>required
+MOSS-TTSD (text to spoken dialogue) is an open-source bilingual spoken dialogue synthesis model that supports both Chinese and English. It can transform dialogue scripts between two speakers into natural, expressive conversational speech. MOSS-TTSD supports voice cloning and long single-session speech generation, making it ideal for AI podcast production.
+
+To better enhance service quality, we will make periodic changes to the models provided by this service, including but not limited to model on/offlining and adjustments to model service capabilities. We will notify you of such changes through appropriate means such as announcements or message pushes where feasible.
+
+Available options: fnlp/MOSS-TTSD-v0.5
+​
+input
+stringrequired
+The dialogue text uses speaker tags to indicate turns:
+[S1]: Indicates Speaker 1 is speaking
+[S2]: Indicates Speaker 2 is speaking
+
+Required string length: 1 - 128000
+Example:
+"[S1]Hello, how are you today?[S2]I'm doing great, thanks for asking![S1]That's wonderful to hear "
+
+​
+max_tokens
+integerdefault:2048
+The maximum number of tokens to generate. The input + output does not exceed 32k tokens.
+
+Example:
+4096
+
+​
+references
+object[]
+The voice field and references field are mutually exclusive. If you want to use scripted dialogue, you need to pass two voice tones through the references field. Scripted dialogue is only available for the moss model.
+
+Show child attributes
+
+​
+voice
+enum<string>
+The "voice" field currently does not support two timbres. If you need to upload two timbres, please use "reference".
+
+Available options: fnlp/MOSS-TTSD-v0.5:alex, fnlp/MOSS-TTSD-v0.5:anna, fnlp/MOSS-TTSD-v0.5:bella, fnlp/MOSS-TTSD-v0.5:benjamin, fnlp/MOSS-TTSD-v0.5:charles, fnlp/MOSS-TTSD-v0.5:claire, fnlp/MOSS-TTSD-v0.5:david, fnlp/MOSS-TTSD-v0.5:diana
+​
+response_format
+enum<string>default:mp3
+The format to audio out. Supported formats are mp3, opus, wav, pcm
+
+Available options: mp3, opus, wav, pcm
+​
+sample_rate
+numberdefault:32000
+Control the output sample rate. The default values and differ for different video output types, as follows: opus: Supports 48000 Hz. wav, pcm: Supports 8000, 16000, 24000, 32000, 44100 Hz, with a default of 44100 Hz. mp3: Supports 32000, 44100 Hz, with a default of 44100 Hz.
+
+​
+stream
+booleandefault:true
+streaming or not
+
+​
+speed
+number<float>default:1
+The speed of the generated audio. Select a value from 0.25 to 4.0. 1.0 is the default.
+
+Required range: 0.25 <= x <= 4
+​
+gain
+number<float>default:0
+Required range: -10 <= x <= 10
+Response
+
+200
+
+application/audio
+Generate audio based on the input text. The data generated by the interface is in binary format and requires the user to process it themselves. Reference:https://docs.siliconflow.cn/capabilities/text-to-speech#5
+The response header contains the x-siliconcloud-trace-id field, which serves as a unique identifier for tracing requests, facilitating log queries and issue troubleshooting.
+
+The response is of type file.
+
+Example:
+"音频的二进制数据"
+
+上传参考音频
+参考音频列表获取
+Ask a question...
+
+Powered by

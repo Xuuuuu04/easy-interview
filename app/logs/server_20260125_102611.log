@@ -1,0 +1,10 @@
+2026-01-25 10:26:11,378 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:26:11,507 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:26:11,557 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:26:11,657 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:26:11,696 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:26:11,818 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_102611.log
+2026-01-25 10:27:06,202 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 10:27:13,846 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 10:27:29,200 | INFO     | main:chat_audio:613 - 🎤 User said: 呃，今天心情不错。
+2026-01-25 10:27:47,747 | INFO     | main:chat_audio:613 - 🎤 User said: 呃，包鱼了。

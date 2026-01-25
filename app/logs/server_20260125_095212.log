@@ -1,0 +1,42 @@
+2026-01-25 09:52:12,372 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_095212.log
+2026-01-25 09:52:12,872 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_095212.log
+2026-01-25 09:54:51,136 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:54:59,737 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:55:24,534 | INFO     | main:chat_audio:606 - 🎤 User said: 嗯还好吧，和女朋友吵架了。
+2026-01-25 09:55:24,539 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
+2026-01-25 09:55:26,562 | DEBUG    | main:chat_audio:674 - 🤖 AI Raw Output (After Think Trim): 和最亲近的人发生争执，心里一定很难受吧。可以和我说说，是因为什么事情起了争执吗？如果你现在还不想说，也没关系，我们可以先聊聊你此刻的感受。
+2026-01-25 09:55:26,562 | INFO     | main:chat_audio:693 - 🚀 Launched async plan evaluator for session 13053bd6...
+2026-01-25 09:55:26,563 | ERROR    | main:chat_audio:700 - Error in chat_audio: name 'updated_plan' is not defined
+2026-01-25 09:55:27,126 | INFO     | main:evaluate_plan_async:493 - 📡 Sending Background Eval Request to zai-org/GLM-4.6...
+2026-01-25 09:55:28,027 | DEBUG    | main:evaluate_plan_async:512 - 📥 Background API Raw Response: {
+  "id": "019bf2dd0c4f449ef9e130b603c4fcd9",
+  "object": "chat.completion",
+  "created": 1769306131,
+  "model": "zai-org/GLM-4.6",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "</think>\nNo updates detected."
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 623,
+    "completion_tokens": 6,
+    "total_tokens": 629,
+    "completion_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "prompt_tokens_details": {
+      "cached_tokens": 320
+    },
+    "prompt_cache_hit_tokens": 320,
+    "prompt_cache_miss_tokens": 303
+  },
+  "system_fingerprint": ""
+}
+2026-01-25 09:55:28,028 | INFO     | main:evaluate_plan_async:521 - ℹ️ No tool calls in response. Text content: </think>
+No updates detected.
