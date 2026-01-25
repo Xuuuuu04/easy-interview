@@ -37,4 +37,4 @@ if __name__ == "__main__":
     # When running directly, we might need to adjust path or run as module
     # But usually 'python app/main.py' might have relative import issues if we use 'app.' in imports
     # If running from root as 'python -m app.main', it works.
-    uvicorn.run(app, host="0.0.0.0", port=8001)
+    uvicorn.run(app, host="0.0.0.0", port=8000)

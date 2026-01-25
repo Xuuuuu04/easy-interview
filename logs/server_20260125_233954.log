@@ -1,3 +1,0 @@
-2026-01-25 23:39:54,254 | INFO     | logger:setup_logging:25 - 日志已初始化。写入文件: logs/server_20260125_233954.log
-2026-01-25 23:39:54,530 | INFO     | config:<module>:22 - ✅ Loaded .env from: I:\AI面试\app\.env
-2026-01-25 23:39:54,544 | INFO     | main:<module>:28 - Application initialized with modular structure.
