@@ -20,7 +20,7 @@ logs/
 *.log
 
 # Environment variables
-.env
+# .env - 已移除排除，允许提交
 
 # OS
 .DS_Store
