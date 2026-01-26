@@ -2,6 +2,7 @@ import json
 import base64
 import hashlib
 import re
+import uuid
 import httpx
 from fastapi import APIRouter, UploadFile, File, Form, HTTPException
 from fastapi.responses import StreamingResponse
@@ -10,6 +11,8 @@ from app.services import file_service, llm_service, interview_service
 from app.core.config import settings
 from app.core.logger import logger
 from app.interview_templates import INTERVIEW_TEMPLATES
+from app.question_bank import get_question_pack
+from app.question_bank.service import render_pack_for_prompt
 
 router = APIRouter()
 
@@ -22,6 +25,8 @@ async def analyze_resume(
 ):
     if not settings.API_KEY: raise HTTPException(status_code=500, detail="API Key not configured")
 
+    session_id = uuid.uuid4().hex
+
     resume_text = ""
     if file:
         resume_text = file_service.parse_resume(file)
@@ -32,6 +37,15 @@ async def analyze_resume(
         resume_text = "No specific background context provided. Please proceed with a standard interview based on the Role and Scenario."
     
     template = INTERVIEW_TEMPLATES.get(scenario, INTERVIEW_TEMPLATES["tech_backend"])
+    pack_id = template.get("question_pack_id") or scenario
+    question_bank_json = None
+    question_bank_version = None
+    try:
+        pack = get_question_pack(pack_id)
+        question_bank_json = render_pack_for_prompt(pack, max_questions=200)
+        question_bank_version = pack.version
+    except Exception as e:
+        logger.warning(f"Question pack unavailable for {pack_id}: {str(e)}")
 
     system_prompt = f"""{template['system_prompt']}
 
@@ -40,21 +54,36 @@ async def analyze_resume(
     **MANDATORY CONSTRAINTS**:
     1. **Language**: The entire plan (titles, questions, summary) MUST be in {language}.
     2. **Role & Scenario**: You are acting strictly as {template['role']} in a {template['name']} setting.
-       - If the user uploaded a custom question bank, use those questions directly.
-       - If the user uploaded a resume, tailoring questions to their specific experience.
+       - Use the provided QUESTION BANK as the source of truth for interview questions.
+       - You MUST vary the selection/order across sessions using the RANDOM_SEED below.
     3. **Structure**: 
        - Break down the interview into 3-5 logical phases (e.g., Intro, Specific Tech 1, Specific Tech 2, System Design, Soft Skills).
        - Ensure questions are deep, specific, and challenging (not generic).
+    4. **Question Sourcing**:
+       - Each plan item MUST be sourced from the QUESTION BANK below.
+       - You MAY lightly tailor the wording for the candidate, but MUST keep the original meaning.
+       - Every item MUST include `bank_id` referencing the original question id from the bank.
+    
+    RANDOM_SEED: {session_id}
+    
+    QUESTION BANK (JSON):
+    {question_bank_json if question_bank_json else '{"pack_id": null, "version": null, "questions": []}'}
     
     Return ONLY a valid JSON object (no markdown, no extra text) with the following structure:
     {{
         "summary": "Brief professional summary of the candidate (in {language})",
+        "meta": {{
+            "scenario": "{scenario}",
+            "session_id": "{session_id}",
+            "question_pack_id": "{pack_id}",
+            "question_pack_version": "{question_bank_version if question_bank_version else ''}"
+        }},
         "sections": [
             {{
                 "title": "Section Title (e.g. Work Experience, Java Core, etc.)",
                 "items": [
-                    {{ "id": "1", "content": "Specific topic or question to cover", "status": "pending" }},
-                    {{ "id": "2", "content": "Another topic or question", "status": "pending" }}
+                    {{ "id": "1", "bank_id": "be.001", "content": "Specific topic or question to cover", "status": "pending" }},
+                    {{ "id": "2", "bank_id": "be.002", "content": "Another topic or question", "status": "pending" }}
                 ]
             }}
         ],
@@ -71,6 +100,7 @@ async def analyze_resume(
 
     Interview Language: {language}
     Scenario: {template['name']}
+    Random Seed: {session_id}
 
     Generate the Interview Plan JSON now in the specified language.
     """
@@ -101,10 +131,20 @@ async def analyze_resume(
         else:
              plan_data = {"raw": reply_text, "summary": "No JSON found in response", "sections": []}
 
+        if isinstance(plan_data, dict):
+            meta = plan_data.get("meta") if isinstance(plan_data.get("meta"), dict) else {}
+            meta.setdefault("scenario", scenario)
+            meta.setdefault("session_id", session_id)
+            meta.setdefault("question_pack_id", pack_id)
+            if question_bank_version:
+                meta.setdefault("question_pack_version", question_bank_version)
+            plan_data["meta"] = meta
+
         return {
             "resume_text": resume_text,
             "interview_plan": plan_data,
-            "scenario": scenario
+            "scenario": scenario,
+            "session_id": session_id
         }
     except Exception as e:
         logger.error(f"Error analyzing resume: {str(e)}", exc_info=True)
@@ -120,38 +160,106 @@ async def analyze_video(req: VideoAnalysisRequest):
     images = req.images[:3]
     lang_instruction = "Respond in Simplified Chinese." if req.language.startswith("zh") else "Respond in English."
 
-    system_instruction = """
-    You are an AI Interview Proctor & Analyst. Analyze the candidate's video frames.
-    
-    1. **Metrics Scoring (0-100)**:
-       - **confidence**: Facial expression, posture (Is he/she nervous or confident?).
-       - **attire**: Professionalism of dress (0=PJ/messy, 100=Business Formal).
-       - **clarity**: Video quality and lighting.
-       - **eye_contact**: Connection with camera/screen. *Note: Looking at the screen to read text is NORMAL. Do not penalize natural screen reading.*
-    
-    2. **Cheat Detection (Strictly Conservative)**:
-       - **Ignore**: Looking at screen, looking away briefly, thinking, natural movements.
-       - **WARNING (Yellow)**: Poor lighting (too dark/bright), face partially out of frame, background too messy.
-       - **CRITICAL (Red)**: Explicit cheating tools (phone, ipad), another person in frame, using AI teleprompter glasses, black screen.
-    
-    Return JSON ONLY:
-    {
-        "metrics": {
-            "confidence": int,
-            "attire": int,
-            "clarity": int,
-            "eye_contact": int
-        },
-        "alert": {
-            "level": "none" | "warning" | "critical",
-            "message_cn": "Reason in Chinese (if level != none, else null)",
-            "message_en": "Reason in English"
-        }
-    }
-    """
+    system_instruction = f"""
+You are an AI Interview Proctor & Analyst. Analyze the candidate's video frames.
+
+Return a single JSON object only. No markdown. No code fences. No extra keys. No extra text.
+All metric values MUST be integers between 0 and 100.
+
+Keys MUST be exactly:
+- metrics.confidence
+- metrics.eye_contact
+- metrics.attire
+- metrics.clarity
+- alert.level (one of: "none", "warning", "critical")
+- alert.message_cn (string or null)
+- alert.message_en (string or null)
+
+Scoring guidance (0-100):
+- confidence: facial expression + posture
+- eye_contact: connection with camera/screen; do NOT penalize natural screen reading
+- attire: professionalism of dress (0=messy, 100=business formal)
+- clarity: video quality + lighting
+
+Cheat detection (strictly conservative):
+- ignore looking at screen, brief look-away, thinking, natural movement
+- warning: lighting too dark/bright, face partially out of frame, background too messy
+- critical: explicit cheating tools (phone/tablet), another person in frame, AI teleprompter glasses, black screen
+
+Example (format must match, values are examples):
+{{"metrics":{{"confidence":55,"eye_contact":60,"attire":75,"clarity":70}},"alert":{{"level":"none","message_cn":null,"message_en":null}}}}
+
+{lang_instruction}
+""".strip()
+
+    def extract_json_object(text: str):
+        if not text:
+            return None
+        cleaned = re.sub(r"```(?:json)?", "", text, flags=re.IGNORECASE).replace("```", "").strip()
+        start = None
+        depth = 0
+        in_string = False
+        escape = False
+        quote_char = ""
+        for i, ch in enumerate(cleaned):
+            if escape:
+                escape = False
+                continue
+            if ch == "\\":
+                if in_string:
+                    escape = True
+                continue
+            if ch in ('"', "'"):
+                if in_string:
+                    if ch == quote_char:
+                        in_string = False
+                        quote_char = ""
+                else:
+                    in_string = True
+                    quote_char = ch
+                continue
+            if in_string:
+                continue
+            if ch == "{":
+                if depth == 0:
+                    start = i
+                depth += 1
+            elif ch == "}":
+                if depth > 0:
+                    depth -= 1
+                    if depth == 0 and start is not None:
+                        candidate = cleaned[start : i + 1]
+                        try:
+                            return json.loads(candidate)
+                        except Exception:
+                            start = None
+                            continue
+        return None
+
+    def to_int_0_100(value, default=0):
+        if value is None:
+            return default
+        try:
+            if isinstance(value, str):
+                v = value.replace("%", "").strip()
+                num = float(v)
+            else:
+                num = float(value)
+            if 0 < num <= 1:
+                num *= 100
+            elif 1 < num <= 10:
+                num *= 10
+            num = round(num)
+            if num < 0:
+                return 0
+            if num > 100:
+                return 100
+            return int(num)
+        except Exception:
+            return default
 
     content_list = [
-        {"type": "text", "text": f"{system_instruction} \n\n {lang_instruction}"}
+        {"type": "text", "text": system_instruction}
     ]
 
     for img_b64 in images:
@@ -170,15 +278,39 @@ async def analyze_video(req: VideoAnalysisRequest):
 
     try:
         content = await llm_service.call_vision_model(messages)
-        json_match = re.search(r'\{.*\}', content, re.DOTALL)
-        if json_match:
-            analysis = json.loads(json_match.group(0))
-        else:
-            analysis = {"raw": content, "alert_message": "Raw output received"}
-        return analysis
-    except Exception as e:
+        analysis = extract_json_object(content)
+        if not isinstance(analysis, dict):
+            logger.warning(f"Vision model output not JSON. Raw: {content}")
+            analysis = {}
+
+        metrics = analysis.get("metrics") if isinstance(analysis.get("metrics"), dict) else {}
+        alert = analysis.get("alert") if isinstance(analysis.get("alert"), dict) else {}
+
+        normalized = {
+            "metrics": {
+                "confidence": to_int_0_100(metrics.get("confidence"), 0),
+                "eye_contact": to_int_0_100(metrics.get("eye_contact"), 0),
+                "attire": to_int_0_100(metrics.get("attire"), 0),
+                "clarity": to_int_0_100(metrics.get("clarity"), 0),
+            },
+            "alert": {
+                "level": alert.get("level") if alert.get("level") in ("none", "warning", "critical") else "none",
+                "message_cn": alert.get("message_cn") if alert.get("message_cn") not in ("", None) else None,
+                "message_en": alert.get("message_en") if alert.get("message_en") not in ("", None) else None,
+            },
+        }
+        return normalized
+    except BaseException as e:
         logger.error(f"Vision Analysis Error: {str(e)}")
-        raise HTTPException(status_code=500, detail=str(e))
+        return {
+            "metrics": {"confidence": 0, "eye_contact": 0, "attire": 0, "clarity": 0},
+            "alert": {
+                "level": "none",
+                "message_cn": None,
+                "message_en": None,
+            },
+            "analysis_error": True,
+        }
 
 @router.post("/api/upload-resume")
 async def upload_resume(
@@ -268,7 +400,8 @@ async def chat_audio(
     interview_plan: str = Form("{}"),
     scenario: str = Form("tech_backend"),
     language: str = Form("zh-CN"),
-    difficulty: int = Form(5)
+    difficulty: int = Form(5),
+    session_id: str = Form(None)
 ):
     if not settings.API_KEY: raise HTTPException(status_code=500, detail="API Key not configured")
 
@@ -309,7 +442,10 @@ async def chat_audio(
         try: plan_data = json.loads(interview_plan)
         except: plan_data = {}
         
-        session_key = hashlib.md5(f"{resume_text[:100]}_{scenario}".encode()).hexdigest()
+        if session_id:
+            session_key = hashlib.md5(f"{session_id}_{scenario}".encode()).hexdigest()
+        else:
+            session_key = hashlib.md5(f"{resume_text[:100]}_{scenario}".encode()).hexdigest()
         
         if session_key in interview_service.plan_cache:
             logger.info(f"📥 使用缓存计划 ({session_key[:8]})...")
@@ -317,6 +453,20 @@ async def chat_audio(
         elif plan_data and "sections" in plan_data:
             logger.info(f"💧 从前端数据恢复计划缓存 ({session_key[:8]})...")
             interview_service.plan_cache[session_key] = plan_data
+
+        asked_set = False
+        for sec in plan_data.get("sections", []):
+            for item in sec.get("items", []):
+                if item.get("status") != "done" and "asked" in item:
+                    item.pop("asked", None)
+        for sec in plan_data.get("sections", []):
+            if asked_set:
+                break
+            for item in sec.get("items", []):
+                if item.get("status") != "done":
+                    item["asked"] = True
+                    asked_set = True
+                    break
         
         plan_desc = "CURRENT INTERVIEW PLAN STATUS:\n"
         for sec in plan_data.get("sections", []):

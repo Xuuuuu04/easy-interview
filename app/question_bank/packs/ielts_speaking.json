@@ -1,0 +1,1402 @@
+[
+  {
+    "id": "ielts.001",
+    "topic": "Part 1 - Home",
+    "question": "Do you live in a house or an apartment? Why?",
+    "tags": [
+      "part1",
+      "home"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you like most about where you live?",
+      "Would you like to move in the future?"
+    ]
+  },
+  {
+    "id": "ielts.002",
+    "topic": "Part 1 - Study/Work",
+    "question": "Do you work or are you a student?",
+    "tags": [
+      "part1",
+      "study_work"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you like about your job/major?",
+      "What would you change about it?"
+    ]
+  },
+  {
+    "id": "ielts.003",
+    "topic": "Part 1 - Hometown",
+    "question": "Tell me about your hometown.",
+    "tags": [
+      "part1",
+      "hometown"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do people like to do there?",
+      "Has it changed much in recent years?"
+    ]
+  },
+  {
+    "id": "ielts.004",
+    "topic": "Part 1 - Daily Routine",
+    "question": "What is your typical daily routine like?",
+    "tags": [
+      "part1",
+      "routine"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Is there anything you would like to change?",
+      "How do you manage your time?"
+    ]
+  },
+  {
+    "id": "ielts.005",
+    "topic": "Part 1 - Free Time",
+    "question": "What do you like to do in your free time?",
+    "tags": [
+      "part1",
+      "hobby"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you prefer to be alone or with others?",
+      "Has your free time changed recently?"
+    ]
+  },
+  {
+    "id": "ielts.006",
+    "topic": "Part 1 - Sports",
+    "question": "Do you like sports? Why or why not?",
+    "tags": [
+      "part1",
+      "sports"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What sports are popular in your country?",
+      "Do you watch sports on TV?"
+    ]
+  },
+  {
+    "id": "ielts.007",
+    "topic": "Part 1 - Music",
+    "question": "What kind of music do you usually listen to?",
+    "tags": [
+      "part1",
+      "music"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Has your taste in music changed?",
+      "Do you play any musical instruments?"
+    ]
+  },
+  {
+    "id": "ielts.008",
+    "topic": "Part 1 - Reading",
+    "question": "Do you like reading books?",
+    "tags": [
+      "part1",
+      "reading"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What genres do you enjoy?",
+      "Do you prefer e-books or paper books?"
+    ]
+  },
+  {
+    "id": "ielts.009",
+    "topic": "Part 1 - Friends",
+    "question": "How often do you meet your friends?",
+    "tags": [
+      "part1",
+      "friends"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you usually do together?",
+      "Do you prefer a small or large group of friends?"
+    ]
+  },
+  {
+    "id": "ielts.010",
+    "topic": "Part 1 - Food",
+    "question": "What kind of food do you like?",
+    "tags": [
+      "part1",
+      "food"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you like cooking?",
+      "How has your diet changed over time?"
+    ]
+  },
+  {
+    "id": "ielts.011",
+    "topic": "Part 1 - Shopping",
+    "question": "Do you like shopping?",
+    "tags": [
+      "part1",
+      "shopping"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you usually buy?",
+      "Do you prefer online shopping or in-store shopping?"
+    ]
+  },
+  {
+    "id": "ielts.012",
+    "topic": "Part 1 - Travel",
+    "question": "Do you like traveling? Why?",
+    "tags": [
+      "part1",
+      "travel"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What kind of places do you like to visit?",
+      "Do you prefer traveling alone or with others?"
+    ]
+  },
+  {
+    "id": "ielts.013",
+    "topic": "Part 1 - Holidays",
+    "question": "What do you usually do on holidays?",
+    "tags": [
+      "part1",
+      "holidays"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you prefer short breaks or long holidays?",
+      "What is your favorite holiday?"
+    ]
+  },
+  {
+    "id": "ielts.014",
+    "topic": "Part 1 - Technology",
+    "question": "How often do you use technology in your daily life?",
+    "tags": [
+      "part1",
+      "technology"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "What apps do you use most?",
+      "Do you think you rely too much on technology?"
+    ]
+  },
+  {
+    "id": "ielts.015",
+    "topic": "Part 1 - Public Transport",
+    "question": "Do you often use public transportation?",
+    "tags": [
+      "part1",
+      "transport"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "What do you like or dislike about it?",
+      "How could public transport be improved?"
+    ]
+  },
+  {
+    "id": "ielts.016",
+    "topic": "Part 1 - Weather",
+    "question": "What kind of weather do you like?",
+    "tags": [
+      "part1",
+      "weather"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Does the weather affect your mood?",
+      "What is the weather like in your country?"
+    ]
+  },
+  {
+    "id": "ielts.017",
+    "topic": "Part 1 - Photography",
+    "question": "Do you like taking photos?",
+    "tags": [
+      "part1",
+      "photography"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you usually take photos of?",
+      "Do you prefer using a phone or a camera?"
+    ]
+  },
+  {
+    "id": "ielts.018",
+    "topic": "Part 1 - Movies",
+    "question": "What kinds of movies do you like?",
+    "tags": [
+      "part1",
+      "movies"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you prefer watching at home or in the cinema?",
+      "What was the last movie you watched?"
+    ]
+  },
+  {
+    "id": "ielts.019",
+    "topic": "Part 1 - Learning",
+    "question": "Do you like learning new things?",
+    "tags": [
+      "part1",
+      "learning"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What skills would you like to learn?",
+      "How do you usually learn?"
+    ]
+  },
+  {
+    "id": "ielts.020",
+    "topic": "Part 1 - Social Media",
+    "question": "Do you use social media?",
+    "tags": [
+      "part1",
+      "social_media"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "What do you use it for?",
+      "What are the advantages and disadvantages?"
+    ]
+  },
+  {
+    "id": "ielts.021",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a person you admire. You should say who the person is, how you know them, what qualities they have, and explain why you admire them.",
+    "tags": [
+      "part2",
+      "people"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "What did you learn from them?",
+      "Has your admiration changed over time?"
+    ]
+  },
+  {
+    "id": "ielts.022",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a memorable trip you have taken. You should say where you went, who you went with, what you did there, and explain why it was memorable.",
+    "tags": [
+      "part2",
+      "travel"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Would you go there again?",
+      "What was the biggest challenge on that trip?"
+    ]
+  },
+  {
+    "id": "ielts.023",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a book you enjoyed reading. You should say what it was, what it was about, when you read it, and explain why you enjoyed it.",
+    "tags": [
+      "part2",
+      "reading"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Would you recommend it to others?",
+      "Did it change your way of thinking?"
+    ]
+  },
+  {
+    "id": "ielts.024",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a piece of technology you find useful. You should say what it is, how you use it, how often you use it, and explain why it is useful.",
+    "tags": [
+      "part2",
+      "technology"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Could you live without it?",
+      "What improvements would you like to see?"
+    ]
+  },
+  {
+    "id": "ielts.025",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe an event you enjoyed. You should say what the event was, where it was, who you were with, and explain why you enjoyed it.",
+    "tags": [
+      "part2",
+      "events"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you prefer small or large events?",
+      "How do events affect community life?"
+    ]
+  },
+  {
+    "id": "ielts.026",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a skill you want to learn. You should say what it is, why you want to learn it, how you would learn it, and explain how it might help you.",
+    "tags": [
+      "part2",
+      "learning"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "What difficulties might you face?",
+      "How long would it take to learn it?"
+    ]
+  },
+  {
+    "id": "ielts.027",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you helped someone. You should say who you helped, what the situation was, what you did, and explain how you felt about it.",
+    "tags": [
+      "part2",
+      "helping"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do people help each other in your country?",
+      "Should schools teach volunteering?"
+    ]
+  },
+  {
+    "id": "ielts.028",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a place in your city you like to visit. You should say where it is, what you do there, who you go with, and explain why you like it.",
+    "tags": [
+      "part2",
+      "places"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Has it changed over time?",
+      "Should cities have more public spaces?"
+    ]
+  },
+  {
+    "id": "ielts.029",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you were surprised. You should say what happened, where you were, who you were with, and explain why you were surprised.",
+    "tags": [
+      "part2",
+      "experience"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you like surprises?",
+      "Why do some people dislike surprises?"
+    ]
+  },
+  {
+    "id": "ielts.030",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a favorite item you own. You should say what it is, when you got it, how you use it, and explain why it is important to you.",
+    "tags": [
+      "part2",
+      "objects"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you prefer practical or sentimental items?",
+      "Why do people get attached to objects?"
+    ]
+  },
+  {
+    "id": "ielts.031",
+    "topic": "Part 3 - Role Models",
+    "question": "Do you think people need role models? Why?",
+    "tags": [
+      "part3",
+      "people"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Are role models different for children and adults?",
+      "Can celebrities be good role models?"
+    ]
+  },
+  {
+    "id": "ielts.032",
+    "topic": "Part 3 - Travel Trends",
+    "question": "How has travel changed in the last few decades?",
+    "tags": [
+      "part3",
+      "travel"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What are the impacts of tourism on local communities?",
+      "Should governments limit tourism in some places?"
+    ]
+  },
+  {
+    "id": "ielts.033",
+    "topic": "Part 3 - Reading Habits",
+    "question": "Why do some people read less nowadays?",
+    "tags": [
+      "part3",
+      "reading"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How can schools encourage reading?",
+      "Are audiobooks as valuable as books?"
+    ]
+  },
+  {
+    "id": "ielts.034",
+    "topic": "Part 3 - Technology Dependence",
+    "question": "Do you think people are too dependent on technology?",
+    "tags": [
+      "part3",
+      "technology"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What are the risks of overusing technology?",
+      "How might technology change education?"
+    ]
+  },
+  {
+    "id": "ielts.035",
+    "topic": "Part 3 - Events",
+    "question": "What kinds of events bring people together?",
+    "tags": [
+      "part3",
+      "events"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Why are community events important?",
+      "Do you think online events can replace offline ones?"
+    ]
+  },
+  {
+    "id": "ielts.036",
+    "topic": "Part 3 - Learning Skills",
+    "question": "What skills are most important for young people today?",
+    "tags": [
+      "part3",
+      "learning"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Should schools focus more on practical skills?",
+      "How can adults keep learning?"
+    ]
+  },
+  {
+    "id": "ielts.037",
+    "topic": "Part 3 - Helping Others",
+    "question": "Why do some people volunteer to help others?",
+    "tags": [
+      "part3",
+      "helping"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Should volunteering be compulsory in schools?",
+      "What benefits do volunteers get?"
+    ]
+  },
+  {
+    "id": "ielts.038",
+    "topic": "Part 3 - City Planning",
+    "question": "What makes a city a good place to live?",
+    "tags": [
+      "part3",
+      "places"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How can governments improve cities?",
+      "Should cities prioritize cars or public transport?"
+    ]
+  },
+  {
+    "id": "ielts.039",
+    "topic": "Part 3 - Emotions",
+    "question": "Why do people enjoy feeling surprised?",
+    "tags": [
+      "part3",
+      "psychology"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Are people becoming harder to surprise?",
+      "How do surprises affect relationships?"
+    ]
+  },
+  {
+    "id": "ielts.040",
+    "topic": "Part 3 - Consumerism",
+    "question": "Why do people buy things they do not really need?",
+    "tags": [
+      "part3",
+      "society"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How does advertising influence buying behavior?",
+      "What are the environmental impacts of consumerism?"
+    ]
+  },
+  {
+    "id": "ielts.041",
+    "topic": "Part 1 - Languages",
+    "question": "Do you like learning languages?",
+    "tags": [
+      "part1",
+      "learning"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What is difficult about learning languages?",
+      "Do you prefer learning alone or with a teacher?"
+    ]
+  },
+  {
+    "id": "ielts.042",
+    "topic": "Part 1 - Family",
+    "question": "How close are you to your family?",
+    "tags": [
+      "part1",
+      "family"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you often spend time together?",
+      "How has family life changed in your country?"
+    ]
+  },
+  {
+    "id": "ielts.043",
+    "topic": "Part 1 - Festivals",
+    "question": "What festivals are important in your country?",
+    "tags": [
+      "part1",
+      "culture"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "How do people celebrate them?",
+      "Do you think festivals will change in the future?"
+    ]
+  },
+  {
+    "id": "ielts.044",
+    "topic": "Part 1 - Animals",
+    "question": "Do you like animals?",
+    "tags": [
+      "part1",
+      "animals"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Did you have pets as a child?",
+      "Should people keep pets at home?"
+    ]
+  },
+  {
+    "id": "ielts.045",
+    "topic": "Part 1 - Environment",
+    "question": "Do you do anything to help the environment?",
+    "tags": [
+      "part1",
+      "environment"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "What environmental problems are common in your country?",
+      "Do you think individuals can make a difference?"
+    ]
+  },
+  {
+    "id": "ielts.046",
+    "topic": "Part 1 - Driving",
+    "question": "Do you drive?",
+    "tags": [
+      "part1",
+      "transport"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Would you like to drive in the future?",
+      "What are the advantages of driving?"
+    ]
+  },
+  {
+    "id": "ielts.047",
+    "topic": "Part 1 - Cooking",
+    "question": "Do you enjoy cooking?",
+    "tags": [
+      "part1",
+      "food"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What dish can you cook well?",
+      "Do you prefer eating at home or outside?"
+    ]
+  },
+  {
+    "id": "ielts.048",
+    "topic": "Part 1 - Art",
+    "question": "Do you like art?",
+    "tags": [
+      "part1",
+      "art"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Do you like visiting museums?",
+      "Should children learn art at school?"
+    ]
+  },
+  {
+    "id": "ielts.049",
+    "topic": "Part 1 - News",
+    "question": "How do you usually get news?",
+    "tags": [
+      "part1",
+      "media"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Do you trust the news?",
+      "Do you prefer local or international news?"
+    ]
+  },
+  {
+    "id": "ielts.050",
+    "topic": "Part 1 - Sleep",
+    "question": "How many hours do you sleep?",
+    "tags": [
+      "part1",
+      "health"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Do you think you get enough sleep?",
+      "What affects your sleep quality?"
+    ]
+  },
+  {
+    "id": "ielts.051",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you solved a problem. You should say what the problem was, how you solved it, who helped you, and explain what you learned.",
+    "tags": [
+      "part2",
+      "problem_solving"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you like solving problems?",
+      "What kinds of problems are hardest for you?"
+    ]
+  },
+  {
+    "id": "ielts.052",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a movie you watched recently. You should say what it was, what it was about, who you watched it with, and explain why you remember it.",
+    "tags": [
+      "part2",
+      "movies"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you prefer watching movies alone or with others?",
+      "How have movies changed over time?"
+    ]
+  },
+  {
+    "id": "ielts.053",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a piece of advice you received. You should say who gave it, what it was, when you received it, and explain whether it was useful.",
+    "tags": [
+      "part2",
+      "advice"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do people in your country often give advice?",
+      "Why do some people ignore advice?"
+    ]
+  },
+  {
+    "id": "ielts.054",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a special meal you had. You should say what it was, where you had it, who you were with, and explain why it was special.",
+    "tags": [
+      "part2",
+      "food"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you often eat with family?",
+      "Do you think traditional food is important?"
+    ]
+  },
+  {
+    "id": "ielts.055",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a hobby you enjoy. You should say what it is, how you started it, how often you do it, and explain why you enjoy it.",
+    "tags": [
+      "part2",
+      "hobby"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you think hobbies are important?",
+      "How do hobbies benefit people?"
+    ]
+  },
+  {
+    "id": "ielts.056",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you waited for something. You should say what you waited for, where you were, why you had to wait, and explain how you felt.",
+    "tags": [
+      "part2",
+      "experience"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Are you a patient person?",
+      "Why do people dislike waiting?"
+    ]
+  },
+  {
+    "id": "ielts.057",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a friend you spend time with. You should say who they are, how you met, what you do together, and explain why you like them.",
+    "tags": [
+      "part2",
+      "friends"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you make friends easily?",
+      "Do you think friendships change with age?"
+    ]
+  },
+  {
+    "id": "ielts.058",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a traditional festival in your country. You should say what it is, how people celebrate it, what you do on that day, and explain why it is important.",
+    "tags": [
+      "part2",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do young people celebrate it differently?",
+      "Will it still be important in the future?"
+    ]
+  },
+  {
+    "id": "ielts.059",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a place you would like to visit in the future. You should say where it is, why you want to go, who you would go with, and explain what you would do there.",
+    "tags": [
+      "part2",
+      "travel"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "What do you do to plan a trip?",
+      "How has travel become easier?"
+    ]
+  },
+  {
+    "id": "ielts.060",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a piece of news you found interesting. You should say what it was, where you heard it, why it interested you, and explain how it affected you.",
+    "tags": [
+      "part2",
+      "media"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you prefer positive or negative news?",
+      "Should news focus more on local issues?"
+    ]
+  },
+  {
+    "id": "ielts.061",
+    "topic": "Part 3 - Education",
+    "question": "What are the most important factors for a good education system?",
+    "tags": [
+      "part3",
+      "education"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Should schools focus on exams or skills?",
+      "How can technology improve education?"
+    ]
+  },
+  {
+    "id": "ielts.062",
+    "topic": "Part 3 - Environment",
+    "question": "Why is it difficult for people to change their habits to protect the environment?",
+    "tags": [
+      "part3",
+      "environment"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What can governments do?",
+      "Do you think environmental education is effective?"
+    ]
+  },
+  {
+    "id": "ielts.063",
+    "topic": "Part 3 - Media",
+    "question": "How do social media platforms influence public opinion?",
+    "tags": [
+      "part3",
+      "media"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "Should social media be regulated?",
+      "How can misinformation be reduced?"
+    ]
+  },
+  {
+    "id": "ielts.064",
+    "topic": "Part 3 - Health",
+    "question": "Why do some people find it hard to maintain a healthy lifestyle?",
+    "tags": [
+      "part3",
+      "health"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What role should employers play?",
+      "How can cities encourage healthier living?"
+    ]
+  },
+  {
+    "id": "ielts.065",
+    "topic": "Part 3 - Work",
+    "question": "How are working patterns changing in your country?",
+    "tags": [
+      "part3",
+      "work"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What are the pros and cons of remote work?",
+      "How might work change in the future?"
+    ]
+  },
+  {
+    "id": "ielts.066",
+    "topic": "Part 3 - Culture",
+    "question": "How can traditional culture be preserved in modern society?",
+    "tags": [
+      "part3",
+      "culture"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Is it important for young people to learn traditions?",
+      "How does globalization affect culture?"
+    ]
+  },
+  {
+    "id": "ielts.067",
+    "topic": "Part 3 - Transport",
+    "question": "What are the main problems of transportation in big cities?",
+    "tags": [
+      "part3",
+      "transport"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "How can public transport be improved?",
+      "Should cities discourage private cars?"
+    ]
+  },
+  {
+    "id": "ielts.068",
+    "topic": "Part 3 - Family",
+    "question": "How have family relationships changed over time?",
+    "tags": [
+      "part3",
+      "family"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you think families are closer or less close now?",
+      "How can families spend more time together?"
+    ]
+  },
+  {
+    "id": "ielts.069",
+    "topic": "Part 3 - Advertising",
+    "question": "What are the positive and negative effects of advertising?",
+    "tags": [
+      "part3",
+      "society"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Should advertising to children be limited?",
+      "How has online advertising changed buying habits?"
+    ]
+  },
+  {
+    "id": "ielts.070",
+    "topic": "Part 3 - Culture & Language",
+    "question": "Do you think learning a foreign language helps people understand other cultures?",
+    "tags": [
+      "part3",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Should everyone learn a second language?",
+      "What is the best age to learn languages?"
+    ]
+  },
+  {
+    "id": "ielts.071",
+    "topic": "Part 1 - Gifts",
+    "question": "Do you like giving gifts?",
+    "tags": [
+      "part1",
+      "relationships"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What kinds of gifts are common in your culture?",
+      "Do you prefer giving or receiving gifts?"
+    ]
+  },
+  {
+    "id": "ielts.072",
+    "topic": "Part 1 - Parks",
+    "question": "Do you often go to parks?",
+    "tags": [
+      "part1",
+      "places"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do people do in parks in your country?",
+      "Should cities build more parks?"
+    ]
+  },
+  {
+    "id": "ielts.073",
+    "topic": "Part 1 - Internet",
+    "question": "How often do you use the internet?",
+    "tags": [
+      "part1",
+      "technology"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "What do you use it for most?",
+      "Do you think the internet has changed society?"
+    ]
+  },
+  {
+    "id": "ielts.074",
+    "topic": "Part 1 - Writing",
+    "question": "Do you like writing?",
+    "tags": [
+      "part1",
+      "communication"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Do you prefer writing by hand or typing?",
+      "What kinds of things do you write?"
+    ]
+  },
+  {
+    "id": "ielts.075",
+    "topic": "Part 1 - Numbers",
+    "question": "Are you good with numbers?",
+    "tags": [
+      "part1",
+      "daily_life"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Do you use numbers often at work or school?",
+      "Why do some people dislike math?"
+    ]
+  },
+  {
+    "id": "ielts.076",
+    "topic": "Part 1 - Dreams",
+    "question": "Do you often remember your dreams?",
+    "tags": [
+      "part1",
+      "psychology"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Do you think dreams have meanings?",
+      "Have your dreams changed over time?"
+    ]
+  },
+  {
+    "id": "ielts.077",
+    "topic": "Part 1 - Handicrafts",
+    "question": "Do you like making things by hand?",
+    "tags": [
+      "part1",
+      "hobby"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Did you learn any handicraft at school?",
+      "Why do people enjoy handmade items?"
+    ]
+  },
+  {
+    "id": "ielts.078",
+    "topic": "Part 1 - Public Holidays",
+    "question": "Do you think public holidays are important?",
+    "tags": [
+      "part1",
+      "culture"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "Should there be more public holidays?",
+      "How do holidays affect productivity?"
+    ]
+  },
+  {
+    "id": "ielts.079",
+    "topic": "Part 1 - Noise",
+    "question": "Do you live in a noisy area?",
+    "tags": [
+      "part1",
+      "environment"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "How does noise affect people?",
+      "How can noise be reduced in cities?"
+    ]
+  },
+  {
+    "id": "ielts.080",
+    "topic": "Part 1 - Transportation",
+    "question": "What is your favorite way of getting around?",
+    "tags": [
+      "part1",
+      "transport"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "Why do you prefer it?",
+      "What transport problems does your city have?"
+    ]
+  },
+  {
+    "id": "ielts.081",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you learned something from the internet. You should say what you learned, where you learned it, why you learned it, and explain how useful it was.",
+    "tags": [
+      "part2",
+      "technology"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you think online learning will replace schools?",
+      "How can people choose reliable sources online?"
+    ]
+  },
+  {
+    "id": "ielts.082",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a person you recently met and want to know better. You should say who the person is, where you met them, what you talked about, and explain why you want to know them better.",
+    "tags": [
+      "part2",
+      "people"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Is it easy to make new friends as an adult?",
+      "What qualities make someone approachable?"
+    ]
+  },
+  {
+    "id": "ielts.083",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you made a difficult decision. You should say what the decision was, what alternatives you had, what you chose, and explain why it was difficult.",
+    "tags": [
+      "part2",
+      "decision"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you ask others for advice?",
+      "How do people learn to make better decisions?"
+    ]
+  },
+  {
+    "id": "ielts.084",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a place where you study or work. You should say where it is, what it is like, what you do there, and explain why you like or dislike it.",
+    "tags": [
+      "part2",
+      "places"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "What makes a workplace productive?",
+      "How important is a quiet environment?"
+    ]
+  },
+  {
+    "id": "ielts.085",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you were late. You should say when it happened, why you were late, what happened as a result, and explain how you felt.",
+    "tags": [
+      "part2",
+      "experience"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Is being punctual important in your culture?",
+      "Why are some people always late?"
+    ]
+  },
+  {
+    "id": "ielts.086",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a piece of clothing you like. You should say what it is, when you got it, how often you wear it, and explain why you like it.",
+    "tags": [
+      "part2",
+      "objects"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do people care more about fashion now?",
+      "How does clothing reflect personality?"
+    ]
+  },
+  {
+    "id": "ielts.087",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you were proud of someone else. You should say who the person was, what they did, how you knew about it, and explain why you felt proud.",
+    "tags": [
+      "part2",
+      "people"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Is it important to praise others?",
+      "Do people express pride differently in different cultures?"
+    ]
+  },
+  {
+    "id": "ielts.088",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe an important rule in your life. You should say what the rule is, who made it, why it exists, and explain how it affects you.",
+    "tags": [
+      "part2",
+      "values"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Do you think rules make people happier?",
+      "Should children follow strict rules?"
+    ]
+  },
+  {
+    "id": "ielts.089",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe a time you tried a new food. You should say what it was, where you tried it, who you were with, and explain whether you liked it.",
+    "tags": [
+      "part2",
+      "food"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Do you like trying new things?",
+      "How do food habits vary across generations?"
+    ]
+  },
+  {
+    "id": "ielts.090",
+    "topic": "Part 2 - Cue Card",
+    "question": "Describe an outdoor activity you enjoy. You should say what it is, where you do it, how often you do it, and explain why you enjoy it.",
+    "tags": [
+      "part2",
+      "hobby"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Why do people spend less time outdoors now?",
+      "How can cities encourage outdoor activities?"
+    ]
+  },
+  {
+    "id": "ielts.091",
+    "topic": "Part 3 - Decision Making",
+    "question": "Do you think people make better decisions alone or with others?",
+    "tags": [
+      "part3",
+      "decision"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What are the dangers of group decisions?",
+      "How can people reduce decision-making bias?"
+    ]
+  },
+  {
+    "id": "ielts.092",
+    "topic": "Part 3 - Online Learning",
+    "question": "What are the advantages and disadvantages of learning online?",
+    "tags": [
+      "part3",
+      "education"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How can online courses be improved?",
+      "Do online certificates have the same value as degrees?"
+    ]
+  },
+  {
+    "id": "ielts.093",
+    "topic": "Part 3 - Rules",
+    "question": "Why do societies need rules?",
+    "tags": [
+      "part3",
+      "society"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "Should rules change over time?",
+      "What happens when rules are too strict?"
+    ]
+  },
+  {
+    "id": "ielts.094",
+    "topic": "Part 3 - Food Culture",
+    "question": "How has food culture changed due to globalization?",
+    "tags": [
+      "part3",
+      "culture"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "Is it good or bad for local cuisines?",
+      "Why do some traditional foods disappear?"
+    ]
+  },
+  {
+    "id": "ielts.095",
+    "topic": "Part 3 - Outdoor Activities",
+    "question": "Why do some people prefer outdoor activities while others prefer indoor ones?",
+    "tags": [
+      "part3",
+      "health"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "How does the environment affect people's choices?",
+      "Should schools encourage outdoor activities?"
+    ]
+  },
+  {
+    "id": "ielts.096",
+    "topic": "Part 3 - Fashion",
+    "question": "Do you think people should care about fashion?",
+    "tags": [
+      "part3",
+      "society"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "How does fashion influence self-confidence?",
+      "Is fast fashion a problem?"
+    ]
+  },
+  {
+    "id": "ielts.097",
+    "topic": "Part 3 - Punctuality",
+    "question": "Why is punctuality more important in some cultures than others?",
+    "tags": [
+      "part3",
+      "culture"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How does punctuality affect workplace relationships?",
+      "Should schools teach punctuality?"
+    ]
+  },
+  {
+    "id": "ielts.098",
+    "topic": "Part 3 - Pride",
+    "question": "Is it common for people to praise others in your culture? Why?",
+    "tags": [
+      "part3",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "What are the benefits of praise?",
+      "Can too much praise be harmful?"
+    ]
+  },
+  {
+    "id": "ielts.099",
+    "topic": "Part 3 - News",
+    "question": "Why do some people prefer getting news from social media rather than traditional media?",
+    "tags": [
+      "part3",
+      "media"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "How can people verify information?",
+      "Should governments control misinformation?"
+    ]
+  },
+  {
+    "id": "ielts.100",
+    "topic": "Part 3 - Future",
+    "question": "What changes do you expect in people's lifestyles in the next 20 years?",
+    "tags": [
+      "part3",
+      "society"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "What might drive these changes?",
+      "How should governments prepare for them?"
+    ]
+  }
+]

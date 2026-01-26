@@ -1,0 +1,1417 @@
+[
+  {
+    "id": "hr.001",
+    "topic": "自我介绍",
+    "question": "用2分钟做自我介绍：背景、亮点、近期目标。",
+    "tags": [
+      "intro",
+      "communication"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "你最想被记住的三个关键词是什么？",
+      "你为什么觉得你适合这个岗位？"
+    ]
+  },
+  {
+    "id": "hr.002",
+    "topic": "动机",
+    "question": "你为什么考虑换工作？真实原因是什么？",
+    "tags": [
+      "motivation"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "如果不换，你现在的风险是什么？",
+      "你对新机会最在意的三点是什么？"
+    ]
+  },
+  {
+    "id": "hr.003",
+    "topic": "选择标准",
+    "question": "你选择一份工作的标准是什么？优先级如何排序？",
+    "tags": [
+      "motivation",
+      "values"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "给我一个取舍例子。",
+      "哪些底线你绝不妥协？"
+    ]
+  },
+  {
+    "id": "hr.004",
+    "topic": "离职原因",
+    "question": "你上一份工作离职的直接原因是什么？",
+    "tags": [
+      "career"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你是否尝试过内部解决？结果如何？",
+      "你从这段经历学到了什么？"
+    ]
+  },
+  {
+    "id": "hr.005",
+    "topic": "职业规划",
+    "question": "你未来1年/3年/5年的职业规划是什么？",
+    "tags": [
+      "career",
+      "planning"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你具体怎么达成？",
+      "如果规划偏离你如何调整？"
+    ]
+  },
+  {
+    "id": "hr.006",
+    "topic": "优势",
+    "question": "你认为你的核心优势是什么？请用STAR讲一个例子证明。",
+    "tags": [
+      "strengths",
+      "star"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "这个优势在新岗位如何转化为价值？",
+      "这个优势的副作用是什么？"
+    ]
+  },
+  {
+    "id": "hr.007",
+    "topic": "短板",
+    "question": "你最大的短板是什么？你如何改进？",
+    "tags": [
+      "weakness",
+      "growth"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "给我一个你因此吃亏的真实例子。",
+      "你怎么证明你真的在改？"
+    ]
+  },
+  {
+    "id": "hr.008",
+    "topic": "失败",
+    "question": "讲一个你失败的经历：你做错了什么？",
+    "tags": [
+      "failure",
+      "star"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你当时有哪些替代选择？",
+      "你如何防止复发？"
+    ]
+  },
+  {
+    "id": "hr.009",
+    "topic": "复盘",
+    "question": "你平时如何复盘？给我一个复盘后真的改变行为的例子。",
+    "tags": [
+      "learning",
+      "process"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何衡量复盘是否有效？",
+      "复盘中最难面对的是什么？"
+    ]
+  },
+  {
+    "id": "hr.010",
+    "topic": "压力",
+    "question": "你压力最大的时刻是什么？你如何应对？",
+    "tags": [
+      "stress",
+      "resilience"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "有没有崩溃过？发生了什么？",
+      "你的压力源通常来自哪里？"
+    ]
+  },
+  {
+    "id": "hr.011",
+    "topic": "冲突",
+    "question": "讲一次你与同事/上级发生冲突的经历，你如何处理？",
+    "tags": [
+      "conflict",
+      "star"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你在冲突中最容易犯的错是什么？",
+      "你如何保证不把冲突升级？"
+    ]
+  },
+  {
+    "id": "hr.012",
+    "topic": "反馈",
+    "question": "讲一次你收到负面反馈的经历，你如何回应并改进？",
+    "tags": [
+      "feedback",
+      "growth"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你当时的第一反应是什么？",
+      "你如何确认改进被看见？"
+    ]
+  },
+  {
+    "id": "hr.013",
+    "topic": "影响力",
+    "question": "讲一次你没有职权但推动事情成功的经历。",
+    "tags": [
+      "influence",
+      "star"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你用了哪些策略？",
+      "如果失败你准备怎么兜底？"
+    ]
+  },
+  {
+    "id": "hr.014",
+    "topic": "沟通",
+    "question": "讲一次你沟通失误导致问题的经历，你从中学到什么？",
+    "tags": [
+      "communication",
+      "failure"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你后来怎么改？",
+      "你如何避免信息不对称？"
+    ]
+  },
+  {
+    "id": "hr.015",
+    "topic": "协作",
+    "question": "你如何与难相处的人合作？给一个例子。",
+    "tags": [
+      "collaboration",
+      "conflict"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何处理对方情绪？",
+      "你如何保护自己的边界？"
+    ]
+  },
+  {
+    "id": "hr.016",
+    "topic": "价值观",
+    "question": "你最看重的价值观是什么？它如何影响你的选择？",
+    "tags": [
+      "values"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "当价值观与利益冲突你怎么选？",
+      "给我一个真实取舍例子。"
+    ]
+  },
+  {
+    "id": "hr.017",
+    "topic": "诚信",
+    "question": "讲一次你坚持原则但不讨好人的经历。",
+    "tags": [
+      "values",
+      "integrity"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "代价是什么？",
+      "你如何向相关方解释？"
+    ]
+  },
+  {
+    "id": "hr.018",
+    "topic": "学习能力",
+    "question": "你最近半年学到的最重要的东西是什么？你如何学习的？",
+    "tags": [
+      "learning"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你如何验证你真的掌握？",
+      "你如何把学习转成产出？"
+    ]
+  },
+  {
+    "id": "hr.019",
+    "topic": "自驱",
+    "question": "讲一次没有人要求你但你主动做的事情，带来了什么影响？",
+    "tags": [
+      "ownership",
+      "motivation"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你为什么愿意做？",
+      "你如何争取资源？"
+    ]
+  },
+  {
+    "id": "hr.020",
+    "topic": "目标感",
+    "question": "你如何设定个人目标并持续推进？",
+    "tags": [
+      "planning",
+      "self_management"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何拆分目标？",
+      "目标失败你怎么处理？"
+    ]
+  },
+  {
+    "id": "hr.021",
+    "topic": "时间管理",
+    "question": "你如何管理时间与优先级？给一个你做取舍的例子。",
+    "tags": [
+      "self_management"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何处理突发打断？",
+      "你是否会拒绝？怎么拒绝？"
+    ]
+  },
+  {
+    "id": "hr.022",
+    "topic": "抗压",
+    "question": "讲一次你在高压下仍交付结果的经历。",
+    "tags": [
+      "resilience",
+      "star"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何保证质量？",
+      "你如何避免透支？"
+    ]
+  },
+  {
+    "id": "hr.023",
+    "topic": "情绪管理",
+    "question": "讲一次你情绪失控或接近失控的经历，你怎么处理？",
+    "tags": [
+      "emotional_intelligence"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你触发点是什么？",
+      "你如何建立预防机制？"
+    ]
+  },
+  {
+    "id": "hr.024",
+    "topic": "同理心",
+    "question": "讲一次你理解他人处境并调整做法的经历。",
+    "tags": [
+      "empathy",
+      "collaboration"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何确认对方被理解？",
+      "同理心与边界如何平衡？"
+    ]
+  },
+  {
+    "id": "hr.025",
+    "topic": "领导力",
+    "question": "你带过团队/带过人吗？讲一次带人成长的例子。",
+    "tags": [
+      "leadership",
+      "coaching"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何因人施策？",
+      "你如何处理对方不配合？"
+    ]
+  },
+  {
+    "id": "hr.026",
+    "topic": "承担责任",
+    "question": "讲一次你承担责任并解决问题的经历，即使不是你的锅。",
+    "tags": [
+      "ownership",
+      "values"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何对外沟通？",
+      "你如何避免被当成背锅？"
+    ]
+  },
+  {
+    "id": "hr.027",
+    "topic": "风险意识",
+    "question": "讲一次你预判风险并提前避免事故的经历。",
+    "tags": [
+      "risk",
+      "ownership"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你靠什么信号判断？",
+      "你如何说服别人相信风险？"
+    ]
+  },
+  {
+    "id": "hr.028",
+    "topic": "细节与严谨",
+    "question": "讲一次你因为细节/严谨避免损失的经历。",
+    "tags": [
+      "execution",
+      "quality"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何建立检查机制？",
+      "如何避免过度追求完美拖慢进度？"
+    ]
+  },
+  {
+    "id": "hr.029",
+    "topic": "适应变化",
+    "question": "讲一次需求/环境巨变，你如何快速适应并调整计划？",
+    "tags": [
+      "adaptability",
+      "star"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何处理不确定性？",
+      "你如何保持团队士气？"
+    ]
+  },
+  {
+    "id": "hr.030",
+    "topic": "挫折",
+    "question": "讲一次你遭遇挫折但最终走出来的经历。",
+    "tags": [
+      "resilience",
+      "growth"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你做了哪些具体行动？",
+      "你如何避免同类挫折？"
+    ]
+  },
+  {
+    "id": "hr.031",
+    "topic": "成就",
+    "question": "你最有成就感的一件事是什么？为什么？",
+    "tags": [
+      "motivation",
+      "values"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "这体现了你什么特质？",
+      "你在其中的具体贡献是什么？"
+    ]
+  },
+  {
+    "id": "hr.032",
+    "topic": "团队合作",
+    "question": "讲一次你在团队里扮演关键角色推动成功的经历。",
+    "tags": [
+      "collaboration",
+      "star"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何处理分歧？",
+      "你如何分配功劳？"
+    ]
+  },
+  {
+    "id": "hr.033",
+    "topic": "跨部门",
+    "question": "讲一次跨部门合作失败或很难的经历，你怎么处理？",
+    "tags": [
+      "stakeholder",
+      "conflict"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何识别关键干系人？",
+      "你如何重建信任？"
+    ]
+  },
+  {
+    "id": "hr.034",
+    "topic": "说服力",
+    "question": "讲一次你说服他人改变想法的经历。",
+    "tags": [
+      "influence",
+      "communication"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你用了哪些证据？",
+      "对方不同意时你怎么退让？"
+    ]
+  },
+  {
+    "id": "hr.035",
+    "topic": "表达",
+    "question": "你如何向非专业的人解释复杂问题？给一个例子。",
+    "tags": [
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何判断对方听懂了？",
+      "你如何处理对方误解？"
+    ]
+  },
+  {
+    "id": "hr.036",
+    "topic": "边界感",
+    "question": "你如何设定工作边界？如何拒绝不合理要求？",
+    "tags": [
+      "self_management",
+      "communication"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你拒绝过吗？结果如何？",
+      "你如何避免被贴标签？"
+    ]
+  },
+  {
+    "id": "hr.037",
+    "topic": "道德困境",
+    "question": "讲一次你遇到道德/合规困境的经历，你怎么选择？",
+    "tags": [
+      "integrity",
+      "values"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你评估了哪些后果？",
+      "你如何向他人解释？"
+    ]
+  },
+  {
+    "id": "hr.038",
+    "topic": "合规意识",
+    "question": "你如何理解合规？讲一个你因合规做出取舍的例子。",
+    "tags": [
+      "governance",
+      "values"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "合规与效率冲突怎么处理？",
+      "你如何推动他人遵守？"
+    ]
+  },
+  {
+    "id": "hr.039",
+    "topic": "职业转折",
+    "question": "你职业生涯里最大的转折是什么？你为什么做那个选择？",
+    "tags": [
+      "career",
+      "decision"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "如果重来一次还会选吗？",
+      "你从中学到什么？"
+    ]
+  },
+  {
+    "id": "hr.040",
+    "topic": "与上级关系",
+    "question": "你如何与上级协作？讲一次你与上级意见不同的经历。",
+    "tags": [
+      "stakeholder",
+      "conflict"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你怎么表达不同意见？",
+      "最终结果如何？"
+    ]
+  },
+  {
+    "id": "hr.041",
+    "topic": "与下属关系",
+    "question": "你如何与下属/新人协作？讲一次你辅导他人的经历。",
+    "tags": [
+      "coaching",
+      "leadership"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何给建议而不替他做？",
+      "你如何衡量辅导效果？"
+    ]
+  },
+  {
+    "id": "hr.042",
+    "topic": "自我认知",
+    "question": "别人最常夸你什么？最常批评你什么？你怎么看？",
+    "tags": [
+      "self_awareness"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何验证这些反馈真实？",
+      "你如何改进被批评的点？"
+    ]
+  },
+  {
+    "id": "hr.043",
+    "topic": "成长路径",
+    "question": "你过去一年最大的成长是什么？为什么会成长？",
+    "tags": [
+      "growth",
+      "learning"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你做了哪些具体行动？",
+      "你如何持续保持成长？"
+    ]
+  },
+  {
+    "id": "hr.044",
+    "topic": "学习方法",
+    "question": "你遇到陌生领域时如何学习？请说出你的方法步骤。",
+    "tags": [
+      "learning",
+      "process"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你如何判断学到可用水平？",
+      "你如何避免学偏方向？"
+    ]
+  },
+  {
+    "id": "hr.045",
+    "topic": "计划能力",
+    "question": "你如何制定计划并跟踪执行？给一个真实例子。",
+    "tags": [
+      "planning",
+      "execution"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何处理执行中变化？",
+      "你如何做复盘与调整？"
+    ]
+  },
+  {
+    "id": "hr.046",
+    "topic": "自律",
+    "question": "讲一次你坚持长期目标但短期很痛苦的经历。",
+    "tags": [
+      "motivation",
+      "resilience"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你靠什么坚持？",
+      "你如何避免倦怠？"
+    ]
+  },
+  {
+    "id": "hr.047",
+    "topic": "责任与归因",
+    "question": "当团队出问题时你习惯怎么归因？讲一个例子。",
+    "tags": [
+      "ownership",
+      "communication"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何避免甩锅？",
+      "你如何推动问题解决？"
+    ]
+  },
+  {
+    "id": "hr.048",
+    "topic": "团队评价",
+    "question": "你希望同事如何评价你？你在现实中做到了吗？",
+    "tags": [
+      "values",
+      "self_awareness"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "给一个证据。",
+      "有哪些差距？"
+    ]
+  },
+  {
+    "id": "hr.049",
+    "topic": "职业底线",
+    "question": "你有哪些职业底线？遇到触碰底线你会怎么做？",
+    "tags": [
+      "integrity",
+      "values"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你遇到过吗？怎么处理？",
+      "如果代价很大你还会坚持吗？"
+    ]
+  },
+  {
+    "id": "hr.050",
+    "topic": "工作与生活",
+    "question": "工作与生活你如何平衡？你如何防止长期透支？",
+    "tags": [
+      "self_management",
+      "resilience"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你有哪些习惯？",
+      "遇到高压阶段你怎么调整？"
+    ]
+  },
+  {
+    "id": "hr.051",
+    "topic": "文化匹配",
+    "question": "你理想的团队文化是什么？你无法接受的文化是什么？",
+    "tags": [
+      "values",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你为什么在意这些？",
+      "给一个你不适应文化的例子。"
+    ]
+  },
+  {
+    "id": "hr.052",
+    "topic": "诚信问题",
+    "question": "如果你发现同事在数据/汇报里造假，你会怎么处理？",
+    "tags": [
+      "integrity",
+      "conflict"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你如何保全证据？",
+      "你如何处理人际风险？"
+    ]
+  },
+  {
+    "id": "hr.053",
+    "topic": "保密意识",
+    "question": "你如何处理敏感信息与保密？给一个例子。",
+    "tags": [
+      "governance",
+      "values"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你遇到过泄密风险吗？",
+      "你如何教育他人？"
+    ]
+  },
+  {
+    "id": "hr.054",
+    "topic": "沟通风格",
+    "question": "你的沟通风格是什么？给一个你刻意调整沟通方式的例子。",
+    "tags": [
+      "communication",
+      "self_awareness"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何识别对方偏好？",
+      "你如何处理对方误解？"
+    ]
+  },
+  {
+    "id": "hr.055",
+    "topic": "演讲与汇报",
+    "question": "讲一次你公开汇报的经历：你如何准备、表达、应对质疑？",
+    "tags": [
+      "communication",
+      "influence"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "质疑最尖锐的点是什么？",
+      "你怎么回答？"
+    ]
+  },
+  {
+    "id": "hr.056",
+    "topic": "谈判",
+    "question": "讲一次你谈判成功或失败的经历：你如何准备与复盘？",
+    "tags": [
+      "communication",
+      "stakeholder"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你最关键的筹码是什么？",
+      "你如何控制情绪？"
+    ]
+  },
+  {
+    "id": "hr.057",
+    "topic": "同事评价",
+    "question": "请给我3个你同事会用来形容你的词，并解释来源。",
+    "tags": [
+      "self_awareness"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "有哪些反面评价？",
+      "你如何看待？"
+    ]
+  },
+  {
+    "id": "hr.058",
+    "topic": "决策风格",
+    "question": "你做决策更偏快还是稳？给一个例子说明。",
+    "tags": [
+      "decision",
+      "self_awareness"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "快的代价是什么？",
+      "稳的代价是什么？"
+    ]
+  },
+  {
+    "id": "hr.059",
+    "topic": "面对不确定",
+    "question": "不确定性很高的任务你如何推进？",
+    "tags": [
+      "adaptability",
+      "planning"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何设定阶段目标？",
+      "你如何减少焦虑？"
+    ]
+  },
+  {
+    "id": "hr.060",
+    "topic": "拒绝能力",
+    "question": "讲一次你拒绝他人请求的经历：你怎么说的？",
+    "tags": [
+      "communication",
+      "boundaries"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "对方反应如何？",
+      "你如何维持关系？"
+    ]
+  },
+  {
+    "id": "hr.061",
+    "topic": "责任升级",
+    "question": "当你发现风险但没人重视，你如何升级推动？",
+    "tags": [
+      "risk",
+      "influence"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你会用哪些证据？",
+      "如果仍然不重视你怎么做？"
+    ]
+  },
+  {
+    "id": "hr.062",
+    "topic": "跨文化",
+    "question": "与不同文化背景的人合作你遇到过什么挑战？怎么解决？",
+    "tags": [
+      "collaboration",
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何避免误解？",
+      "你如何建立共同工作方式？"
+    ]
+  },
+  {
+    "id": "hr.063",
+    "topic": "职业自我驱动",
+    "question": "没有外部压力时你如何保持自驱？",
+    "tags": [
+      "motivation"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何建立自我激励系统？",
+      "你如何避免三分钟热度？"
+    ]
+  },
+  {
+    "id": "hr.064",
+    "topic": "价值冲突",
+    "question": "当你个人价值观与公司决策冲突时你怎么处理？",
+    "tags": [
+      "values",
+      "conflict"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你会选择离开吗？阈值是什么？",
+      "你如何与他人沟通？"
+    ]
+  },
+  {
+    "id": "hr.065",
+    "topic": "目标对齐",
+    "question": "你如何确保自己做的事情与团队目标对齐？",
+    "tags": [
+      "execution",
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何判断偏离？",
+      "你如何主动纠偏？"
+    ]
+  },
+  {
+    "id": "hr.066",
+    "topic": "复盘深度",
+    "question": "一次复盘你会问自己哪些问题？请列出你的清单。",
+    "tags": [
+      "learning",
+      "process"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何把问题变成行动？",
+      "你如何防止行动项不了了之？"
+    ]
+  },
+  {
+    "id": "hr.067",
+    "topic": "客户/用户思维",
+    "question": "讲一次你从客户/用户视角推动改进的经历。",
+    "tags": [
+      "customer_focus",
+      "influence"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何收集用户声音？",
+      "你如何把用户声音转成行动？"
+    ]
+  },
+  {
+    "id": "hr.068",
+    "topic": "团队贡献",
+    "question": "你如何定义“团队贡献”？给一个你支持他人的例子。",
+    "tags": [
+      "collaboration",
+      "values"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何处理功劳分配？",
+      "你如何应对被忽视？"
+    ]
+  },
+  {
+    "id": "hr.069",
+    "topic": "主动承认错误",
+    "question": "讲一次你主动承认错误的经历，你怎么做的？",
+    "tags": [
+      "integrity",
+      "growth"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "对你有什么代价？",
+      "你如何修复信任？"
+    ]
+  },
+  {
+    "id": "hr.070",
+    "topic": "创新",
+    "question": "讲一次你提出创新并落地的经历。",
+    "tags": [
+      "innovation",
+      "influence"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何争取资源？",
+      "创新失败你如何止损？"
+    ]
+  },
+  {
+    "id": "hr.071",
+    "topic": "持续改进",
+    "question": "讲一次你持续改进流程/工具提升效率的经历。",
+    "tags": [
+      "process",
+      "ownership"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "改进前后差异如何量化？",
+      "你如何推动他人采用？"
+    ]
+  },
+  {
+    "id": "hr.072",
+    "topic": "职业转型",
+    "question": "你是否考虑过转型？你如何评估转型风险？",
+    "tags": [
+      "career",
+      "decision"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你为转型做了哪些准备？",
+      "你如何验证自己适合？"
+    ]
+  },
+  {
+    "id": "hr.073",
+    "topic": "职业成功定义",
+    "question": "你如何定义职业成功？它会影响你当下选择吗？",
+    "tags": [
+      "values",
+      "career"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何衡量成功？",
+      "成功定义会变化吗？"
+    ]
+  },
+  {
+    "id": "hr.074",
+    "topic": "长期主义",
+    "question": "讲一次你为长期收益牺牲短期利益的经历。",
+    "tags": [
+      "values",
+      "decision"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何抵抗短期诱惑？",
+      "最终结果如何？"
+    ]
+  },
+  {
+    "id": "hr.075",
+    "topic": "复合能力",
+    "question": "你认为你身上最稀缺的复合能力是什么？",
+    "tags": [
+      "strengths",
+      "self_awareness"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "给例子证明。",
+      "你如何持续强化它？"
+    ]
+  },
+  {
+    "id": "hr.076",
+    "topic": "习惯",
+    "question": "你最影响你效率的一个习惯是什么？",
+    "tags": [
+      "self_management"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你如何形成这个习惯？",
+      "你如何改掉坏习惯？"
+    ]
+  },
+  {
+    "id": "hr.077",
+    "topic": "阅读与输入",
+    "question": "你如何获取信息与学习？你如何判断信息质量？",
+    "tags": [
+      "learning"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你有哪些信息源？",
+      "你如何避免信息过载？"
+    ]
+  },
+  {
+    "id": "hr.078",
+    "topic": "健康与工作",
+    "question": "健康问题影响工作时你如何处理？你如何建立可持续节奏？",
+    "tags": [
+      "resilience",
+      "self_management"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你会向团队说明吗？",
+      "你如何管理预期？"
+    ]
+  },
+  {
+    "id": "hr.079",
+    "topic": "边界与责任",
+    "question": "当你发现团队做法不合理但又不是你职责范围，你怎么处理？",
+    "tags": [
+      "ownership",
+      "communication"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何避免越界？",
+      "你如何推动改进？"
+    ]
+  },
+  {
+    "id": "hr.080",
+    "topic": "公平感",
+    "question": "团队中出现不公平感你如何处理？",
+    "tags": [
+      "leadership",
+      "communication"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何收集事实？",
+      "你如何公开透明地沟通？"
+    ]
+  },
+  {
+    "id": "hr.081",
+    "topic": "信任",
+    "question": "你如何建立信任？讲一次你失去信任又重新建立的经历。",
+    "tags": [
+      "trust",
+      "communication"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "失去信任的根因是什么？",
+      "你如何证明自己改变了？"
+    ]
+  },
+  {
+    "id": "hr.082",
+    "topic": "责任心",
+    "question": "你如何证明你有责任心？请用一个具体例子。",
+    "tags": [
+      "ownership",
+      "star"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你承担了哪些代价？",
+      "你如何避免过度承担？"
+    ]
+  },
+  {
+    "id": "hr.083",
+    "topic": "成就动机",
+    "question": "你做事的主要驱动力是什么？",
+    "tags": [
+      "motivation"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "当驱动力消失你怎么调整？",
+      "你如何保持长期动力？"
+    ]
+  },
+  {
+    "id": "hr.084",
+    "topic": "价值冲突处理",
+    "question": "讲一次你为了原则与他人对立的经历。",
+    "tags": [
+      "integrity",
+      "conflict"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你如何控制冲突伤害？",
+      "你如何寻找共同点？"
+    ]
+  },
+  {
+    "id": "hr.085",
+    "topic": "自我边界",
+    "question": "你如何避免把工作压力带到生活？",
+    "tags": [
+      "self_management",
+      "resilience"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你有哪些具体方法？",
+      "当方法失效你怎么办？"
+    ]
+  },
+  {
+    "id": "hr.086",
+    "topic": "承诺管理",
+    "question": "你如何管理承诺？你如何避免过度承诺导致失信？",
+    "tags": [
+      "execution",
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你是否曾经失信？怎么补救？",
+      "你如何对外管理预期？"
+    ]
+  },
+  {
+    "id": "hr.087",
+    "topic": "人际敏感度",
+    "question": "你如何识别团队中的潜在矛盾与情绪？",
+    "tags": [
+      "emotional_intelligence",
+      "leadership"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你如何介入不激化？",
+      "你如何保护弱势方？"
+    ]
+  },
+  {
+    "id": "hr.088",
+    "topic": "抗打击",
+    "question": "你如何面对被否定、被拒绝？讲一个例子。",
+    "tags": [
+      "resilience",
+      "growth"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何从否定中提取信息？",
+      "你如何恢复自信？"
+    ]
+  },
+  {
+    "id": "hr.089",
+    "topic": "复盘诚实度",
+    "question": "你做复盘时最难承认的是什么？为什么？",
+    "tags": [
+      "self_awareness",
+      "learning"
+    ],
+    "difficulty": 8,
+    "followups": [
+      "你如何克服心理防御？",
+      "你如何让复盘更诚实？"
+    ]
+  },
+  {
+    "id": "hr.090",
+    "topic": "职业焦虑",
+    "question": "你是否有职业焦虑？焦虑点是什么？你如何处理？",
+    "tags": [
+      "career",
+      "resilience"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "焦虑带来过哪些行为？",
+      "你如何把焦虑转成行动？"
+    ]
+  },
+  {
+    "id": "hr.091",
+    "topic": "适配度",
+    "question": "你觉得自己最不适配的工作环境是什么？为什么？",
+    "tags": [
+      "culture",
+      "values"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "你经历过吗？结果如何？",
+      "你如何提前识别不适配？"
+    ]
+  },
+  {
+    "id": "hr.092",
+    "topic": "领导期待",
+    "question": "你希望领导如何对待你？你最不能接受什么管理方式？",
+    "tags": [
+      "culture",
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何与领导对齐期待？",
+      "期待不一致你怎么处理？"
+    ]
+  },
+  {
+    "id": "hr.093",
+    "topic": "团队期待",
+    "question": "你希望团队如何协作？你最怕的团队习惯是什么？",
+    "tags": [
+      "culture",
+      "collaboration"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何推动形成好习惯？",
+      "遇到坏习惯你怎么改变？"
+    ]
+  },
+  {
+    "id": "hr.094",
+    "topic": "薪资期望",
+    "question": "你的薪资期望是什么？你如何给出这个数字？",
+    "tags": [
+      "compensation",
+      "communication"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你最看重薪资还是成长？如何取舍？",
+      "如果不满足你会怎么做？"
+    ]
+  },
+  {
+    "id": "hr.095",
+    "topic": "Offer选择",
+    "question": "你同时有两个Offer，你如何做选择？你依据是什么？",
+    "tags": [
+      "decision",
+      "career"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何降低选择后悔？",
+      "你如何评估长期风险？"
+    ]
+  },
+  {
+    "id": "hr.096",
+    "topic": "试用期",
+    "question": "试用期你会如何设定目标并证明价值？",
+    "tags": [
+      "execution",
+      "planning"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你前30天会做什么？",
+      "你如何争取关键资源？"
+    ]
+  },
+  {
+    "id": "hr.097",
+    "topic": "离职交接",
+    "question": "你如何做离职交接？如何体现职业化？",
+    "tags": [
+      "professionalism",
+      "process"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "你如何处理未完成工作？",
+      "你如何与团队保持关系？"
+    ]
+  },
+  {
+    "id": "hr.098",
+    "topic": "职业底色",
+    "question": "你认为你身上最稳定的‘职业底色’是什么？",
+    "tags": [
+      "values",
+      "self_awareness"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "它如何在压力下体现？",
+      "它可能带来哪些盲点？"
+    ]
+  },
+  {
+    "id": "hr.099",
+    "topic": "文化适配验证",
+    "question": "你如何验证一家公司文化是否适合你？你会问哪些问题？",
+    "tags": [
+      "culture",
+      "decision"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "你如何识别面试中的包装？",
+      "你如何做信息交叉验证？"
+    ]
+  },
+  {
+    "id": "hr.100",
+    "topic": "总结",
+    "question": "如果让你用一句话总结你能带来的价值，会是什么？",
+    "tags": [
+      "communication",
+      "self_awareness"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "给一个证据支撑。",
+      "你最担心的风险是什么？"
+    ]
+  },
+  {
+    "id": "hr.101",
+    "topic": "行业洞察",
+    "question": "你如何看待所在行业未来的发展趋势？",
+    "tags": [
+      "vision",
+      "learning"
+    ],
+    "difficulty": 7,
+    "followups": [
+      "这对你的职业规划有什么影响？",
+      "你如何准备应对变化？"
+    ]
+  },
+  {
+    "id": "hr.102",
+    "topic": "同辈压力",
+    "question": "你如何看待同龄人比你成功？",
+    "tags": [
+      "self_management",
+      "psychology"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "这会给你带来动力还是焦虑？",
+      "你如何定义自己的节奏？"
+    ]
+  }
+]

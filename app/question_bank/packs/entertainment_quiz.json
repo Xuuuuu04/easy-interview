@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "ent.001",
+    "topic": "电影知识",
+    "question": "《肖申克的救赎》中，主角安迪在监狱里通过什么方式掩盖挖洞的声音？",
+    "tags": [
+      "movie",
+      "trivia"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "他用了多久挖通地道？",
+      "电影改编自谁的小说？"
+    ]
+  },
+  {
+    "id": "ent.002",
+    "topic": "电影知识",
+    "question": "漫威电影宇宙中，灭霸打响指后消失了一半生命，这个事件被称为？",
+    "tags": [
+      "movie",
+      "marvel"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "哪部电影逆转了这个事件？",
+      "钢铁侠最后的台词是什么？"
+    ]
+  },
+  {
+    "id": "ent.003",
+    "topic": "音乐知识",
+    "question": "被称为“流行音乐之王”的歌手是谁？",
+    "tags": [
+      "music",
+      "pop"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "他最畅销的专辑是哪张？",
+      "他的标志性舞步叫什么？"
+    ]
+  },
+  {
+    "id": "ent.004",
+    "topic": "音乐知识",
+    "question": "贝多芬在失去什么感觉后创作了《第九交响曲》？",
+    "tags": [
+      "music",
+      "classical"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "这首曲子的终章合唱是哪首诗？",
+      "贝多芬一共写了几部交响曲？"
+    ]
+  },
+  {
+    "id": "ent.005",
+    "topic": "文学常识",
+    "question": "《哈利·波特》系列小说中，哈利的猫头鹰叫什么名字？",
+    "tags": [
+      "literature",
+      "fantasy"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "它是什么品种的猫头鹰？",
+      "它在第几部书中牺牲了？"
+    ]
+  },
+  {
+    "id": "ent.006",
+    "topic": "文学常识",
+    "question": "中国四大名著中，描写孙悟空保唐僧西天取经的是哪一部？",
+    "tags": [
+      "literature",
+      "classic"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "作者是谁？",
+      "孙悟空被压在什么山下？"
+    ]
+  },
+  {
+    "id": "ent.007",
+    "topic": "动漫知识",
+    "question": "《海贼王》中，路飞吃下的恶魔果实叫什么？",
+    "tags": [
+      "anime",
+      "manga"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "现在果实名称揭晓后叫什么？",
+      "路飞的草帽是谁给他的？"
+    ]
+  },
+  {
+    "id": "ent.008",
+    "topic": "动漫知识",
+    "question": "宫崎骏执导的电影中，获得奥斯卡最佳动画长片奖的是哪一部？",
+    "tags": [
+      "anime",
+      "ghibli"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "电影中的无脸男代表了什么？",
+      "千寻的名字被谁夺走了？"
+    ]
+  },
+  {
+    "id": "ent.009",
+    "topic": "游戏知识",
+    "question": "《英雄联盟》中，召唤师峡谷的最终BOSS生物叫什么？",
+    "tags": [
+      "gaming",
+      "esports"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "击杀它会获得什么增益？",
+      "它通常在多少分钟刷新？"
+    ]
+  },
+  {
+    "id": "ent.010",
+    "topic": "游戏知识",
+    "question": "任天堂的招牌角色马里奥，最初在《大金刚》中登场时的职业是什么？",
+    "tags": [
+      "gaming",
+      "history"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "他的弟弟叫什么？",
+      "马里奥的配色为什么是红蓝？"
+    ]
+  },
+  {
+    "id": "ent.011",
+    "topic": "体育知识",
+    "question": "足球比赛中，世界杯每几年举办一次？",
+    "tags": [
+      "sports",
+      "football"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "2022年世界杯冠军是哪个国家？",
+      "世界杯历史上夺冠次数最多的国家是？"
+    ]
+  },
+  {
+    "id": "ent.012",
+    "topic": "体育知识",
+    "question": "篮球比赛中，三分线外投篮命中得几分？",
+    "tags": [
+      "sports",
+      "basketball"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "罚球命中得几分？",
+      "NBA历史得分王是谁？"
+    ]
+  },
+  {
+    "id": "ent.013",
+    "topic": "明星八卦",
+    "question": "好莱坞著名演员莱昂纳多·迪卡普里奥凭借哪部电影获得了奥斯卡影帝？",
+    "tags": [
+      "celebrity",
+      "movie"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "他在电影中扮演了什么角色？",
+      "他曾因哪部电影风靡全球？"
+    ]
+  },
+  {
+    "id": "ent.014",
+    "topic": "综艺节目",
+    "question": "韩国综艺《Running Man》中，被称为“能力者”的成员是谁？",
+    "tags": [
+      "variety",
+      "korea"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "他的标志性名牌是什么？",
+      "他和谁组成了“周一情侣”？"
+    ]
+  },
+  {
+    "id": "ent.015",
+    "topic": "艺术知识",
+    "question": "达芬奇的名画《蒙娜丽莎》现收藏于哪个博物馆？",
+    "tags": [
+      "art",
+      "history"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "这个博物馆位于哪个城市？",
+      "画中人物的微笑为什么神秘？"
+    ]
+  },
+  {
+    "id": "ent.016",
+    "topic": "历史趣闻",
+    "question": "据说牛顿被什么砸中后发现了万有引力定律？",
+    "tags": [
+      "history",
+      "science"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "这个故事是真实的吗？",
+      "牛顿还发明了什么数学工具？"
+    ]
+  },
+  {
+    "id": "ent.017",
+    "topic": "地理常识",
+    "question": "世界上海拔最高的山峰是哪一座？",
+    "tags": [
+      "geography",
+      "nature"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "它位于哪两个国家边境？",
+      "它的高度是多少？"
+    ]
+  },
+  {
+    "id": "ent.018",
+    "topic": "美食文化",
+    "question": "“满汉全席”起源于中国的哪个朝代？",
+    "tags": [
+      "food",
+      "culture"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "它主要包含哪两个民族的菜肴？",
+      "现在还能吃到正宗的满汉全席吗？"
+    ]
+  },
+  {
+    "id": "ent.019",
+    "topic": "科幻电影",
+    "question": "电影《黑客帝国》中，尼奥选择了红色药丸还是蓝色药丸？",
+    "tags": [
+      "movie",
+      "scifi"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "红色药丸代表什么？",
+      "蓝色药丸代表什么？"
+    ]
+  },
+  {
+    "id": "ent.020",
+    "topic": "超级英雄",
+    "question": "蝙蝠侠的真实身份是谁？",
+    "tags": [
+      "comics",
+      "dc"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "他所在的城市叫什么？",
+      "他的管家叫什么名字？"
+    ]
+  },
+  {
+    "id": "ent.021",
+    "topic": "电视剧",
+    "question": "美剧《权力的游戏》中，这一家的族语是“凛冬将至”。",
+    "tags": [
+      "tv",
+      "fantasy"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "这是哪个家族？",
+      "该剧改编自哪部小说？"
+    ]
+  },
+  {
+    "id": "ent.022",
+    "topic": "网络迷因",
+    "question": "“Never Gonna Give You Up”这首歌被用来恶作剧的现象被称为什么？",
+    "tags": [
+      "internet",
+      "meme"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "歌手是谁？",
+      "这个梗起源于哪里？"
+    ]
+  },
+  {
+    "id": "ent.023",
+    "topic": "时尚",
+    "question": "香奈儿品牌的创始人是谁？",
+    "tags": [
+      "fashion",
+      "history"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "她的经典设计有哪些？",
+      "香奈儿5号香水为什么出名？"
+    ]
+  },
+  {
+    "id": "ent.024",
+    "topic": "舞蹈",
+    "question": "芭蕾舞起源于哪个国家？",
+    "tags": [
+      "dance",
+      "art"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "它在哪个国家得到了极大发展？",
+      "《天鹅湖》的作曲家是谁？"
+    ]
+  },
+  {
+    "id": "ent.025",
+    "topic": "科技产品",
+    "question": "第一代iPhone是在哪一年发布的？",
+    "tags": [
+      "tech",
+      "history"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "发布者是谁？",
+      "它取消了当时手机常见的什么部件？"
+    ]
+  },
+  {
+    "id": "ent.026",
+    "topic": "天文学",
+    "question": "太阳系中体积最大的行星是哪一颗？",
+    "tags": [
+      "science",
+      "astronomy"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "它主要由什么气体组成？",
+      "它有光环吗？"
+    ]
+  },
+  {
+    "id": "ent.027",
+    "topic": "神话传说",
+    "question": "希腊神话中，众神之王是谁？",
+    "tags": [
+      "mythology",
+      "culture"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "他的武器是什么？",
+      "他的妻子是谁？"
+    ]
+  },
+  {
+    "id": "ent.028",
+    "topic": "童话故事",
+    "question": "《灰姑娘》的故事中，她的魔法在几点会失效？",
+    "tags": [
+      "fairy_tale",
+      "literature"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "她留下了什么东西？",
+      "这个故事的作者是谁？"
+    ]
+  },
+  {
+    "id": "ent.029",
+    "topic": "动物冷知识",
+    "question": "哪种动物的指纹和人类非常相似，以至于犯罪现场鉴识都可能混淆？",
+    "tags": [
+      "animals",
+      "trivia"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "这种动物主要分布在哪里？",
+      "它们是独居还是群居？"
+    ]
+  },
+  {
+    "id": "ent.030",
+    "topic": "语言知识",
+    "question": "世界上使用人数最多的语言是什么？",
+    "tags": [
+      "language",
+      "culture"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "英语排第几？",
+      "世界上语言种类最多的国家是？"
+    ]
+  },
+  {
+    "id": "ent.031",
+    "topic": "电影奖项",
+    "question": "戛纳电影节的最高奖项叫什么？",
+    "tags": [
+      "movie",
+      "awards"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "奖杯的形状是什么植物？",
+      "中国哪部电影获得过此奖？"
+    ]
+  },
+  {
+    "id": "ent.032",
+    "topic": "流行语",
+    "question": "网络用语“yyds”是什么意思？",
+    "tags": [
+      "internet",
+      "slang"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "它的全拼是什么？",
+      "它通常用来形容什么？"
+    ]
+  },
+  {
+    "id": "ent.033",
+    "topic": "棋牌游戏",
+    "question": "围棋起源于哪个国家？",
+    "tags": [
+      "games",
+      "culture"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "围棋棋盘有多少个交叉点？",
+      "AlphaGo战胜了哪位人类棋手？"
+    ]
+  },
+  {
+    "id": "ent.034",
+    "topic": "侦探小说",
+    "question": "夏洛克·福尔摩斯的助手是谁？",
+    "tags": [
+      "literature",
+      "mystery"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "他们住在哪里？",
+      "作者是谁？"
+    ]
+  },
+  {
+    "id": "ent.035",
+    "topic": "恐怖电影",
+    "question": "电影《闪灵》中，男主角用斧头砍门时的经典台词是什么？",
+    "tags": [
+      "movie",
+      "horror"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "这部电影的导演是谁？",
+      "原著作者对电影评价如何？"
+    ]
+  },
+  {
+    "id": "ent.036",
+    "topic": "脱口秀",
+    "question": "中国著名的脱口秀节目《吐槽大会》的口号是“吐槽是门手艺，____”。",
+    "tags": [
+      "variety",
+      "comedy"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "后半句是什么？",
+      "这个节目的策划人是谁？"
+    ]
+  },
+  {
+    "id": "ent.037",
+    "topic": "古典音乐",
+    "question": "莫扎特被称为什么神童？",
+    "tags": [
+      "music",
+      "classical"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "他几岁开始作曲？",
+      "他最后一部未完成的作品是什么？"
+    ]
+  },
+  {
+    "id": "ent.038",
+    "topic": "绘画",
+    "question": "凡高的代表作《星月夜》描绘的是什么时候的景象？",
+    "tags": [
+      "art",
+      "history"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "他当时身处哪里？",
+      "他割掉了自己的什么？"
+    ]
+  },
+  {
+    "id": "ent.039",
+    "topic": "节日习俗",
+    "question": "万圣节前夜，孩子们会玩什么游戏讨糖果？",
+    "tags": [
+      "culture",
+      "holiday"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "这句话用英语怎么说？",
+      "南瓜灯的由来是什么？"
+    ]
+  },
+  {
+    "id": "ent.040",
+    "topic": "星座",
+    "question": "黄道十二宫中，排在第一个的星座是？",
+    "tags": [
+      "astrology",
+      "culture"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "它的日期范围是？",
+      "它的象征符号是什么？"
+    ]
+  },
+  {
+    "id": "ent.041",
+    "topic": "心理学趣闻",
+    "question": "巴甫洛夫用什么动物做了条件反射实验？",
+    "tags": [
+      "psychology",
+      "science"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "他摇铃铛后动物会怎样？",
+      "这被称为经典条件反射还是操作性条件反射？"
+    ]
+  },
+  {
+    "id": "ent.042",
+    "topic": "建筑奇迹",
+    "question": "古埃及金字塔是为谁建造的陵墓？",
+    "tags": [
+      "history",
+      "architecture"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "最大的金字塔是哪一座？",
+      "狮身人面像就在它旁边吗？"
+    ]
+  },
+  {
+    "id": "ent.043",
+    "topic": "魔术",
+    "question": "著名魔术师大卫·科波菲尔曾让哪个地标建筑消失？",
+    "tags": [
+      "magic",
+      "entertainment"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "是自由女神像吗？",
+      "他是怎么做到的？"
+    ]
+  },
+  {
+    "id": "ent.044",
+    "topic": "街机游戏",
+    "question": "经典游戏《吃豆人》中，敌人的形象是什么？",
+    "tags": [
+      "gaming",
+      "retro"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "它们是什么颜色的？",
+      "吃豆人吃到大点后会发生什么？"
+    ]
+  },
+  {
+    "id": "ent.045",
+    "topic": "卡牌游戏",
+    "question": "《万智牌》被认为是世界上第一款什么类型的游戏？",
+    "tags": [
+      "games",
+      "card"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "TCG是什么缩写？",
+      "《游戏王》和它有关系吗？"
+    ]
+  },
+  {
+    "id": "ent.046",
+    "topic": "摇滚乐",
+    "question": "披头士乐队（The Beatles）来自英国哪个城市？",
+    "tags": [
+      "music",
+      "rock"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "哪位成员被刺杀了？",
+      "他们的解散年份是？"
+    ]
+  },
+  {
+    "id": "ent.047",
+    "topic": "摄影",
+    "question": "摄影术发明初期，照片是彩色的还是黑白的？",
+    "tags": [
+      "art",
+      "tech"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "第一张彩色照片是谁拍的？",
+      "现在的数码相机用什么感光？"
+    ]
+  },
+  {
+    "id": "ent.048",
+    "topic": "相声",
+    "question": "中国相声界辈分中，“德”字辈的下一辈是什么？",
+    "tags": [
+      "culture",
+      "comedy"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "郭德纲的师父是谁？",
+      "相声的四门功课是？"
+    ]
+  },
+  {
+    "id": "ent.049",
+    "topic": "嘻哈文化",
+    "question": "嘻哈（Hip-Hop）文化的四大元素是DJ、说唱、涂鸦和什么？",
+    "tags": [
+      "music",
+      "culture"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "街舞属于其中吗？",
+      "Beatbox算吗？"
+    ]
+  },
+  {
+    "id": "ent.050",
+    "topic": "奥斯卡",
+    "question": "第一部获得奥斯卡最佳影片的非英语电影是？",
+    "tags": [
+      "movie",
+      "awards"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "是《寄生虫》吗？",
+      "导演是谁？"
+    ]
+  },
+  {
+    "id": "ent.051",
+    "topic": "乐器",
+    "question": "钢琴有多少个黑白键？",
+    "tags": [
+      "music",
+      "instrument"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "多少个白键？",
+      "多少个黑键？"
+    ]
+  },
+  {
+    "id": "ent.052",
+    "topic": "茶文化",
+    "question": "中国六大茶类中，发酵程度最高的是哪一种？",
+    "tags": [
+      "culture",
+      "food"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "红茶和黑茶谁更发酵？",
+      "普洱茶属于哪一类？"
+    ]
+  },
+  {
+    "id": "ent.053",
+    "topic": "咖啡",
+    "question": "拿铁咖啡主要由浓缩咖啡和什么组成？",
+    "tags": [
+      "food",
+      "drink"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "比例大概是多少？",
+      "卡布奇诺和它有什么区别？"
+    ]
+  },
+  {
+    "id": "ent.054",
+    "topic": "鸡尾酒",
+    "question": "被称为“鸡尾酒之王”的是哪一款酒？",
+    "tags": [
+      "drink",
+      "culture"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "它的基酒是什么？",
+      "007邦德最爱喝什么？"
+    ]
+  },
+  {
+    "id": "ent.055",
+    "topic": "武侠小说",
+    "question": "金庸小说《天龙八部》中的“天龙八部”一词来源于什么宗教？",
+    "tags": [
+      "literature",
+      "culture"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "佛教吗？",
+      "萧峰最后的结局是？"
+    ]
+  },
+  {
+    "id": "ent.056",
+    "topic": "科幻",
+    "question": "刘慈欣的小说《三体》中，三体人锁死地球科技的微观粒子叫什么？",
+    "tags": [
+      "literature",
+      "scifi"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "智子是什么？",
+      "黑暗森林法则是谁发现的？"
+    ]
+  },
+  {
+    "id": "ent.057",
+    "topic": "日本动漫",
+    "question": "《火影忍者》中，鸣人的父亲是谁？",
+    "tags": [
+      "anime",
+      "manga"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "他是第几代火影？",
+      "鸣人体内封印着什么？"
+    ]
+  },
+  {
+    "id": "ent.058",
+    "topic": "美剧",
+    "question": "情景喜剧《老友记》中，谁和谁最后在一起了？",
+    "tags": [
+      "tv",
+      "sitcom"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "罗斯和瑞秋吗？",
+      "钱德勒和莫妮卡吗？"
+    ]
+  },
+  {
+    "id": "ent.059",
+    "topic": "流行音乐",
+    "question": "周杰伦的第一张专辑叫什么？",
+    "tags": [
+      "music",
+      "pop"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "《Jay》吗？",
+      "《可爱女人》收录在里面吗？"
+    ]
+  },
+  {
+    "id": "ent.060",
+    "topic": "摇滚",
+    "question": "皇后乐队（Queen）的主唱是谁？",
+    "tags": [
+      "music",
+      "rock"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "他的音域有多宽？",
+      "波希米亚狂想曲有多长？"
+    ]
+  },
+  {
+    "id": "ent.061",
+    "topic": "百老汇",
+    "question": "音乐剧《歌剧魅影》中，魅影戴着什么颜色的面具？",
+    "tags": [
+      "theatre",
+      "art"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "白色的吗？",
+      "他住在剧院哪里？"
+    ]
+  },
+  {
+    "id": "ent.062",
+    "topic": "京剧",
+    "question": "京剧行当“生旦净末丑”中，扮演女性角色的是？",
+    "tags": [
+      "culture",
+      "drama"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "梅兰芳是哪个行当？",
+      "花脸属于哪个行当？"
+    ]
+  },
+  {
+    "id": "ent.063",
+    "topic": "书法",
+    "question": "被誉为“天下第一行书”的是王羲之的哪幅作品？",
+    "tags": [
+      "art",
+      "culture"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "《兰亭集序》吗？",
+      "真迹还在吗？"
+    ]
+  },
+  {
+    "id": "ent.064",
+    "topic": "围棋",
+    "question": "围棋中“金角银边”的下一句是什么？",
+    "tags": [
+      "games",
+      "strategy"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "草肚皮吗？",
+      "这是什么意思？"
+    ]
+  },
+  {
+    "id": "ent.065",
+    "topic": "麻将",
+    "question": "中国麻将中，通常有多少张牌（不含花牌）？",
+    "tags": [
+      "games",
+      "culture"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "136张吗？",
+      "四川麻将有什么特点？"
+    ]
+  },
+  {
+    "id": "ent.066",
+    "topic": "扑克",
+    "question": "德州扑克中，最大的牌型是什么？",
+    "tags": [
+      "games",
+      "card"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "皇家同花顺吗？",
+      "同花顺大还是四条大？"
+    ]
+  },
+  {
+    "id": "ent.067",
+    "topic": "电子竞技",
+    "question": "DOTA2的最高级别赛事叫什么？",
+    "tags": [
+      "esports",
+      "gaming"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "TI（国际邀请赛）吗？",
+      "奖金池通常很高吗？"
+    ]
+  },
+  {
+    "id": "ent.068",
+    "topic": "主机游戏",
+    "question": "索尼PlayStation的经典手柄符号是哪四个？",
+    "tags": [
+      "gaming",
+      "console"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "三角、圆圈、叉、方块吗？",
+      "它们有颜色吗？"
+    ]
+  },
+  {
+    "id": "ent.069",
+    "topic": "蒸汽平台",
+    "question": "PC游戏平台Steam的创始人是谁？",
+    "tags": [
+      "gaming",
+      "tech"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Gabe Newell（G胖）吗？",
+      "他会数3吗？"
+    ]
+  },
+  {
+    "id": "ent.070",
+    "topic": "赛车",
+    "question": "F1赛车中，代表法拉利车队的颜色是什么？",
+    "tags": [
+      "sports",
+      "racing"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "红色吗？",
+      "舒马赫开过法拉利吗？"
+    ]
+  },
+  {
+    "id": "ent.071",
+    "topic": "奥运会",
+    "question": "2008年奥运会在哪个城市举办？",
+    "tags": [
+      "sports",
+      "history"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "鸟巢是哪个体育场？",
+      "开幕式导演是谁？"
+    ]
+  },
+  {
+    "id": "ent.072",
+    "topic": "网球",
+    "question": "网球四大满贯中，在红土场地进行的是？",
+    "tags": [
+      "sports",
+      "tennis"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "法网吗？",
+      "红土之王是谁？"
+    ]
+  },
+  {
+    "id": "ent.073",
+    "topic": "台球",
+    "question": "斯诺克比赛中，分值最高的彩球是什么颜色？",
+    "tags": [
+      "sports",
+      "snooker"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "黑色吗？",
+      "多少分？"
+    ]
+  },
+  {
+    "id": "ent.074",
+    "topic": "登山",
+    "question": "人类首次登顶珠穆朗玛峰是在哪一年？",
+    "tags": [
+      "sports",
+      "history"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "1953年吗？",
+      "其中有夏尔巴人吗？"
+    ]
+  },
+  {
+    "id": "ent.075",
+    "topic": "潜水",
+    "question": "水肺潜水（Scuba Diving）需要背什么装备？",
+    "tags": [
+      "sports",
+      "hobby"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "气瓶吗？",
+      "BCD是什么？"
+    ]
+  },
+  {
+    "id": "ent.076",
+    "topic": "健身",
+    "question": "卧推主要锻炼哪部分肌肉？",
+    "tags": [
+      "fitness",
+      "health"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "胸大肌吗？",
+      "深蹲练什么？"
+    ]
+  },
+  {
+    "id": "ent.077",
+    "topic": "瑜伽",
+    "question": "瑜伽起源于哪个国家？",
+    "tags": [
+      "fitness",
+      "culture"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "印度吗？",
+      "Namaste是什么意思？"
+    ]
+  },
+  {
+    "id": "ent.078",
+    "topic": "马拉松",
+    "question": "全程马拉松的距离是多少？",
+    "tags": [
+      "sports",
+      "running"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "42.195公里吗？",
+      "这个数字怎么来的？"
+    ]
+  },
+  {
+    "id": "ent.079",
+    "topic": "露营",
+    "question": "野外露营时，为了防潮通常会在帐篷下垫什么？",
+    "tags": [
+      "hobby",
+      "outdoor"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "防潮垫吗？",
+      "天幕是做什么的？"
+    ]
+  },
+  {
+    "id": "ent.080",
+    "topic": "钓鱼",
+    "question": "路亚钓法（Lure Fishing）使用的是真饵还是假饵？",
+    "tags": [
+      "hobby",
+      "fishing"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "假饵（拟饵）吗？",
+      "主要钓什么鱼？"
+    ]
+  },
+  {
+    "id": "ent.081",
+    "topic": "摄影器材",
+    "question": "单反相机中的“单反”指的是什么结构？",
+    "tags": [
+      "photography",
+      "tech"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "单镜头反光吗？",
+      "微单没有反光板吗？"
+    ]
+  },
+  {
+    "id": "ent.082",
+    "topic": "电影特效",
+    "question": "CGI技术是指什么？",
+    "tags": [
+      "movie",
+      "tech"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "电脑生成图像吗？",
+      "第一部大量使用CGI的电影是？"
+    ]
+  },
+  {
+    "id": "ent.083",
+    "topic": "配音",
+    "question": "日本声优中，被称为“神谷浩史”的代表作有哪些？",
+    "tags": [
+      "anime",
+      "voice_acting"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "利威尔兵长吗？",
+      "夏目贵志吗？"
+    ]
+  },
+  {
+    "id": "ent.084",
+    "topic": "导演风格",
+    "question": "以暴力美学著称的香港导演是谁？",
+    "tags": [
+      "movie",
+      "director"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "吴宇森吗？",
+      "标志性元素是白鸽吗？"
+    ]
+  },
+  {
+    "id": "ent.085",
+    "topic": "剧本杀",
+    "question": "剧本杀（LARP）中，“DM”是指什么人？",
+    "tags": [
+      "games",
+      "social"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "主持人（Dungeon Master）吗？",
+      "这个词借用自D&D吗？"
+    ]
+  },
+  {
+    "id": "ent.086",
+    "topic": "密室逃脱",
+    "question": "密室逃脱中，常见的锁具除了密码锁还有什么？",
+    "tags": [
+      "games",
+      "puzzle"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "磁力锁吗？",
+      "机关锁吗？"
+    ]
+  },
+  {
+    "id": "ent.087",
+    "topic": "狼人杀",
+    "question": "狼人杀中，女巫通常有几瓶药？",
+    "tags": [
+      "games",
+      "social"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "两瓶吗？",
+      "一瓶毒药一瓶解药吗？"
+    ]
+  },
+  {
+    "id": "ent.088",
+    "topic": "塔罗牌",
+    "question": "塔罗牌有多少张大阿卡纳牌？",
+    "tags": [
+      "mysticism",
+      "culture"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "22张吗？",
+      "愚人是0号吗？"
+    ]
+  },
+  {
+    "id": "ent.089",
+    "topic": "魔方",
+    "question": "三阶魔方有多少个小方块？",
+    "tags": [
+      "games",
+      "puzzle"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "26个吗？",
+      "中间那个是固定的吗？"
+    ]
+  },
+  {
+    "id": "ent.090",
+    "topic": "乐高",
+    "question": "乐高积木起源于哪个国家？",
+    "tags": [
+      "toys",
+      "brand"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "丹麦吗？",
+      "乐高乐园好玩吗？"
+    ]
+  },
+  {
+    "id": "ent.091",
+    "topic": "芭比娃娃",
+    "question": "芭比娃娃的男朋友叫什么？",
+    "tags": [
+      "toys",
+      "culture"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "肯（Ken）吗？",
+      "芭比有全名吗？"
+    ]
+  },
+  {
+    "id": "ent.092",
+    "topic": "迪士尼",
+    "question": "迪士尼乐园的城堡通常是基于哪位公主的城堡？",
+    "tags": [
+      "entertainment",
+      "park"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "灰姑娘或睡美人吗？",
+      "上海迪士尼是哪位的？"
+    ]
+  },
+  {
+    "id": "ent.093",
+    "topic": "环球影城",
+    "question": "哈利波特主题区位于哪个乐园？",
+    "tags": [
+      "entertainment",
+      "park"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "环球影城吗？",
+      "有黄油啤酒喝吗？"
+    ]
+  },
+  {
+    "id": "ent.094",
+    "topic": "脱口秀演员",
+    "question": "美国著名脱口秀演员乔治·卡林以什么风格著称？",
+    "tags": [
+      "comedy",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "黑色幽默/讽刺吗？",
+      "七个不能说的脏字？"
+    ]
+  },
+  {
+    "id": "ent.095",
+    "topic": "相声贯口",
+    "question": "相声基本功里，“报菜名”属于哪一门？",
+    "tags": [
+      "culture",
+      "comedy"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "贯口吗？",
+      "属于“学”还是“练”？"
+    ]
+  },
+  {
+    "id": "ent.096",
+    "topic": "B站",
+    "question": "Bilibili的吉祥物叫什么？",
+    "tags": [
+      "internet",
+      "platform"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "22和33吗？",
+      "投币是什么意思？"
+    ]
+  },
+  {
+    "id": "ent.097",
+    "topic": "短视频",
+    "question": "抖音的国际版叫什么？",
+    "tags": [
+      "internet",
+      "app"
+    ],
+    "difficulty": 1,
+    "followups": [
+      "TikTok吗？",
+      "Logo是什么形状？"
+    ]
+  },
+  {
+    "id": "ent.098",
+    "topic": "流媒体",
+    "question": "Netflix出品的韩剧《鱿鱼游戏》中，第一个游戏是什么？",
+    "tags": [
+      "tv",
+      "streaming"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "一二三木头人吗？",
+      "有人活下来吗？"
+    ]
+  },
+  {
+    "id": "ent.099",
+    "topic": "播客",
+    "question": "中文播客界，被称为“播客元年”的是哪一年？",
+    "tags": [
+      "media",
+      "culture"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "2020年吗？",
+      "小宇宙App是什么？"
+    ]
+  },
+  {
+    "id": "ent.100",
+    "topic": "直播",
+    "question": "直播带货中，“所有女生”是谁的口头禅？",
+    "tags": [
+      "internet",
+      "sales"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "李佳琦吗？",
+      "他是卖口红出名的吗？"
+    ]
+  },
+  {
+    "id": "ent.101",
+    "topic": "虚拟偶像",
+    "question": "世界第一公主殿下指的是哪位虚拟歌姬？",
+    "tags": [
+      "music",
+      "virtual"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "初音未来吗？",
+      "她的代表色是什么？"
+    ]
+  },
+  {
+    "id": "ent.102",
+    "topic": "二次元",
+    "question": "ACG中的G指的是什么？",
+    "tags": [
+      "culture",
+      "acg"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "Game（游戏）吗？",
+      "A和C分别是什么？"
+    ]
+  },
+  {
+    "id": "ent.103",
+    "topic": "手办",
+    "question": "手办（Figure）通常分为景品和什么？",
+    "tags": [
+      "hobby",
+      "collection"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "PVC/Scale吗？",
+      "GK是什么？"
+    ]
+  },
+  {
+    "id": "ent.104",
+    "topic": "Cosplay",
+    "question": "Cosplay是哪个词的缩写？",
+    "tags": [
+      "hobby",
+      "culture"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "Costume Play吗？",
+      "Coser是指人吗？"
+    ]
+  },
+  {
+    "id": "ent.105",
+    "topic": "同人志",
+    "question": "日本最大的同人志即卖会叫什么？",
+    "tags": [
+      "culture",
+      "event"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "Comiket（CM）吗？",
+      "在东京哪里举办？"
+    ]
+  }
+]

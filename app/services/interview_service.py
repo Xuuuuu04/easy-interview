@@ -2,6 +2,8 @@ import json
 import httpx
 from app.core.config import settings
 from app.core.logger import logger
+from app.question_bank import get_question_pack
+from app.question_bank.service import render_pack_for_prompt
 
 # Session storage for updated plans
 plan_cache = {}
@@ -98,10 +100,25 @@ async def evaluate_plan_async(history_list, resume_text, plan_data, scenario, la
                     plan_desc += f"  ✅ [DONE] (ID: {item['id']}) {item['content']} - Score: {item.get('score', 'N/A')}\n"
                     completed_items.append(item['id'])
                 else:
-                    plan_desc += f"  ⬜ [PENDING] (ID: {item['id']}) {item['content']}\n"
+                    asked_flag = " 🟣[ASKED]" if item.get("asked") else ""
+                    plan_desc += f"  ⬜ [PENDING{asked_flag}] (ID: {item['id']}) {item['content']}\n"
                     pending_items.append(f"ID {item['id']}: {item['content'][:40]}")
         
         all_done = len(pending_items) == 0
+
+        pack_id = None
+        try:
+            meta = plan_data.get("meta") if isinstance(plan_data.get("meta"), dict) else {}
+            pack_id = meta.get("question_pack_id") or scenario
+        except Exception:
+            pack_id = scenario
+
+        question_bank_json = '{"pack_id": null, "version": null, "questions": []}'
+        try:
+            pack = get_question_pack(pack_id)
+            question_bank_json = render_pack_for_prompt(pack, max_questions=200)
+        except Exception as e:
+            logger.warning(f"Question pack unavailable for {pack_id}: {str(e)}")
         
         # Strict system prompt to prevent chatting
         system_prompt = f"""You are a background process that updates an interview checklist.
@@ -118,6 +135,9 @@ INTERVIEW PLAN:
 
 PENDING ITEMS: {', '.join(pending_items) if pending_items else 'ALL DONE!'}
 
+QUESTION BANK (JSON):
+{question_bank_json}
+
 INSTRUCTIONS:
     1. Analyze the *latest* user answer.
     2. If it answers a PENDING item:
@@ -125,15 +145,21 @@ INSTRUCTIONS:
        - If YES: call `mark_item_complete` (score 60-100).
        - If NO (and difficulty is high): call `insert_followup_question`.
        - If NO (and answer is total nonsense): call `mark_item_complete` (score 0-59).
-    3. If you want to change the next question, call `modify_pending_item`.
+    3. Plan improvement is REQUIRED:
+       - If there is ANY PENDING item remaining, you MUST also improve the future plan by calling `modify_pending_item` and/or `insert_followup_question`.
+       - DO NOT modify any pending item that is marked as [ASKED] (the candidate already heard it).
+       - If you need a deeper probe for the last answer, insert the follow-up AFTER an [ASKED] pending item (so the next question the candidate heard remains unchanged).
+       - Use the QUESTION BANK as the source of truth for follow-ups and rewrites.
+    4. If you want to change a future question, call `modify_pending_item` (but never the [ASKED] ones).
     4. If everything is done, call `complete_interview`.
     
     Force yourself to call at least one tool if there is ANY progress.
+    If there are pending items and you marked something complete, you MUST also call at least one plan improvement tool.
     """
         
         # Construct messages strictly for tool calling
         messages = [{"role": "system", "content": system_prompt}]
-        messages.extend(history_list[-4:])  # Keep context short
+        messages.extend(history_list[-8:])  # Keep context short but include last question
         messages.append({"role": "user", "content": "Analyze the above conversation and update the plan immediately. Call tools now."})
 
         # Use the same GLM-4.6 model for plan evaluation (with Function Calling)
@@ -169,6 +195,14 @@ INSTRUCTIONS:
             
             # Process tool calls
             updated_plan = plan_data.copy()
+            asked_item_id = None
+            for sec in updated_plan.get("sections", []):
+                for item in sec.get("items", []):
+                    if item.get("status") != "done" and item.get("asked"):
+                        asked_item_id = str(item.get("id"))
+                        break
+                if asked_item_id:
+                    break
             interview_complete = False
             final_result = None
             updates_made = 0
@@ -216,7 +250,7 @@ INSTRUCTIONS:
                     
                     for sec in updated_plan.get('sections', []):
                         for item in sec['items']:
-                            if str(item['id']) == item_id and item.get('status') != 'done':
+                            if str(item['id']) == item_id and item.get('status') != 'done' and not item.get("asked") and not item.get("locked"):
                                 item['content'] = new_content
                                 updates_made += 1
                                 logger.info(f"📝 Modified pending item {item_id}")
@@ -226,6 +260,10 @@ INSTRUCTIONS:
                     new_id = str(fn_args.get('new_id'))
                     content = fn_args.get('content', '')
                     
+                    if asked_item_id and after_id != asked_item_id:
+                        logger.info(f"⏭️ Ignored follow-up insertion after {after_id} (asked item is {asked_item_id})")
+                        continue
+
                     inserted = False
                     for sec in updated_plan.get('sections', []):
                         if inserted: break

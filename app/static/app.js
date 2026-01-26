@@ -81,7 +81,8 @@ const app = {
         // 新增：视频帧分析
         videoFrameBuffer: [],
         lastFrameCapture: 0,
-        frameCaptureInterval: 1000 // 每秒截取一帧
+        frameCaptureInterval: 1000, // 每秒截取一帧
+        analysisLastErrorAt: 0
     },
 
     init: async () => {
@@ -432,6 +433,7 @@ const app = {
 
             const data = await res.json();
             app.state.currentPlan = data;
+            if (data.session_id) app.state.currentSessionId = data.session_id;
             // Also store resume/context text for later
             if (data.resume_text) app.state.resumeText = data.resume_text;
 
@@ -627,6 +629,10 @@ const app = {
 
         formData.append('scenario', app.state.selectedScenario);
         formData.append('language', app.state.selectedLanguage);
+        const plan = app.state.currentPlan?.interview_plan || app.state.currentPlan;
+        if (plan) {
+            formData.append('interview_plan', JSON.stringify(plan));
+        }
 
         try {
             const res = await fetch('/api/upload-resume', {
@@ -712,19 +718,55 @@ const app = {
                 })
             });
 
-            if (res.ok) {
-                const data = await res.json();
-                app.updateAnalysisUI(data);
+            if (!res.ok) {
+                const now = Date.now();
+                if (now - (app.state.analysisLastErrorAt || 0) > 10000) {
+                    const text = await res.text().catch(() => "");
+                    console.warn("analyze-video failed:", res.status, text);
+                    app.state.analysisLastErrorAt = now;
+                }
+                return;
             }
+
+            const data = await res.json();
+            app.updateAnalysisUI(data);
         } catch (e) {
-            // console.debug("Analysis update skipped");
+            const now = Date.now();
+            if (now - (app.state.analysisLastErrorAt || 0) > 10000) {
+                console.warn("analyze-video error:", e);
+                app.state.analysisLastErrorAt = now;
+            }
         }
     },
 
     updateAnalysisUI: (data) => {
-        // Update New Metrics
+        const normalizeScore = (value) => {
+            if (value === null || value === undefined) return null;
+            let num = value;
+            if (typeof num === 'string') {
+                const cleaned = num.replace('%', '').trim();
+                const parsed = Number(cleaned);
+                num = Number.isFinite(parsed) ? parsed : NaN;
+            }
+            if (!Number.isFinite(num)) return null;
+            if (num > 0 && num <= 1) num = num * 100;
+            if (num > 1 && num <= 10) num = num * 10;
+            return Math.min(100, Math.max(0, Math.round(num)));
+        };
+
+        const pick = (obj, keys) => {
+            for (const k of keys) {
+                if (obj && obj[k] !== undefined && obj[k] !== null) return obj[k];
+            }
+            return undefined;
+        };
+
+        const metrics = data?.metrics || data?.metric || data || {};
+
         const updateMetric = (id, score) => {
-            const val = Math.min(100, Math.max(0, Math.round(score || 0)));
+            const normalized = normalizeScore(score);
+            if (normalized === null) return;
+            const val = normalized;
             const labelEl = document.getElementById(`stat-${id}`);
             const barEl = document.getElementById(`bar-${id}`);
             if (labelEl) labelEl.innerText = `${val}%`;
@@ -733,12 +775,10 @@ const app = {
             }
         };
 
-        if (data.metrics) {
-            updateMetric('confidence', data.metrics.confidence);
-            updateMetric('eye', data.metrics.eye_contact);
-            updateMetric('attire', data.metrics.attire);
-            updateMetric('clarity', data.metrics.clarity);
-        }
+        updateMetric('confidence', pick(metrics, ['confidence', 'conf', 'self_confidence']));
+        updateMetric('eye', pick(metrics, ['eye_contact', 'eyeContact', 'eye', 'gaze', 'eye_contact_score']));
+        updateMetric('attire', pick(metrics, ['attire', 'outfit', 'dress', 'appearance']));
+        updateMetric('clarity', pick(metrics, ['clarity', 'hd', 'video_quality', 'lighting']));
 
         // Tiered Cheat Alert
         if (data.alert && data.alert.level !== 'none') {
@@ -996,6 +1036,9 @@ const app = {
         formData.append("scenario", app.state.selectedScenario);
         formData.append("language", app.state.selectedLanguage);
         formData.append("difficulty", app.state.difficulty.toString());  // Add difficulty level
+        if (app.state.currentSessionId) {
+            formData.append("session_id", app.state.currentSessionId);
+        }
 
         // Include Current Plan State for AI
         if (app.state.currentPlan && app.state.currentPlan.interview_plan) {
@@ -1042,6 +1085,10 @@ const app = {
                 console.log("✅ 计划已从后端更新");
             }
 
+            if (app.state.currentSessionKey) {
+                app.startPlanPolling(app.state.currentSessionKey);
+            }
+
             // 3. Interview Completion Check
             if (data.interview_complete) {
                 console.log("🏁 面试结束!");
@@ -1076,7 +1123,7 @@ const app = {
             // Play TTS (Single call)
             await app.playTTS(aiResponseText);
 
-            // 3. 计划已由后端同步更新，无需轮询
+            // Plan polling runs in background while TTS is playing
 
 
         } catch (err) {
@@ -1086,6 +1133,51 @@ const app = {
             const text = document.getElementById('mic-text');
             if (text) text.innerText = "按住说话";
         }
+    },
+
+    startPlanPolling: (sessionKey) => {
+        if (app.state.planPollTimer) {
+            clearInterval(app.state.planPollTimer);
+            app.state.planPollTimer = null;
+        }
+
+        const startAt = Date.now();
+        const timeoutMs = 8000;
+        const intervalMs = 500;
+
+        app.state.planPollTimer = setInterval(async () => {
+            try {
+                if (Date.now() - startAt > timeoutMs) {
+                    clearInterval(app.state.planPollTimer);
+                    app.state.planPollTimer = null;
+                    return;
+                }
+
+                const res = await fetch(`/api/plan-status/${sessionKey}`);
+                if (!res.ok) return;
+                const data = await res.json();
+                const plan = data?.plan;
+                if (!plan) return;
+
+                const current = app.state.currentPlan?.interview_plan || app.state.currentPlan;
+                const currentJson = current ? JSON.stringify(current) : "";
+                const nextJson = JSON.stringify(plan);
+                if (nextJson && nextJson !== currentJson) {
+                    app.state.currentPlan = plan;
+                    app.renderSidePanel(plan);
+
+                    if (plan.interview_complete && plan.final_result) {
+                        app.showScoreModal(plan.final_result);
+                    }
+
+                    clearInterval(app.state.planPollTimer);
+                    app.state.planPollTimer = null;
+                }
+            } catch (e) {
+                clearInterval(app.state.planPollTimer);
+                app.state.planPollTimer = null;
+            }
+        }, intervalMs);
     },
 
     playTTS: async (text) => {

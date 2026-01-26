@@ -1,0 +1,15 @@
+[Unit]
+Description=EasyInterview FastAPI Application
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/easyinterview
+User=easyinterview
+Group=easyinterview
+EnvironmentFile=-/opt/easyinterview/.env
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/easyinterview/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

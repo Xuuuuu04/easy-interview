@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "psy.001",
+    "topic": "心理咨询基础",
+    "question": "心理咨询中，最重要的建立关系的原则是什么？",
+    "tags": [
+      "counseling",
+      "basic"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "共情是什么意思？",
+      "无条件积极关注是谁提出的？"
+    ]
+  },
+  {
+    "id": "psy.002",
+    "topic": "流派理论",
+    "question": "弗洛伊德创立了什么心理学流派？",
+    "tags": [
+      "theory",
+      "psychoanalysis"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "本我、自我、超我分别代表什么？",
+      "潜意识理论的核心是什么？"
+    ]
+  },
+  {
+    "id": "psy.003",
+    "topic": "认知行为疗法",
+    "question": "CBT（认知行为疗法）的核心观点是改变什么来改变情绪和行为？",
+    "tags": [
+      "therapy",
+      "cbt"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "自动思维是什么？",
+      "苏格拉底式提问怎么做？"
+    ]
+  },
+  {
+    "id": "psy.004",
+    "topic": "人本主义",
+    "question": "卡尔·罗杰斯认为心理咨询师应具备哪三个核心特质？",
+    "tags": [
+      "theory",
+      "humanistic"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "真诚一致性指什么？",
+      "为什么需要共情？"
+    ]
+  },
+  {
+    "id": "psy.005",
+    "topic": "防御机制",
+    "question": "当人遇到痛苦时，潜意识地拒绝承认现实，这种防御机制叫什么？",
+    "tags": [
+      "psychoanalysis",
+      "defense"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "否认机制常见吗？",
+      "合理化（酸葡萄）是什么意思？"
+    ]
+  },
+  {
+    "id": "psy.006",
+    "topic": "依恋理论",
+    "question": "安斯沃斯通过“陌生情境实验”将婴儿的依恋类型分为哪几种？",
+    "tags": [
+      "development",
+      "attachment"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "安全型依恋的表现是什么？",
+      "焦虑-矛盾型依恋成年后会怎样？"
+    ]
+  },
+  {
+    "id": "psy.007",
+    "topic": "情绪管理",
+    "question": "情绪ABC理论中，B代表什么？",
+    "tags": [
+      "cbt",
+      "emotion"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "A和C分别是什么？",
+      "信念如何影响情绪？"
+    ]
+  },
+  {
+    "id": "psy.008",
+    "topic": "发展心理学",
+    "question": "埃里克森的社会心理发展阶段论中，青少年期（12-18岁）面临的主要冲突是什么？",
+    "tags": [
+      "development",
+      "theory"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "自我同一性对角色混乱吗？",
+      "成年早期的冲突是什么？"
+    ]
+  },
+  {
+    "id": "psy.009",
+    "topic": "心理测量",
+    "question": "MMPI（明尼苏达多项人格测验）主要用于什么？",
+    "tags": [
+      "assessment",
+      "clinical"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "它是自评量表吗？",
+      "有多少道题？"
+    ]
+  },
+  {
+    "id": "psy.010",
+    "topic": "变态心理学",
+    "question": "抑郁症的核心症状通常包括哪“三低”？",
+    "tags": [
+      "clinical",
+      "depression"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "情绪低落、思维迟缓、意志活动减退吗？",
+      "持续时间需要多久才能确诊？"
+    ]
+  },
+  {
+    "id": "psy.011",
+    "topic": "咨询伦理",
+    "question": "心理咨询师在什么情况下可以打破保密原则？",
+    "tags": [
+      "ethics",
+      "practice"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "来访者有自杀风险时吗？",
+      "涉及虐待儿童时吗？"
+    ]
+  },
+  {
+    "id": "psy.012",
+    "topic": "社会心理学",
+    "question": "从众实验（阿希实验）说明了什么现象？",
+    "tags": [
+      "social",
+      "experiment"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "群体压力如何影响判断？",
+      "有同盟者时从众率会下降吗？"
+    ]
+  },
+  {
+    "id": "psy.013",
+    "topic": "行为主义",
+    "question": "斯金纳箱实验研究的是什么类型的条件反射？",
+    "tags": [
+      "behaviorism",
+      "learning"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "操作性条件反射吗？",
+      "强化和惩罚的区别是什么？"
+    ]
+  },
+  {
+    "id": "psy.014",
+    "topic": "格式塔疗法",
+    "question": "格式塔疗法强调的是“此时此地”还是“过去经历”？",
+    "tags": [
+      "therapy",
+      "gestalt"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "空椅子技术是怎么做的？",
+      "未完成事件（Unfinished Business）是什么？"
+    ]
+  },
+  {
+    "id": "psy.015",
+    "topic": "积极心理学",
+    "question": "心流（Flow）状态通常在什么情况下产生？",
+    "tags": [
+      "positive",
+      "motivation"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "挑战与技能匹配时吗？",
+      "谁提出了心流理论？"
+    ]
+  },
+  {
+    "id": "psy.016",
+    "topic": "应激障碍",
+    "question": "PTSD的全称是什么？",
+    "tags": [
+      "clinical",
+      "trauma"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "创伤后应激障碍吗？",
+      "闪回（Flashback）是什么症状？"
+    ]
+  },
+  {
+    "id": "psy.017",
+    "topic": "人格心理学",
+    "question": "大五人格理论（Big Five）包括哪五个维度？",
+    "tags": [
+      "personality",
+      "theory"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "开放性、尽责性、外向性、宜人性、神经质吗？",
+      "哪个维度与工作绩效相关性最高？"
+    ]
+  },
+  {
+    "id": "psy.018",
+    "topic": "心理咨询设置",
+    "question": "为什么心理咨询通常需要固定的时间、地点和收费？",
+    "tags": [
+      "practice",
+      "setting"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "这能提供安全感吗？",
+      "打破设置意味着什么？"
+    ]
+  },
+  {
+    "id": "psy.019",
+    "topic": "移情",
+    "question": "来访者将对重要他人的情感转移到咨询师身上，这叫什么？",
+    "tags": [
+      "psychoanalysis",
+      "relationship"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "正移情和负移情有什么区别？",
+      "反移情是什么？"
+    ]
+  },
+  {
+    "id": "psy.020",
+    "topic": "家庭治疗",
+    "question": "萨提亚模式中，指责型、讨好型、超理智型、打岔型属于什么？",
+    "tags": [
+      "family",
+      "satir"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "沟通姿态吗？",
+      "一致性沟通是什么样的？"
+    ]
+  },
+  {
+    "id": "psy.021",
+    "topic": "危机干预",
+    "question": "危机干预的六步法中，第一步通常是什么？",
+    "tags": [
+      "crisis",
+      "intervention"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "确定问题/评估安全性吗？",
+      "提供支持是第几步？"
+    ]
+  },
+  {
+    "id": "psy.022",
+    "topic": "梦的解析",
+    "question": "弗洛伊德认为梦是什么的满足？",
+    "tags": [
+      "psychoanalysis",
+      "dream"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "愿望的达成吗？",
+      "显梦和隐梦的区别？"
+    ]
+  },
+  {
+    "id": "psy.023",
+    "topic": "心理防御",
+    "question": "“吃不到葡萄说葡萄酸”属于哪种防御机制？",
+    "tags": [
+      "defense",
+      "behavior"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "合理化吗？",
+      "“甜柠檬”心理也是合理化吗？"
+    ]
+  },
+  {
+    "id": "psy.024",
+    "topic": "进化心理学",
+    "question": "进化心理学如何解释男性和女性在择偶策略上的差异？",
+    "tags": [
+      "evolutionary",
+      "mating"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "亲代投资理论是什么？",
+      "这种解释有争议吗？"
+    ]
+  },
+  {
+    "id": "psy.025",
+    "topic": "催眠",
+    "question": "催眠状态下，人的意识是清醒的还是昏迷的？",
+    "tags": [
+      "hypnosis",
+      "consciousness"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "是意识狭窄/高度专注吗？",
+      "所有人都能被催眠吗？"
+    ]
+  },
+  {
+    "id": "psy.026",
+    "topic": "自恋",
+    "question": "自恋型人格障碍的主要特征是什么？",
+    "tags": [
+      "clinical",
+      "personality"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "夸大自我重要性吗？",
+      "缺乏共情能力吗？"
+    ]
+  },
+  {
+    "id": "psy.027",
+    "topic": "焦虑",
+    "question": "广泛性焦虑障碍（GAD）与惊恐障碍的主要区别是什么？",
+    "tags": [
+      "clinical",
+      "anxiety"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "GAD是慢性持续的吗？",
+      "惊恐发作是突发的吗？"
+    ]
+  },
+  {
+    "id": "psy.028",
+    "topic": "团体咨询",
+    "question": "团体咨询中，治疗性因素包括哪些？",
+    "tags": [
+      "group",
+      "therapy"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "普适性（Universalilty）是什么？",
+      "希望的重塑重要吗？"
+    ]
+  },
+  {
+    "id": "psy.029",
+    "topic": "艺术治疗",
+    "question": "艺术治疗主要通过什么方式帮助来访者？",
+    "tags": [
+      "therapy",
+      "art"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "非语言表达吗？",
+      "绘画分析是唯一的手段吗？"
+    ]
+  },
+  {
+    "id": "psy.030",
+    "topic": "叙事疗法",
+    "question": "叙事疗法的核心理念是“人不是问题，____是问题”。",
+    "tags": [
+      "therapy",
+      "narrative"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "问题才是问题吗？",
+      "外化技术怎么用？"
+    ]
+  },
+  {
+    "id": "psy.031",
+    "topic": "职业倦怠",
+    "question": "MBI量表测量的职业倦怠包括哪三个维度？",
+    "tags": [
+      "work",
+      "burnout"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "情感耗竭、去人性化、个人成就感低落吗？",
+      "哪个最先出现？"
+    ]
+  },
+  {
+    "id": "psy.032",
+    "topic": "刻板印象",
+    "question": "刻板印象威胁是什么意思？",
+    "tags": [
+      "social",
+      "bias"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "这会影响表现吗？",
+      "如何减少刻板印象威胁？"
+    ]
+  },
+  {
+    "id": "psy.033",
+    "topic": "认知失调",
+    "question": "费斯汀格的认知失调实验中，得到1美元的人比得到20美元的人更觉得任务有趣，为什么？",
+    "tags": [
+      "social",
+      "cognitive"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "理由不充分效应吗？",
+      "他们改变了态度以减少失调吗？"
+    ]
+  },
+  {
+    "id": "psy.034",
+    "topic": "依恋成人",
+    "question": "成人依恋类型中，回避型的人在亲密关系中通常表现如何？",
+    "tags": [
+      "relationship",
+      "attachment"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "独立、不愿依赖吗？",
+      "他们内心需要亲密吗？"
+    ]
+  },
+  {
+    "id": "psy.035",
+    "topic": "双相障碍",
+    "question": "双相情感障碍（躁郁症）的特征是什么？",
+    "tags": [
+      "clinical",
+      "mood"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "躁狂发作和抑郁发作交替吗？",
+      "I型和II型的区别？"
+    ]
+  },
+  {
+    "id": "psy.036",
+    "topic": "强迫症",
+    "question": "强迫症（OCD）包含哪两个部分？",
+    "tags": [
+      "clinical",
+      "anxiety"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "强迫观念和强迫行为吗？",
+      "他们知道这些行为是不合理的吗？"
+    ]
+  },
+  {
+    "id": "psy.037",
+    "topic": "精神分裂症",
+    "question": "精神分裂症的阳性症状包括哪些？",
+    "tags": [
+      "clinical",
+      "psychosis"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "幻觉和妄想吗？",
+      "阴性症状是什么？"
+    ]
+  },
+  {
+    "id": "psy.038",
+    "topic": "心理韧性",
+    "question": "复原力（Resilience）是指什么能力？",
+    "tags": [
+      "positive",
+      "coping"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "从逆境中恢复的能力吗？",
+      "它是天生的还是可培养的？"
+    ]
+  },
+  {
+    "id": "psy.039",
+    "topic": "焦点解决",
+    "question": "SFBT（焦点解决短期治疗）常用的提问技术有哪些？",
+    "tags": [
+      "therapy",
+      "brief"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "奇迹提问吗？",
+      "例外提问吗？"
+    ]
+  },
+  {
+    "id": "psy.040",
+    "topic": "正念",
+    "question": "正念（Mindfulness）的核心要素是什么？",
+    "tags": [
+      "therapy",
+      "mindfulness"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "有意识地觉察当下且不评判吗？",
+      "MBSR是什么课程？"
+    ]
+  },
+  {
+    "id": "psy.041",
+    "topic": "心理剧",
+    "question": "心理剧的创始人是谁？",
+    "tags": [
+      "therapy",
+      "drama"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "莫雷诺吗？",
+      "替身和角色互换怎么用？"
+    ]
+  },
+  {
+    "id": "psy.042",
+    "topic": "沙盘游戏",
+    "question": "沙盘游戏治疗（Sandplay）主要基于谁的理论？",
+    "tags": [
+      "therapy",
+      "jung"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "荣格吗？",
+      "多拉·卡尔夫发展的吗？"
+    ]
+  },
+  {
+    "id": "psy.043",
+    "topic": "安慰剂效应",
+    "question": "安慰剂效应说明了什么心理机制？",
+    "tags": [
+      "medical",
+      "psychology"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "期望/信念对生理的影响吗？",
+      "反安慰剂效应是什么？"
+    ]
+  },
+  {
+    "id": "psy.044",
+    "topic": "从众",
+    "question": "什么因素会增加从众行为？",
+    "tags": [
+      "social",
+      "influence"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "群体凝聚力吗？",
+      "任务难度高时会增加吗？"
+    ]
+  },
+  {
+    "id": "psy.045",
+    "topic": "旁观者效应",
+    "question": "为什么旁观者越多，受害者获得帮助的可能性越小？",
+    "tags": [
+      "social",
+      "help"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "责任分散吗？",
+      "如何打破旁观者效应？"
+    ]
+  },
+  {
+    "id": "psy.046",
+    "topic": "吊桥效应",
+    "question": "吊桥效应解释了什么心理现象？",
+    "tags": [
+      "social",
+      "emotion"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "情绪的二因素理论吗？",
+      "将恐惧误读为心动吗？"
+    ]
+  },
+  {
+    "id": "psy.047",
+    "topic": "习得性无助",
+    "question": "塞利格曼通过电击狗的实验发现了什么？",
+    "tags": [
+      "learning",
+      "depression"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "放弃尝试吗？",
+      "这与抑郁症有关吗？"
+    ]
+  },
+  {
+    "id": "psy.048",
+    "topic": "皮格马利翁效应",
+    "question": "教师的期望如何影响学生的表现？",
+    "tags": [
+      "educational",
+      "social"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "自我实现的预言吗？",
+      "罗森塔尔实验是什么？"
+    ]
+  },
+  {
+    "id": "psy.049",
+    "topic": "巴纳姆效应",
+    "question": "为什么人们觉得星座运势描述得很准？",
+    "tags": [
+      "cognitive",
+      "bias"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "笼统、模棱两可的描述吗？",
+      "这和算命有关吗？"
+    ]
+  },
+  {
+    "id": "psy.050",
+    "topic": "墨菲定律",
+    "question": "墨菲定律的基本含义是什么？",
+    "tags": [
+      "popular",
+      "life"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "如果事情有变坏的可能，它总会发生吗？",
+      "如何应对墨菲定律？"
+    ]
+  },
+  {
+    "id": "psy.051",
+    "topic": "晕轮效应",
+    "question": "光环效应（Halo Effect）是指什么？",
+    "tags": [
+      "social",
+      "bias"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "因一点优点而认为整个人都好吗？",
+      "外貌有优势吗？"
+    ]
+  },
+  {
+    "id": "psy.052",
+    "topic": "破窗效应",
+    "question": "破窗理论认为环境中的不良现象如果不被制止，会发生什么？",
+    "tags": [
+      "social",
+      "criminology"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "诱发更多不良行为吗？",
+      "这与零容忍政策有关吗？"
+    ]
+  },
+  {
+    "id": "psy.053",
+    "topic": "登门槛效应",
+    "question": "想要别人答应一个大请求，先让他答应一个小请求，这叫什么？",
+    "tags": [
+      "social",
+      "compliance"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "得寸进尺效应吗？",
+      "反过来叫留面子效应吗？"
+    ]
+  },
+  {
+    "id": "psy.054",
+    "topic": "首因效应",
+    "question": "第一印象为什么如此重要？",
+    "tags": [
+      "social",
+      "cognitive"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "先入为主吗？",
+      "近因效应什么时候起作用？"
+    ]
+  },
+  {
+    "id": "psy.055",
+    "topic": "刻板印象",
+    "question": "我们对他人的看法往往基于他们所属的群体，这叫什么？",
+    "tags": [
+      "social",
+      "bias"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "可以节省认知资源吗？",
+      "会导致歧视吗？"
+    ]
+  },
+  {
+    "id": "psy.056",
+    "topic": "归因错误",
+    "question": "基本归因错误是指我们在解释他人行为时，倾向于高估什么？",
+    "tags": [
+      "social",
+      "attribution"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "内在特质吗？",
+      "低估了情境因素吗？"
+    ]
+  },
+  {
+    "id": "psy.057",
+    "topic": "自我服务偏差",
+    "question": "成功归因于自己，失败归因于环境，这叫什么？",
+    "tags": [
+      "social",
+      "attribution"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "为了维护自尊吗？",
+      "抑郁症患者有这种偏差吗？"
+    ]
+  },
+  {
+    "id": "psy.058",
+    "topic": "社会懈怠",
+    "question": "为什么三个和尚没水喝？",
+    "tags": [
+      "social",
+      "group"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "个人贡献无法被衡量时会偷懒吗？",
+      "如何减少社会懈怠？"
+    ]
+  },
+  {
+    "id": "psy.059",
+    "topic": "群体极化",
+    "question": "群体讨论后，观点往往变得更加极端，这叫什么？",
+    "tags": [
+      "social",
+      "group"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "风险转移现象吗？",
+      "回声室效应有关吗？"
+    ]
+  },
+  {
+    "id": "psy.060",
+    "topic": "去个性化",
+    "question": "在狂欢节或暴乱中，人们为什么会做出平时不敢做的事？",
+    "tags": [
+      "social",
+      "group"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "自我意识下降吗？",
+      "匿名性起了作用吗？"
+    ]
+  },
+  {
+    "id": "psy.061",
+    "topic": "认知失调",
+    "question": "吸烟者知道吸烟有害健康但还在吸，他们通常会怎么想？",
+    "tags": [
+      "cognitive",
+      "health"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "“我爷爷吸烟活到了90岁”吗？",
+      "改变行为难还是改变态度难？"
+    ]
+  },
+  {
+    "id": "psy.062",
+    "topic": "互惠原则",
+    "question": "为什么超市试吃后你会觉得不好意思不买？",
+    "tags": [
+      "social",
+      "influence"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "亏欠感吗？",
+      "这是一种顺从策略吗？"
+    ]
+  },
+  {
+    "id": "psy.063",
+    "topic": "稀缺原理",
+    "question": "“限时限量”为什么能促进销售？",
+    "tags": [
+      "social",
+      "marketing"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "得不到的永远在骚动吗？",
+      "阻抗理论怎么解释？"
+    ]
+  },
+  {
+    "id": "psy.064",
+    "topic": "权威效应",
+    "question": "米尔格拉姆的电击实验展示了人们对权威的什么态度？",
+    "tags": [
+      "social",
+      "obedience"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "盲目服从吗？",
+      "65%的人按到了最大电压吗？"
+    ]
+  },
+  {
+    "id": "psy.065",
+    "topic": "社会支持",
+    "question": "良好的社会支持系统对心理健康有什么作用？",
+    "tags": [
+      "health",
+      "coping"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "缓冲压力的负面影响吗？",
+      "情感支持和工具支持的区别？"
+    ]
+  },
+  {
+    "id": "psy.066",
+    "topic": "压力应对",
+    "question": "应对压力的方式主要分为哪两种？",
+    "tags": [
+      "health",
+      "coping"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "问题中心和情绪中心吗？",
+      "哪种更有效？"
+    ]
+  },
+  {
+    "id": "psy.067",
+    "topic": "身心疾病",
+    "question": "长期压力会导致胃溃疡吗？",
+    "tags": [
+      "health",
+      "psychosomatic"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "A型性格更容易得心脏病吗？",
+      "心理神经免疫学是什么？"
+    ]
+  },
+  {
+    "id": "psy.068",
+    "topic": "安慰剂",
+    "question": "手术也可以有安慰剂效应吗？",
+    "tags": [
+      "medical",
+      "research"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "假手术实验说明了什么？",
+      "伦理上允许吗？"
+    ]
+  },
+  {
+    "id": "psy.069",
+    "topic": "依恋代际传递",
+    "question": "父母的依恋类型会影响孩子的依恋类型吗？",
+    "tags": [
+      "development",
+      "family"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "安全型父母更容易养出安全型孩子吗？",
+      "如何阻断不安全依恋的传递？"
+    ]
+  },
+  {
+    "id": "psy.070",
+    "topic": "皮亚杰",
+    "question": "皮亚杰认为儿童认知发展经过哪四个阶段？",
+    "tags": [
+      "development",
+      "cognitive"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "感知运动、前运算、具体运算、形式运算吗？",
+      "客体永久性什么时候获得？"
+    ]
+  },
+  {
+    "id": "psy.071",
+    "topic": "维果茨基",
+    "question": "最近发展区（ZPD）是指什么？",
+    "tags": [
+      "development",
+      "education"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "现有水平和潜在水平之间的差距吗？",
+      "脚手架（Scaffolding）教学法怎么用？"
+    ]
+  },
+  {
+    "id": "psy.072",
+    "topic": "道德发展",
+    "question": "科尔伯格用什么故事研究道德发展？",
+    "tags": [
+      "development",
+      "moral"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "海因茨偷药吗？",
+      "前习俗、习俗、后习俗水平的区别？"
+    ]
+  },
+  {
+    "id": "psy.073",
+    "topic": "中年危机",
+    "question": "荣格认为中年期的主要心理任务是什么？",
+    "tags": [
+      "development",
+      "jung"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "个性化/自性化吗？",
+      "面对阴影和阿尼玛/阿尼姆斯吗？"
+    ]
+  },
+  {
+    "id": "psy.074",
+    "topic": "老年心理",
+    "question": "老年人记忆力衰退通常表现为哪种记忆受损？",
+    "tags": [
+      "aging",
+      "memory"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "流体智力下降吗？",
+      "晶体智力会下降吗？"
+    ]
+  },
+  {
+    "id": "psy.075",
+    "topic": "哀伤五阶段",
+    "question": "库伯勒-罗斯提出的临终/哀伤五阶段是？",
+    "tags": [
+      "grief",
+      "clinical"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "否认、愤怒、讨价还价、抑郁、接受吗？",
+      "顺序是固定的吗？"
+    ]
+  },
+  {
+    "id": "psy.076",
+    "topic": "性别认同",
+    "question": "性别认同和生理性别是一回事吗？",
+    "tags": [
+      "gender",
+      "identity"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "跨性别是什么意思？",
+      "社会性别（Gender）与生理性别（Sex）的区别？"
+    ]
+  },
+  {
+    "id": "psy.077",
+    "topic": "智力",
+    "question": "加德纳的多元智力理论包括哪些智力？",
+    "tags": [
+      "intelligence",
+      "education"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "语言、数理、音乐、空间、身体动觉、人际、内省、自然观察吗？",
+      "传统智商测试测了什么？"
+    ]
+  },
+  {
+    "id": "psy.078",
+    "topic": "情绪智力",
+    "question": "情商（EQ）通常包括哪几个能力？",
+    "tags": [
+      "emotion",
+      "intelligence"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "识别、理解、管理自己和他人情绪吗？",
+      "戈尔曼是提出者吗？"
+    ]
+  },
+  {
+    "id": "psy.079",
+    "topic": "动机",
+    "question": "马斯洛需求层次理论的最高层是什么？",
+    "tags": [
+      "motivation",
+      "humanistic"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "自我实现吗？",
+      "后来加了自我超越吗？"
+    ]
+  },
+  {
+    "id": "psy.080",
+    "topic": "耶克斯-多德森定律",
+    "question": "动机强度与工作效率之间是什么关系？",
+    "tags": [
+      "motivation",
+      "performance"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "倒U型曲线吗？",
+      "任务难度不同曲线一样吗？"
+    ]
+  },
+  {
+    "id": "psy.081",
+    "topic": "归因风格",
+    "question": "乐观的归因风格通常是怎样的？",
+    "tags": [
+      "cognitive",
+      "positive"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "将失败归因为暂时的、具体的、外在的吗？",
+      "习得性乐观怎么练？"
+    ]
+  },
+  {
+    "id": "psy.082",
+    "topic": "自我效能感",
+    "question": "班杜拉提出的自我效能感是指什么？",
+    "tags": [
+      "motivation",
+      "cognitive"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "相信自己能完成任务的信念吗？",
+      "这与自信一样吗？"
+    ]
+  },
+  {
+    "id": "psy.083",
+    "topic": "内控与外控",
+    "question": "内控型的人相信命运掌握在谁手里？",
+    "tags": [
+      "personality",
+      "control"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "自己手里吗？",
+      "哪种心理更健康？"
+    ]
+  },
+  {
+    "id": "psy.084",
+    "topic": "拖延",
+    "question": "从心理学角度看，拖延往往与什么情绪有关？",
+    "tags": [
+      "behavior",
+      "emotion"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "焦虑或完美主义吗？",
+      "怎么克服拖延？"
+    ]
+  },
+  {
+    "id": "psy.085",
+    "topic": "习惯",
+    "question": "习惯回路包含哪三个部分？",
+    "tags": [
+      "behavior",
+      "habit"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "暗示、惯常行为、奖赏吗？",
+      "如何改变坏习惯？"
+    ]
+  },
+  {
+    "id": "psy.086",
+    "topic": "睡眠",
+    "question": "REM睡眠阶段通常会发生什么？",
+    "tags": [
+      "health",
+      "sleep"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "做梦吗？",
+      "眼球快速转动吗？"
+    ]
+  },
+  {
+    "id": "psy.087",
+    "topic": "潜意识",
+    "question": "弗洛伊德认为通往潜意识的捷径是什么？",
+    "tags": [
+      "psychoanalysis",
+      "dream"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "梦吗？",
+      "自由联想也是吗？"
+    ]
+  },
+  {
+    "id": "psy.088",
+    "topic": "荣格",
+    "question": "荣格提出的“集体潜意识”包含什么？",
+    "tags": [
+      "jung",
+      "theory"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "原型（Archetypes）吗？",
+      "曼陀罗象征什么？"
+    ]
+  },
+  {
+    "id": "psy.089",
+    "topic": "阿德勒",
+    "question": "阿德勒认为人类行为的根本动力是什么？",
+    "tags": [
+      "adler",
+      "motivation"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "追求优越/克服自卑吗？",
+      "出生顺序影响性格吗？"
+    ]
+  },
+  {
+    "id": "psy.090",
+    "topic": "存在主义",
+    "question": "存在主义心理治疗关注的四大终极关怀是什么？",
+    "tags": [
+      "therapy",
+      "existential"
+    ],
+    "difficulty": 6,
+    "followups": [
+      "死亡、自由、孤独、无意义吗？",
+      "欧文·亚隆的书读过吗？"
+    ]
+  },
+  {
+    "id": "psy.091",
+    "topic": "森田疗法",
+    "question": "森田疗法的核心原则是“顺其自然，____”。",
+    "tags": [
+      "therapy",
+      "eastern"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "为所当为吗？",
+      "它主要治疗什么？"
+    ]
+  },
+  {
+    "id": "psy.092",
+    "topic": "内观",
+    "question": "内观疗法要求来访者回顾哪三件事？",
+    "tags": [
+      "therapy",
+      "eastern"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "别人为我做的、我为别人做的、我给别人添的麻烦吗？",
+      "它起源于哪里？"
+    ]
+  },
+  {
+    "id": "psy.093",
+    "topic": "箱庭疗法",
+    "question": "箱庭疗法与沙盘游戏是同一个东西吗？",
+    "tags": [
+      "therapy",
+      "sandplay"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "基本是，来源不同吗？",
+      "为什么叫箱庭？"
+    ]
+  },
+  {
+    "id": "psy.094",
+    "topic": "绘画分析",
+    "question": "在“房树人”测验中，树通常代表什么？",
+    "tags": [
+      "assessment",
+      "projection"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "生命力/潜意识自我吗？",
+      "房子代表家庭吗？"
+    ]
+  },
+  {
+    "id": "psy.095",
+    "topic": "罗夏墨迹",
+    "question": "罗夏墨迹测验属于什么类型的心理测验？",
+    "tags": [
+      "assessment",
+      "projection"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "投射测验吗？",
+      "它的信效度有争议吗？"
+    ]
+  },
+  {
+    "id": "psy.096",
+    "topic": "主题统觉",
+    "question": "TAT（主题统觉测验）要求被试看图做什么？",
+    "tags": [
+      "assessment",
+      "projection"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "讲一个故事吗？",
+      "它能测出成就动机吗？"
+    ]
+  },
+  {
+    "id": "psy.097",
+    "topic": "自闭症",
+    "question": "孤独症谱系障碍（ASD）的主要核心症状是？",
+    "tags": [
+      "clinical",
+      "development"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "社交沟通障碍和刻板行为吗？",
+      "阿斯伯格综合征属于其中吗？"
+    ]
+  },
+  {
+    "id": "psy.098",
+    "topic": "多动症",
+    "question": "ADHD的全称是什么？",
+    "tags": [
+      "clinical",
+      "development"
+    ],
+    "difficulty": 2,
+    "followups": [
+      "注意缺陷多动障碍吗？",
+      "成人也会有ADHD吗？"
+    ]
+  },
+  {
+    "id": "psy.099",
+    "topic": "边缘型人格",
+    "question": "BPD（边缘型人格障碍）最显著的特征是？",
+    "tags": [
+      "clinical",
+      "personality"
+    ],
+    "difficulty": 5,
+    "followups": [
+      "情绪、人际关系、自我形象的不稳定吗？",
+      "他们害怕被抛弃吗？"
+    ]
+  },
+  {
+    "id": "psy.100",
+    "topic": "抑郁与悲伤",
+    "question": "抑郁症和正常的悲伤（如丧亲）有什么区别？",
+    "tags": [
+      "clinical",
+      "emotion"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "自我评价降低（自责）是抑郁的特征吗？",
+      "悲伤通常会随时间缓解吗？"
+    ]
+  },
+  {
+    "id": "psy.101",
+    "topic": "产后抑郁",
+    "question": "产后抑郁通常发生在什么时候？",
+    "tags": [
+      "clinical",
+      "women"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "产后几周到几个月吗？",
+      "它和产后情绪低落（Baby Blues）一样吗？"
+    ]
+  },
+  {
+    "id": "psy.102",
+    "topic": "双重人格",
+    "question": "多重人格障碍现在的正式名称是什么？",
+    "tags": [
+      "clinical",
+      "dissociation"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "分离性身份障碍（DID）吗？",
+      "这通常与童年创伤有关吗？"
+    ]
+  },
+  {
+    "id": "psy.103",
+    "topic": "进食障碍",
+    "question": "神经性厌食症和神经性贪食症的区别？",
+    "tags": [
+      "clinical",
+      "eating"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "厌食症体重显著过低吗？",
+      "贪食症有催吐/清除行为吗？"
+    ]
+  },
+  {
+    "id": "psy.104",
+    "topic": "成瘾",
+    "question": "成瘾行为的生理基础通常涉及哪个神经递质？",
+    "tags": [
+      "addiction",
+      "biology"
+    ],
+    "difficulty": 4,
+    "followups": [
+      "多巴胺吗？",
+      "戒断反应是什么？"
+    ]
+  },
+  {
+    "id": "psy.105",
+    "topic": "网络成瘾",
+    "question": "网络游戏成瘾被列入精神疾病诊断标准了吗？",
+    "tags": [
+      "addiction",
+      "internet"
+    ],
+    "difficulty": 3,
+    "followups": [
+      "ICD-11列入了吗？",
+      "如何判断是否成瘾？"
+    ]
+  }
+]
