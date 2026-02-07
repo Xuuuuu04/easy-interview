@@ -18,14 +18,14 @@
 ### 目录结构
 
 ```
-app/
+src/app/
   api/routes/              # API 路由
   services/                # 核心服务层
   core/                    # 配置与日志
   schemas/                 # 请求模型
   question_bank/packs/     # 场景题库
   static/                  # 前端静态资源
-deploy/
+src/deploy/
   DEPLOY_STEPS.md          # 服务器部署步骤
   deploy.py                # 自动化部署脚本
   easyinterview.service    # systemd 服务
@@ -59,13 +59,13 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 
 ### 题库说明
 
-- 题库目录：`app/question_bank/packs/`
+- 题库目录：`src/app/question_bank/packs/`
 - 当前已覆盖 14 个场景，每个场景题量不少于 100 题
 
 ### 部署方式
 
-- 详细步骤见 `deploy/DEPLOY_STEPS.md`
-- 自动部署脚本：`deploy/deploy.py`
+- 详细步骤见 `src/deploy/DEPLOY_STEPS.md`
+- 自动部署脚本：`src/deploy/deploy.py`
 
 部署脚本环境变量：
 

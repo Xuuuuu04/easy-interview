@@ -7,7 +7,7 @@ Multi-scenario interview system with question-bank-driven workflows and evaluati
 - English: [README_EN](./README_EN.md)
 
 ## Project Structure
-App: src/app/; Deploy scripts: src/deploy/; Docs: docs/
+App: src/src/app/; Deploy scripts: src/src/deploy/; Docs: docs/
 
 ## Quick Start
 cd app && pip install -r requirements.txt && uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
