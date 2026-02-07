@@ -53,7 +53,7 @@ su -s /bin/bash -c "/opt/easyinterview/venv/bin/pip install -r /opt/easyintervie
 
 ### 6. 配置 Systemd（服务守护）
 
-把仓库里的 [easyinterview.service](file:///I:/AI面试/deploy/easyinterview.service) 放到 systemd：
+把仓库里的 `deploy/easyinterview.service` 放到 systemd：
 
 ```bash
 cp /opt/easyinterview/deploy/easyinterview.service /etc/systemd/system/easyinterview.service
@@ -64,7 +64,7 @@ systemctl status -n 50 easyinterview --no-pager
 
 ### 7. 配置 Nginx（反向代理）
 
-把仓库里的 [nginx_app.conf](file:///I:/AI面试/deploy/nginx_app.conf) 放到 Nginx：
+把仓库里的 `deploy/nginx_app.conf` 放到 Nginx：
 
 Debian/Ubuntu（推荐）：
 ```bash

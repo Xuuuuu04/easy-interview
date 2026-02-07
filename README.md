@@ -64,7 +64,7 @@ uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 
 ### 部署方式
 
-- 详细步骤见 [DEPLOY_STEPS.md](file:///I:/AI面试/deploy/DEPLOY_STEPS.md)
+- 详细步骤见 `deploy/DEPLOY_STEPS.md`
 - 自动部署脚本：`deploy/deploy.py`
 
 部署脚本环境变量：
@@ -91,3 +91,7 @@ DEPLOY_INCLUDE_ENV=1
 - 对外端口：80/443
 - Nginx 配置路径：/etc/nginx/sites-available/easyinterview.oyemoye.top
 - 证书邮箱：admin@oyemoye.top
+
+## 开发进度（截至 2026-02-07）
+- 当前开发进度与已知风险：`docs/PROJECT_STATUS.md`
+- 本仓库以可公开协作为目标维护，功能清单与后续计划以状态文档为准并持续更新。
