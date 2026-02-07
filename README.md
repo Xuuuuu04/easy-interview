@@ -106,3 +106,7 @@ DEPLOY_INCLUDE_ENV=1
 
 ## 目录结构
 - 结构说明：[`docs/PROJECT_STRUCTURE.md`](./docs/PROJECT_STRUCTURE.md)
+
+## 迁移说明
+- 已将核心目录迁移到 `src/app` 与 `src/deploy`。
+- 根目录 `app` / `deploy` 为兼容软链接，原命令可继续使用。

@@ -1,8 +1,0 @@
-2026-01-25 10:10:06,413 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101006.log
-2026-01-25 10:10:06,555 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101006.log
-2026-01-25 10:10:06,673 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101006.log
-2026-01-25 10:10:06,828 | INFO     | main:<module>:68 - Logging initialized. Writing to logs/server_20260125_101006.log
-2026-01-25 10:11:25,263 | INFO     | main:chat_audio:606 - 🎤 User said: 嗯，还好。
-2026-01-25 10:12:00,110 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
-2026-01-25 10:12:09,097 | INFO     | main:generate_thought_response:165 - Trying Model: GLM-4.6 (zai-org/GLM-4.6)...
-2026-01-25 10:12:28,818 | INFO     | main:chat_audio:606 - 🎤 User said: 你有问题吧？

@@ -7,7 +7,7 @@ Multi-scenario interview system with question-bank-driven workflows and evaluati
 - English: [README_EN](./README_EN.md)
 
 ## Project Structure
-App: app/; Deploy scripts: deploy/; Docs: docs/
+App: src/app/; Deploy scripts: src/deploy/; Docs: docs/
 
 ## Quick Start
 cd app && pip install -r requirements.txt && uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
@@ -18,3 +18,7 @@ cd app && pip install -r requirements.txt && uvicorn app.main:app --host 127.0.0
 ## Development Status
 - This repository is maintained for open-source collaboration.
 - Progress is tracked via commits and issues.
+
+## Migration Note
+- Core folders have been moved to `src/app` and `src/deploy`.
+- Root `app` / `deploy` are compatibility symlinks so existing commands keep working.
